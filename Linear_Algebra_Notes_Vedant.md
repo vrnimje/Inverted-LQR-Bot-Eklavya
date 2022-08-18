@@ -44,5 +44,24 @@
  Determinant of a transformation matrix is the scaling factor for the area/volume of a space/region. Its -ve/+ve sign refers to the flipping of the space.<br>
  Flipping refers to whether or not the basis vectors $\hat{i}$ and $\hat{j}$ change their relative orientation. In 3-D, it means that the relative 
  positions of the axes change in orientation. First, they can be represented by right-hand rule, and then by left-hand. <br>
+ When determinant is zero, it implies the area scales down to nothing.
+ </p>
+ 
+ ## 6. Inverse of a Matrix
+ 
+ <p>
+ Inverse transformation matrix is the process of nullifying the said matrix to get the original vector back.<br>
+ $A\vec{x}=\vec{v} \implies \vec{x}= A^{-1}\vec{v}$<br>
+ Basically, $A^{-1}A=I$(identity matrix)<br>
+ </p>
+ 
+ ## 7. Rank
+ 
+ <p>
+ Rank is the number of dimensions in the output of the transformation. <br>
+ When it is 1, output is a line, when it is 2, output is a plane.<br>
+ Set of all possible outputs of a  is called 
+ 
+ 
  
  
