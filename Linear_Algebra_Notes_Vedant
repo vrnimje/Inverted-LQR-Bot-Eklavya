@@ -1,0 +1,24 @@
+#Linear Algebra
+
+##1. Vectors
+
+<p> Defined as ordered list of numbers or,<br>
+ Quantity having both magnitude and direction 
+ [13,4]=[x,y]
+</p>
+
+<p> Scaling of vectors: Multiplying a constant(scalar) with a vector <br>
+    2[1,2] = [2,4]
+</p>
+
+##2. Linear Combinations, Span and Basis Vectors 
+
+<p> <strong>v</strong> = i + 2j = [1,2], where i and j are unit basis vectors<br>
+    Linear combination: a<strong>v</strong> + b<strong>w</strong> <br>
+    It basically represents the span of the vectors, when taken as basis vectors<br>
+    For 2 vectors: It is a plane    For 3 vectors: It can represent all vectors<br>
+    
+    Linearly dependent: <strong>u</strong> = a<strong>v</strong> + b<strong>w</strong><br>
+    Linearly independent: <strong>u</strong> != a<strong>v</strong> + b<strong>w</strong><br>
+    Basis of vector space is a set of Linearly independent vectors that span the full space
+</p>
