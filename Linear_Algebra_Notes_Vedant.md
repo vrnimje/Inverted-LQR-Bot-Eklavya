@@ -60,7 +60,11 @@
  <p>
  Rank is the number of dimensions in the output of the transformation. <br>
  When it is 1, output is a line, when it is 2, output is a plane.<br>
- Set of all possible outputs of a  is called 
+ Set of all possible outputs of a transformation is called the column space $\equiv$ span of basis vectors. Rank is the number of dimesnions in the column space. When all the possible dimensions are in the output, the matrix is called full rank. <br>
+ **Null space** or the **Kernel** is the space of all the vectors that become null. When the resultant vector is a null vector, the solution to the equation $A\vec{x}=\vec{v}$ is all the vectors in the null space.<br>
+ 
+ 
+ 
  
  
  
