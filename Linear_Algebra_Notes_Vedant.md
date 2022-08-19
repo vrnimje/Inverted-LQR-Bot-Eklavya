@@ -61,12 +61,12 @@
  Rank is the number of dimensions in the output of the transformation. <br>
  When it is 1, output is a line, when it is 2, output is a plane.<br>
  Set of all possible outputs of a transformation is called the column space $\equiv$ span of basis vectors. Rank is the number of dimesnions in the column space. When all the possible dimensions are in the output, the matrix is called full rank. <br>
- **Null space** or the **Kernel** is the space of all the vectors that become null. When the resultant vector is a null vector, the solution to the equation $A\vec{x}=\vec{v}$ is all the vectors in the null space.<br>
+ <strong>Null space</strong> or the <strong>Kernel</strong> is the space of all the vectors that become null. When the resultant vector is a null vector, the solution to the equation $A\vec{x}=\vec{v}$ is all the vectors in the null space.<br>
  </p>
  
  ## 8. Non square matrices
  <p>
- For matrix of order $m \times n$, m indicates the number of dimesnions of the input vector, and n indicates the dimesnions of the output vector.<br>
+ For matrix of order $m \times n$, n indicates the number of dimesnions of the input vector, and m indicates the dimesnions of the output vector.<br>
  </p>
  
  ## 9. Dot Products and Duality
@@ -98,5 +98,8 @@ So dot product is basically a transformation that squishes a vector onto a numbe
  $$\vec{p} = \vec{a} \times \vec{b}$$
  The area of the parallelogram is measured by taking the determinant of the two vectors.<br>
  ![Screenshot from 2022-08-19 13-07-59](https://user-images.githubusercontent.com/103848930/185568551-9ba1c41c-8cc5-454e-9242-fbeacb151795.png)
+ 
+ ![Screenshot from 2022-08-19 15-42-22](https://user-images.githubusercontent.com/103848930/185597174-6c3518f9-8b74-460d-ac86-29fd3acc1f63.png)
+
  
  
