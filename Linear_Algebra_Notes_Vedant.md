@@ -62,10 +62,41 @@
  When it is 1, output is a line, when it is 2, output is a plane.<br>
  Set of all possible outputs of a transformation is called the column space $\equiv$ span of basis vectors. Rank is the number of dimesnions in the column space. When all the possible dimensions are in the output, the matrix is called full rank. <br>
  **Null space** or the **Kernel** is the space of all the vectors that become null. When the resultant vector is a null vector, the solution to the equation $A\vec{x}=\vec{v}$ is all the vectors in the null space.<br>
+ </p>
  
+ ## 8. Non square matrices
+ <p>
+ For matrix of order $m \times n$, m indicates the number of dimesnions of the input vector, and n indicates the dimesnions of the output vector.<br>
+ </p>
  
+ ## 9. Dot Products and Duality
+ <p>
+ Dot product of two vectors is the product of length of one vector with length of projection on the first vector. It is also given by the multiplication of the respective elements, for vectors of same dimension. <br>
  
+ $$\begin{bmatrix}
+    1 \\
+    2 \\
+    3
+   \end{bmatrix} \bullet 
+   \begin{bmatrix*}[r]
+    4 \\
+    5 \\
+    6 \\
+    \end{bmatrix*}=1 \times 4 + 2 \times 5 + 3 \times 6 = 32$$ 
  
+ or 
+![Screenshot from 2022-08-19 12-36-18](https://user-images.githubusercontent.com/103848930/185563099-fd68b2cf-9037-4c46-bbd3-8318e000e331.png)
+ Both these definitions are explained by duality
  
+![Screenshot from 2022-08-19 12-51-21](https://user-images.githubusercontent.com/103848930/185565724-2d193ae3-7384-4051-9f66-7e7fe57ef6ca.png)
+So dot product is basically a transformation that squishes a vector onto a number line, and is associated with another matrix/vector. 
+ </p>
+ 
+ ## 10. Cross products
+ <p>
+ It is the vector, whose magnitude is the area of the parallelogram enclosed by the two vectors, and its direction perpendicular to the plane of the parallelogram, determined using the right hand rule. 
+ $$\vec{p} = \vec{a} \times \vec{b}$$
+ The area of the parallelogram is measured by taking the determinant of the two vectors.<br>
+ ![Screenshot from 2022-08-19 13-07-59](https://user-images.githubusercontent.com/103848930/185568551-9ba1c41c-8cc5-454e-9242-fbeacb151795.png)
  
  
