@@ -100,6 +100,26 @@ So dot product is basically a transformation that squishes a vector onto a numbe
  ![Screenshot from 2022-08-19 13-07-59](https://user-images.githubusercontent.com/103848930/185568551-9ba1c41c-8cc5-454e-9242-fbeacb151795.png)
  
  ![Screenshot from 2022-08-19 15-42-22](https://user-images.githubusercontent.com/103848930/185597174-6c3518f9-8b74-460d-ac86-29fd3acc1f63.png)
+ </p>
+ 
+ ## 11. Change of basis
+ 
+<p>
+ $$A \begin{bmatrix}
+      x^{'} \\
+      y^{'} 
+      \end{bmatrix} = \begin{bmatrix*}[r]
+                      x \\
+                      y 
+                      \end{bmatrix*}$$
+ 
+ where $x^{'}$ & $y^{'}$ represent the coordinates of the vector in the system where the basis vectors are changed.<br>
+ So changing of basis is basically applying another transformation.
+ </p>
+ 
+ 
+ 
+ 
 
  
  
