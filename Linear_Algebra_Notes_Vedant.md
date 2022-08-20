@@ -1,6 +1,12 @@
 <h1>Linear Algebra</h1>
 
-<h2> 1. Vectors</h2>
+## Table of Contents
+<p>
+1. [Vectors](#vectors)
+ 
+</p>
+
+## 1. Vectors <a name="vectors"></a>
 
 <p> Defined as ordered list of numbers or,<br>
  Quantity having both magnitude and direction 
