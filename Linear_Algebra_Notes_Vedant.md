@@ -46,6 +46,7 @@
 ## 5. Determinant
 <p>
  Determinant of a transformation matrix is the scaling factor for the area/volume of a space/region. Its -ve/+ve sign refers to the flipping of the space.<br>
+ <img src="/assets/image.png"><br>
  Flipping refers to whether or not the basis vectors $\hat{i}$ and $\hat{j}$ change their relative orientation. In 3-D, it means that the relative 
  positions of the axes change in orientation. First, they can be represented by right-hand rule, and then by left-hand. <br>
  When determinant is zero, it implies the area scales down to nothing.
@@ -90,10 +91,10 @@
     \end{bmatrix*}=1 \times 4 + 2 \times 5 + 3 \times 6 = 32$$ 
  
  or 
-![Screenshot from 2022-08-19 12-36-18](https://user-images.githubusercontent.com/103848930/185563099-fd68b2cf-9037-4c46-bbd3-8318e000e331.png)
+ <img src="assets/Screenshot from 2022-08-19 12-36-18.png"><br>
  Both these definitions are explained by duality
  
-![Screenshot from 2022-08-19 12-51-21](https://user-images.githubusercontent.com/103848930/185565724-2d193ae3-7384-4051-9f66-7e7fe57ef6ca.png)
+<img src="assets/Screenshot from 2022-08-19 12-51-21.png">
 So dot product is basically a transformation that squishes a vector onto a number line, and is associated with another matrix/vector. 
  </p>
  
@@ -102,7 +103,7 @@ So dot product is basically a transformation that squishes a vector onto a numbe
  It is the vector, whose magnitude is the area of the parallelogram enclosed by the two vectors, and its direction perpendicular to the plane of the parallelogram, determined using the right hand rule. 
  $$\vec{p} = \vec{a} \times \vec{b}$$
  The area of the parallelogram is measured by taking the determinant of the two vectors.<br>
- ![Screenshot from 2022-08-19 13-07-59](https://user-images.githubusercontent.com/103848930/185568551-9ba1c41c-8cc5-454e-9242-fbeacb151795.png)
+ <img src="assets/Screenshot from 2022-08-19 13-07-59.png">
  
  ![Screenshot from 2022-08-19 15-42-22](https://user-images.githubusercontent.com/103848930/185597174-6c3518f9-8b74-460d-ac86-29fd3acc1f63.png)
  </p>
