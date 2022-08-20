@@ -27,7 +27,7 @@
 <p> Transformations are basically functions that change the landing direction of the input vector<br>
  Linear transformations are those in which the lines remain lines and the origin remains fixed. The axes gridlines remain parallel and evenly spaced.<br>
  We only have to consider where the basis vectors $\hat{i}$ and $\hat{j}$ land after the transformation<br>
-![Screenshot from 2022-08-18 20-10-22](https://user-images.githubusercontent.com/103848930/185448746-1c78c6ff-c6b0-47a1-87b0-668f1343049f.png)<br>
+ <figure><img src="./assets/Screenshot from 2022-08-18 20-10-22.png"><figcaption>image caption</figcaption></figure>
  Transformations having linearly dependent vectors lead to limiting of the span to 1-D (a line).<br>
  Linearity have following characteristics :<br>
  1. Additivity: $L(\vec{v} + \vec{w}) = L(\vec{v}) + L(\vec{w})$ <br>
@@ -39,7 +39,7 @@
 
 <p>
  Composition is applying two transformations in steps. Product of two transformation matrices gives the composition matrix. <br>
- ![Screenshot from 2022-08-18 21-12-25](https://user-images.githubusercontent.com/103848930/185450104-1e3bb87d-b1cf-49d8-aa2f-e26f67652993.png)<br>
+ <img src="/assets/Screenshot from 2022-08-18 21-12-25.png"><br>
  Order of multiplying matrices is not commutative, it leads to different landing points.<br>
  </p>
  
@@ -49,6 +49,7 @@
  Flipping refers to whether or not the basis vectors $\hat{i}$ and $\hat{j}$ change their relative orientation. In 3-D, it means that the relative 
  positions of the axes change in orientation. First, they can be represented by right-hand rule, and then by left-hand. <br>
  When determinant is zero, it implies the area scales down to nothing.
+ 
  </p>
  
  ## 6. Inverse of a Matrix
