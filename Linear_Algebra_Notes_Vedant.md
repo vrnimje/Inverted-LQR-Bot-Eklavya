@@ -73,6 +73,7 @@
  ## 8. Non square matrices
  <p>
  For matrix of order $m \times n$, n indicates the number of dimesnions of the input vector, and m indicates the dimesnions of the output vector.<br>
+ <img src="assets/nonsquare.jpeg">
  </p>
  
  ## 9. Dot Products and Duality
@@ -143,7 +144,7 @@ So dot product is basically a transformation that squishes a vector onto a numbe
  ## 13. Abstract Vector Spaces
  <p>
  Any form of data can be represented by vectors, as long as it has some sense of linearity in it. All the concepts of linear algebra can therefore be applied extended to these spaces as well. The following axioms can be applied when we represent something as a vector space.<br>
-![Screenshot from 2022-08-19 23-20-05](https://user-images.githubusercontent.com/103848930/185678052-277b43f1-ee31-4cc3-b482-36c04c946a77.png)
+<img src="assets/Screenshot from 2022-08-19 23-20-05.png">
  </p>
  
  
