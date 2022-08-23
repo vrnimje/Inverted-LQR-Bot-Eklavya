@@ -43,9 +43,11 @@
 
 ## Linear systems
 A system can be represented by linear system of differential equation as below.
+
 $$
     dx/dt = Ax
 $$
+
 Here x is a vector consisting system coordinates and A is matrix which represents how these variables interact with each other.
 
 <br>
@@ -59,10 +61,10 @@ $$
 By using Taylor's series we can write  
 
 $$
-    e^(At) = $I + At + A^2t^2/2! + A^3t^3/3! .... 
+    e^{At} = I + At + A^2t^2/2! + A^3t^3/3! .... 
 $$
 
-As this is very difficult to compute we will use eigenvectors of A to convert $x$ in terms of eigenvector coordinates.
+As this is very difficult to compute we will use eigenvectors of A to convert x in terms of eigenvector coordinates.
 
 <br>
 
@@ -70,6 +72,7 @@ Let us consider matrix containing all the eigenvectors
 T = [E<sub>1</sub> E<sub>2</sub>...E<sub>n</sub>]
 
 and diagonal matrix containing all the eigenvalues as below.
+
 <img src="https://qph.cf2.quoracdn.net/main-qimg-362b830d77aae9348a480d36ff6147d0" alt="Diagonal matrix D" width="300"/> 
 
 So we can write 
@@ -164,7 +167,7 @@ $$
     Ã = e^{AΔt}
 $$ 
 
-If we have initial cordinates $x_0$, we can write
+If we have initial cordinates x<sub>0</sub>, we can write
 
 $$
     x_{1} = Ãx_0
@@ -236,7 +239,7 @@ For most systems A and B are fixed. To check if system is controllable or not
 consider matrix 
 
 $$
-    C = [B AB A^2B A^3B ... A^{n-1}B]
+    C = [B, AB, A^2B, A^3B ... A^{n-1}B]
 $$
 
 If and only if rank of C is a full rank matrix i.e rank(C) = n then the system is controllable.
