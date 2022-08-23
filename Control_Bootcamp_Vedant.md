@@ -19,11 +19,17 @@ Pre-planned tracjectory, but we have to constantly supply energy. <br>
 </p>
 
 $$ \dot{x}=Ax + Bu $$
+
 This represents an O.D.E. where, x is the input, and u is the control term (knob). B is how u changes the state. We also measure some aspects of the state.
+
 $$ y=Cx $$
+
 Let control law is:
-$$  u= -Kx $$<br>
+
+$$  u= -Kx $$
+
  where (y=x)
+ 
 $$    \dot{x}=Ax-BKx
            =(A-BK)x
 $$
@@ -33,17 +39,19 @@ By the eigenvalues of the matrix $(A-BK)$, we can determine whether or not the s
 ## I. Linear Systems
 <p>
 
-$ \dot{x}=Ax $
+$$ \dot{x}=Ax $$
 
 where x is a matrix
 
-$ x(t)=e^{At}x(0) $
-$ e^{At}=I + At + \frac{A^{2}t^{2}} {2!} + \cdots $   .....(i) 
+$$ x(t)=e^{At}x(0) $$
+ 
+$$ e^{At}=I + At + \frac{A^{2}t^{2}} {2!} + \cdots $$   
 
 To compute $A^{n}$ easily, we make use of **eigenvalues and eigenvectors**
 
 $$ A \vec{c} = \lambda \vec{c} $$
 And, 
+ 
 $$ T=\begin{bmatrix}
     \vec{c1} & \vec{c2} & \vec{c3} & \cdots\\
     \end{bmatrix} $$
@@ -52,36 +60,43 @@ $$ AT = TD $$
 where D is a diagonal matrix containing eigenvalues of all the corresponding eigenvectors in T.<br>
 
 $$ T^{-1} A T = D $$
+ 
 Eqn in MATLAB is
+ 
 $$ [T,D] = eig(A) $$
 
 Now we map the vector x in the eigenbasis plane
-Let $$x=Tz$$
-$$ \dot{x} = T \dot{z} = Ax
-$$
+Let 
+ $$x=Tz$$
+ 
+$$ \dot{x} = T \dot{z} = Ax $$
 $$ \dot{z} = T^{-1}ATz = Dz $$
 
 Therefore,
 $$ z=D \dot{z}$$
 
-Linear system 1 img
+ <image src="assets\Linear system 1.png"></image><br>
 
 So, solution becomes
 
-Linear system 2 img
+ <image src="assets\Linear system 2.png"></image><br>
 
 But to represent in the original paramters,
 
 $$ A = TDT^{-1} $$
+ 
 So, $ A^{n} $ becomes,
+ 
 $$ A^{n} = T D^{n} T^{-1} $$
+ 
 Hence, calculating eqn (i) becomes easier
+ 
 $$ e^{At} = T[I + Dt + \frac{D^{2}t^{2}}{2!} + \frac{D^{3}t^{3}}{3!} + \cdots] T^{-1} $$
 $$ e^{At} = T e^{Dt} T^{-1} $$
 
 Finally,
 
-Linear system 3 img
+ <image src="assets\Linear system 3.png"></image><br>
 
 The dynamics are simpler in the eigenbasis plane, allowing us to get the state at a future time. 
 
@@ -91,29 +106,35 @@ The dynamics are simpler in the eigenbasis plane, allowing us to get the state a
 <p>
 
 #### Stability in continuous time
-Stability 1 img <br>
+<image src="assets\Stability 1.png"></image><br>
+ 
 $$ \lambda = a \pm  \iota b $$
+ 
 So, 
+ 
 $$ e^{\lambda t} = e^{at}[cos(bt) \pm \iota sin(bt)]$$
 
-Stability 2 img 
+<image src="assets\Stability 2.png"></image><br>
 
-If $ a>0 $,
+If a>0,
 
 So the system will eventually blow up to infinity, and so will x as well 
 
 Hence, the system is stable if and only if all the eigenvalues are negative. 
+ 
+<image src="assets\Stabilty 3.png"></image><br> 
 
-Stability 3 img 
-
-So we basically want to make the system stable by making the eigenvalues, which are positive, negative, by using the '$Bu$' term. 
+So we basically want to make the system stable by making the eigenvalues, which are positive, negative, by using the 'Bu' 
+ term. 
 
 #### Stability in discrete time
 It is represented as
+ 
 $$ x_{k+1} = \tilde{A} x_{k} $$
+ 
 where $ x_{k} = x(k \triangle t)$
 
-Stability 4 img
+<image src="assets\Stabilty 4.png"></image><br> 
 
 So the magintude of the eigenvalues have to be less than 1 , to attain stability, otherwise the term $R^{n} \to \infin$. 
 
@@ -124,35 +145,44 @@ So the magintude of the eigenvalues have to be less than 1 , to attain stability
 Basically converting a non linear system to a linear one, for controlling the former.<br>
 
 $$ \dot{x} = f(x) $$
+ 
 #### Steps
 1. Find fixed points $\bar{x}$ such that 
+ 
    $$ f(\bar{x}) = 0 $$
+
    So we find states where the system is not in motion (fixed)
 2. Linearise about $\bar{x}$.
+ 
    $$ (\frac{df}{dx})_{\bar{x}} = [\frac{df_{i}}{dx_{j}}] $$
 
    Calculating the Jacobian of the dynamics
 
 We do this so that when we zoom into these fixed points, the system behaves like a linear one.
 
-Linearising 1 img
+<image src="assets\Linearising 1.png"></image><br> 
 
-Now we fix our origin at $\bar{x}$, so that $x-\bar{x}\approx0$. 
+Now we fix our origin at $\bar{x}$, so that 
+ 
+ $$x-\bar{x}\approx0$$
 
-Linearising 2 img
+<image src="assets\Linearising 2.png"></image><br> 
 
 For example, in case of a inverted pendulum, a fixed point is the vertical state of the pendulum. When we consider only the region where the angle of deviation from this state is very small, that region effectively behaves as a linear system. We then control the system such that it stays within that region.<br>
     
     Hartman–Grobman theorem
     The theorem states that the behaviour of a dynamical system in a domain near a hyperbolic equilibrium point is qualitatively the same as the behaviour of its linearisation near this equilibrium point, where hyperbolicity means that no eigenvalue of the linearisation has real part equal to zero.
 
-Linearising 3 img
+<image src="assets\LInearising 3.png"></image><br> 
 
-Linearising 4 img
+<image src="assets\Linearising 4.png"></image><br> 
 
 MATLAB eqns are:
+ 
 $$ d=0.1 $$
+ 
 $$ Ad = [0,1;-1,-d] $$
+ 
 Therefore, eig(Ad) gives
 -0.05 - 0.99871i and
 -0.05 + 0.99871i
@@ -163,10 +193,13 @@ Similarly, for Au, eig(Au) gives one stable and another unstable eigenvalue
 ## 4. Controllabiltiy
 <p>
 
-$$ \dot{x} = Ax + Bu$$  where
+$$ \dot{x} = Ax + Bu$$  
+ 
+ where
+ 
 $$ x \in R^n, u \in R^{q}, A\in R^{n\times n} and B \in R^{n\times q} $$
 
-Controllability 1 img
+<image src="assets\Controllability 1.png"></image><br> 
 (Assuming full state feedback)
 
 In majority systems, A and B are fixed, we can only adjust u.
@@ -176,11 +209,11 @@ ctrb(A,B) tells the same
 
 All the vector components should be controllable. Some examples are
 
-Controllability 2 img
+<image src="assets\Controllability 2.png"></image><br> 
 
-Controllability 3 img
+<image src="assets\Controllability 3.png"></image><br> 
 
-Controllability 4 img
+<image src="assets\Controllability 4.png"></image><br> 
 
 ctrb gives this above matrix
 </p>
@@ -189,16 +222,18 @@ ctrb gives this above matrix
 <p>
 
 Reachable set 
-$ R_{t}$ = {$c \in R^{n} |$ there is an input u(t) such that x(t)=c }
+ 
+$'R_{t}'$ = {$c \in R^{n} |$ there is an input u(t) such that x(t)=c }
 
 </p>
 
 ## 6. Inverted Pendulum on a cart
 <p>
 
-Inverted 1 img
+<image src="assets\Inverted 1.png"></image><br> 
 
 We can represent this system as a vector:<br>
+ 
 $$\vec{x} =  \begin{bmatrix}
             x \\
             \dot{x} \\
@@ -210,8 +245,10 @@ $$\vec{x} =  \begin{bmatrix}
 $$ \frac{d}{dt} x = f(x) $$
 
 Fixed points:
-$ \theta = 0,\pi$
-$ \dot{x}=0 $
+ 
+$$ \theta = 0,\pi $$
+ 
+$$ \dot{x}=0 $$
 
 $x$ is free
 
@@ -231,7 +268,7 @@ Hence, we need an optimal set of eigenvalues, which can be determined using LQR.
 
 We consider a cost function, which tells how much penalty must be there, when a certain component of the vector x deviates from its desired value. We also do the same for the force "u", so that we can reduce the strain on motors, if necessary. This cost function is given by:
 
-Inverted 2 img
+<image src="assets\Inverted 2.png"></image><br> 
 
 where Q is a $n \times n$ matrix, and R is a coefficient. 
 
@@ -251,7 +288,9 @@ Time complexity: O($n^{3}$)
 
 In reality, it is impossible to read the full-state measurements; we might only get the readings y, given by
 
-$y = Cx$, where $ y \in R^{p}$, where p<n
+$$y = Cx$$,
+
+where $y \in R^{p}$, where p<n
 
 Here, we consider the term **Observability**, which tells if we can or cannot estimate any state x from measurements y(t)
 
@@ -259,13 +298,15 @@ MATLAB: rank(obsv(A,C))
 
 if it is equal to n, the system is observable, and vice-versa. 
 
-Full-state 1 img
+<image src="assets\Full state 1.png"></image><br> 
 
 where $\hat{x}$ is the estimated state, having some disturbances.
 
 #### Observability
 
-Observability matrix, $$O = \begin{bmatrix}
+Observability matrix, 
+                                          
+$$O = \begin{bmatrix}
 C \\
 CA \\
 CA^{2}\\
@@ -274,6 +315,7 @@ CA^{n-1}
 \end{bmatrix} $$
 
 where C is the controllability matrix, 
+                                          
 $$ C=\begin{bmatrix}
         B & AB & A^{2}B & \cdots & A^{n-1}B
     \end{bmatrix} $$
@@ -282,19 +324,18 @@ rank(obsv(A,C)) should be n
 
 #### Developing the estimator (Kalman filter)
 
-Full state 2 img
+<image src="assets\Full state 2.png"></image><br> 
 
 $$
 \dot{\hat{x}} = A\hat{x}+Bu+K_{f}(y-\hat{y})
 $$
-$
-\hat{y}=C\hat{x}
-$
+
+$$\hat{y}=C\hat{x}$$
 
 where $K_{f}$ is the Kalman filter gain matrix
 
 The term $K_{f}(y-\hat{y})$ is used to update the value of $\dot{\hat{x}}$ based on new values of y
 
-Full state 3 img
-Full state 4 img
-Full state 5 img
+<image src="assets\Full state 3.png"></image><br> 
+<image src="assets\Full state 4.png"></image><br> 
+<image src="assets\Full state 5.png"></image><br> 
