@@ -51,13 +51,17 @@ Here x is a vector consisting system coordinates and A is matrix which represent
 <br>
 
 Basic solution of this equation can be given as 
+
 $$
     x(t) = e^{At}
 $$
+
 By using Taylor's series we can write  
+
 $$
     e^(At) = $I + At + A^2t^2/2! + A^3t^3/3! .... 
 $$
+
 As this is very difficult to compute we will use eigenvectors of A to convert $x$ in terms of eigenvector coordinates.
 
 <br>
@@ -69,27 +73,34 @@ and diagonal matrix containing all the eigenvalues as below.
 <img src="https://qph.cf2.quoracdn.net/main-qimg-362b830d77aae9348a480d36ff6147d0" alt="Diagonal matrix D" width="300"/> 
 
 So we can write 
+
 $$
     AT = TD
 $$
+
 $$
     T^{-1}AT = D
 $$
 
 Let us assume x is vector containing system coordinates in terms of eigenvector coordinates.
 So 
+
 $$
     x = Tz
 $$
+
 $$
     dx/dt = T{dz/dt} = Ax
 $$
+
 $$
     dz/dt = T^{-1}ATz
 $$
+
 $$
     dz/dt = Dz
 $$
+
 $$
     z(t) =  e^{Dt}z(0)
 $$
@@ -99,17 +110,25 @@ Even though above equation is easier to compute, we want it in terms of x and no
 <br>
 
 We know AT = TD, so we can write 
+
 $$
     A = TDT^{-1}
 $$
+
 Putting this equation in previous Taylor's series and simplifing it we get
+
 $$
-e^{At} = Te^{Dt}T^{-1}
+    e^{At} = Te^{Dt}T^{-1}
 $$
+
 [Watch this video from 15:28 for calculations](https://www.youtube.com/watch?v=nyqJJdhReiA&list=PLMrJAkhIeNNR20Mz-VpzgfQs5zrYi085m&index=2)
 
 Now our final equation becomes
-### $$ x(t) = Te^{Dt}T^{-1}x(0) $$
+
+$$
+    x(t) = Te^{Dt}T^{-1}x(0) 
+$$
+
 We can use this equation to find state of the system in future time.
 
 ---
@@ -118,34 +137,47 @@ We can use this equation to find state of the system in future time.
 
 ## Stability and Eigenvalues
 
-If $x(t)$ tends to infinity then the system will be unstable.
-Which means if value of $e^{Dt}$ tends to infinity then system will be unstable. Value of $e^{Dt}$ is given in terms of eigenvalues.
+If x(t) tends to infinity then the system will be unstable.
+Which means if value of e^(Dt) tends to infinity then system will be unstable. Value of e^(Dt) is given in terms of eigenvalues.
 
 <img src="https://i.postimg.cc/zvJr5T84/Screenshot-from-2022-08-23-18-21-11.png" alt="Value of e^Dt" width="300"/>
 
-We can clearly see that if real part of all eigenvalues is negative then the value of $x(t)$ will not tend to infinity and system will become stable.
+We can clearly see that if real part of all eigenvalues is negative then the value of x(t) will not tend to infinity and system will become stable.
 
 Till now we were looking at system as continuous time system.
 But sensors cannot measure physical property continuously. 
 Sensors give readings at discrete time intervals.
 
 We can represent this discrete time system as 
+
 $$
     x_{k + 1} = Ãx_k 
 $$
 
-where $x_k = x(kΔt)$  and  $Ã = e^{AΔt}$ 
+where 
+
+$$
+    x_k = x(kΔt)
+$$  
+  
+$$ 
+    Ã = e^{AΔt}
+$$ 
 
 If we have initial cordinates $x_0$, we can write
+
 $$
     x_{1} = Ãx_0
 $$
+
 $$
     x_{2} = Ã^{2}x_0
 $$
+
 $$
   .
 $$
+
 $$
     x_{N} = Ã^{N}x_0
 $$
@@ -161,7 +193,7 @@ Hence the magnitude of eigenvalue should be less than 1 in discrete time system 
 ## Linearizing Around a Fixed Point
 
 Till now we looked at purely linear system. We can also derive linear system from non-linear
-dyanamical system like $dx/dt = f(x)$if it has fixed points i.e $d/dt$ of those points is zero.
+dyanamical system like dx/dt = f(x) if it has fixed points i.e d/dt of those points is zero.
 Physically the system will be stable at fixed points assuming there are no disturbances.
 
 Let ̄x be the system coordinates at fixed point.
@@ -171,15 +203,18 @@ $$
     dx/dt - dx̄/dt = f(x̄) + Df/Dx_{(x-x̄)} + D^2f/Dx^2_{(x-x̄)} + ....
 $$
 
-Where 
+Where
+
 $$
     Df/Dx_{(x-x̄)} = [∂f_i/∂x_j]
 $$ 
 
 if x - x̄ is very small, then
+
 $$
     Δdx/dt = Df/dx_x̄Δx    =>  Δdx/dt = AΔx
 $$
+
 If all the eigenvalues have real part then the linearization works, but if some eigenvalues
 are purely imaginary, then we can't linearize system.
 
@@ -189,17 +224,21 @@ are purely imaginary, then we can't linearize system.
 
 ## Controllability
 Let us consider a system  of dimension n which we want to control. It can be represented by following equation.
+
 $$
     dx/dt = Ax + Bu
 $$
+
 where A is nxn matrix which relates system coordinates,
 B is matrix which represents actuators used to control system and
 u = -kx is manipulated input to actuators.
 For most systems A and B are fixed. To check if system is controllable or not
 consider matrix 
+
 $$
     C = [B AB A^2B A^3B ... A^{n-1}B]
 $$
+
 If and only if rank of C is a full rank matrix i.e rank(C) = n then the system is controllable.
 
 Singular Value Decomposition of matrix C gives information about which 
@@ -223,18 +262,23 @@ Let us consider a inverted pendulum on a cart having state vector x as below.
 
 This system can be represented by non-linear equation dx/dt = f(x)
 It can be linearized for fixed points given below.
+
 $$
     Θ = 0, π
 $$
+
 $$
     dΘ/dt = 0
 $$
+
 $$
     x free
 $$ 
+
 $$   
     dx/dt = 0
 $$
+
 We can find Jacobian matrix for these fixed points. In case where
 pendulum is inverted(Θ = π), some of the eigenvalues of matrix A
 comeout to be positive. To stabalize the pendulum in this position 
@@ -270,6 +314,7 @@ to our need.
 $$
     J = ∫(x^TQx + u^TRu)
 $$
+
 $$
     J = ∫(x^TQx - u^TRkx)
 $$
@@ -300,16 +345,21 @@ If rank(O) = n, system is observable.
 To estimate the full state we need to design a estimator which accepts u and y as input
 and outputs x̂ which is estimated full state.  This estimator itself is a linear dynamical system.
 It can be represented as 
+
 $$
     dx̂/dt = Ax̂ + Bu + K_f(y-̂y)
 $$
+
 $$
     ŷ = Cx̂
 $$
+
 <img src="https://i.postimg.cc/g26Z0dTt/Screenshot-from-2022-08-24-00-30-16.png" alt="Estimator" width="400"/>
 
-Here $K_f$ is Kalman filter gain matrix. The term 
+Here K<sub>f</sub> is Kalman filter gain matrix. The term 
+
 $$
     K_f(y-̂y)
 $$
+
 updates estimated x̂ based on new values of y.
