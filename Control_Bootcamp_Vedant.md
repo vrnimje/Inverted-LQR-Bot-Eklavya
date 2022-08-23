@@ -18,7 +18,7 @@ Pre-planned tracjectory, but we have to constantly supply energy. <br>
    
 </p>
 
-$$ \dot{x}=Ax + Bu $$
+$$\dot{x}=Ax + Bu$$
 
 This represents an O.D.E. where, x is the input, and u is the control term (knob). B is how u changes the state. We also measure some aspects of the state.
 
@@ -50,13 +50,16 @@ $$ e^{At}=I + At + \frac{A^{2}t^{2}} {2!} + \cdots $$
 To compute $A^{n}$ easily, we make use of **eigenvalues and eigenvectors**
 
 $$ A \vec{c} = \lambda \vec{c} $$
+ 
 And, 
  
 $$ T=\begin{bmatrix}
     \vec{c1} & \vec{c2} & \vec{c3} & \cdots\\
     \end{bmatrix} $$
 So,
+ 
 $$ AT = TD $$
+ 
 where D is a diagonal matrix containing eigenvalues of all the corresponding eigenvectors in T.<br>
 
 $$ T^{-1} A T = D $$
@@ -67,12 +70,15 @@ $$ [T,D] = eig(A) $$
 
 Now we map the vector x in the eigenbasis plane
 Let 
+ 
  $$x=Tz$$
  
 $$ \dot{x} = T \dot{z} = Ax $$
+ 
 $$ \dot{z} = T^{-1}ATz = Dz $$
 
 Therefore,
+ 
 $$ z=D \dot{z}$$
 
  <image src="assets\Linear system 1.png"></image><br>
@@ -92,6 +98,7 @@ $$ A^{n} = T D^{n} T^{-1} $$
 Hence, calculating eqn (i) becomes easier
  
 $$ e^{At} = T[I + Dt + \frac{D^{2}t^{2}}{2!} + \frac{D^{3}t^{3}}{3!} + \cdots] T^{-1} $$
+ 
 $$ e^{At} = T e^{Dt} T^{-1} $$
 
 Finally,
@@ -147,6 +154,7 @@ Basically converting a non linear system to a linear one, for controlling the fo
 $$ \dot{x} = f(x) $$
  
 #### Steps
+ 
 1. Find fixed points $\bar{x}$ such that 
  
    $$ f(\bar{x}) = 0 $$
@@ -154,7 +162,7 @@ $$ \dot{x} = f(x) $$
    So we find states where the system is not in motion (fixed)
 2. Linearise about $\bar{x}$.
  
-   $$ (\frac{df}{dx})_{\bar{x}} = [\frac{df_{i}}{dx_{j}}] $$
+   $$ (\frac{Df}{Dx})_{\bar{x}} = [\frac{df_{i}}{dx_{j}}] $$
 
    Calculating the Jacobian of the dynamics
 
@@ -197,7 +205,7 @@ $$ \dot{x} = Ax + Bu$$
  
  where
  
-$$ x \in R^n, u \in R^{q}, A\in R^{n\times n} and B \in R^{n\times q} $$
+$$ x \in R^n, u \in R^{q}, A\in R^{n\times n}, B \in R^{n\times q} $$
 
 <image src="assets\Controllability 1.png"></image><br> 
 (Assuming full state feedback)
@@ -250,7 +258,7 @@ $$ \theta = 0,\pi $$
  
 $$ \dot{x}=0 $$
 
-$x$ is free
+x is free
 
 "u" is a force here, which we can change/ modify. 
 
