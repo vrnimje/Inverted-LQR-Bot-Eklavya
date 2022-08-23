@@ -32,7 +32,7 @@
             
 |  | Open Loop | Closed Loop Feedback control |
 | --- | --- | --- |
-| |Uncertainty refers to internal changes in system.Uncertainty makes input suboptimal.  | Uncertainty is not an issue, as any change is system variables gets detected and input is varied accordingly. |
+| Uncertainty refers to internal changes in system.|Uncertainty makes input suboptimal.  | Uncertainty is not an issue, as any change is system variables gets detected and input is varied accordingly. |
 |  | Instable | Very stable. |
 | Disturbance referes to external forces. | Cannot take in account for disturbance. | Disturbance also gets detected by sensors and input is vaired accordingly. |
 |  | Inefficient as energy is used continuously| Efficient as energy is used only when required|
@@ -43,13 +43,22 @@
 
 ## Linear systems
 A system can be represented by linear system of differential equation as below.
-$dx/dt = Ax$
-Here $x$ is a vector consisting system coordinates and A is matrix which represents how these variables interact with each other.
+$$
+    dx/dt = Ax
+$$
+Here x is a vector consisting system coordinates and A is matrix which represents how these variables interact with each other.
 
 <br>
 
-Basic solution of this equation can be given as $x(t) = e^{At}$.
-By using Taylor's series we can write  e^(At) = $I + At + A^2t^2/2! + A^3t^3/3! ....  $ As this is very difficult to compute we will use eigenvectors of A to convert $x$ in terms of eigenvector coordinates.
+Basic solution of this equation can be given as 
+$$
+    x(t) = e^{At}
+$$
+By using Taylor's series we can write  
+$$
+    e^(At) = $I + At + A^2t^2/2! + A^3t^3/3! .... 
+$$
+As this is very difficult to compute we will use eigenvectors of A to convert $x$ in terms of eigenvector coordinates.
 
 <br>
 
@@ -59,30 +68,41 @@ T = [E<sub>1</sub> E<sub>2</sub>...E<sub>n</sub>]
 and diagonal matrix containing all the eigenvalues as below.
 <img src="https://qph.cf2.quoracdn.net/main-qimg-362b830d77aae9348a480d36ff6147d0" alt="Diagonal matrix D" width="300"/> 
 
-So we can write $AT = TD$ and $T^{-1}AT = D$
+So we can write 
+$$
+    AT = TD
+$$
+$$
+    T^{-1}AT = D
+$$
 
-Let us assume $z$ is vector containing system coordinates in terms of eigenvector coordinates.
+Let us assume x is vector containing system coordinates in terms of eigenvector coordinates.
 So 
-$$x = Tz
+$$
+    x = Tz
 $$
 $$
-dx/dt = T{dz/dt} = Ax
+    dx/dt = T{dz/dt} = Ax
 $$
 $$
-dz/dt = T^{-1}ATz
+    dz/dt = T^{-1}ATz
 $$
 $$
-dz/dt = Dz
+    dz/dt = Dz
 $$
 $$
-z(t) =  e^{Dt}z(0)
+    z(t) =  e^{Dt}z(0)
 $$
 
-Even though above equation is easier to compute, we want it in terms of $x$ and not $z$.
+Even though above equation is easier to compute, we want it in terms of x and not z.
 
 <br>
 
-We know $AT = TD$, so we can write  $A = TDT^{-1}$. Putting this equation in previous Taylor's series and simplifing it we get
+We know AT = TD, so we can write 
+$$
+    A = TDT^{-1}
+$$
+Putting this equation in previous Taylor's series and simplifing it we get
 $$
 e^{At} = Te^{Dt}T^{-1}
 $$
@@ -110,7 +130,9 @@ But sensors cannot measure physical property continuously.
 Sensors give readings at discrete time intervals.
 
 We can represent this discrete time system as 
-### $$ x_{k + 1} = Ãx_k $$
+$$
+    x_{k + 1} = Ãx_k 
+$$
 
 where $x_k = x(kΔt)$  and  $Ã = e^{AΔt}$ 
 
@@ -149,7 +171,10 @@ $$
     dx/dt - dx̄/dt = f(x̄) + Df/Dx_{(x-x̄)} + D^2f/Dx^2_{(x-x̄)} + ....
 $$
 
-Where $Df/Dx_{(x-x̄)} = [∂f_i/∂x_j]$ 
+Where 
+$$
+    Df/Dx_{(x-x̄)} = [∂f_i/∂x_j]
+$$ 
 
 if x - x̄ is very small, then
 $$
@@ -164,11 +189,17 @@ are purely imaginary, then we can't linearize system.
 
 ## Controllability
 Let us consider a system  of dimension n which we want to control. It can be represented by following equation.
-$dx/dt = Ax + Bu$, where A is nxn matrix which relates system coordinates,
+$$
+    dx/dt = Ax + Bu
+$$
+where A is nxn matrix which relates system coordinates,
 B is matrix which represents actuators used to control system and
-$u = -kx$ is manipulated input to actuators.
-For most systems A and B are fixed. To check if system is controlable or not
-consider matrix $C = [B AB A^2B A^3B ... A^{n-1}B]$
+u = -kx is manipulated input to actuators.
+For most systems A and B are fixed. To check if system is controllable or not
+consider matrix 
+$$
+    C = [B AB A^2B A^3B ... A^{n-1}B]
+$$
 If and only if rank of C is a full rank matrix i.e rank(C) = n then the system is controllable.
 
 Singular Value Decomposition of matrix C gives information about which 
@@ -179,18 +210,18 @@ states of system are easier to control and which are not.
 1. If and only if system is controllable, arbitrary eigenvalue(pole) placement is possible.
 1. If the system if controllabe, then there is some control input $u$ which will
 steer the system to any  state x.
-Reachable set is collection of all states for which there is an control input $u(t)$ so that $x(t)$ denotes that state.
+Reachable set is collection of all states for which there is an control input u(t) so that x(t) denotes that state.
 
 ---
 
 <br>
 
 ## Inverted Pendulum on a Cart
-Let us consider a inverted pendulum on a cart having state vector $x$ as below.
+Let us consider a inverted pendulum on a cart having state vector x as below.
 
 <img src="https://i.postimg.cc/zvJr5T84/Screenshot-from-2022-08-23-18-21-11.png" alt="Diagram of inverted pendulum" width="400"/>  <img src="https://i.postimg.cc/dDPGLQSM/Screenshot-from-2022-08-23-18-22-00.png" alt="State Vector" width="200"/> 
 
-This system can be represented by non-linear equation $dx/dt = f(x)$
+This system can be represented by non-linear equation dx/dt = f(x)
 It can be linearized for fixed points given below.
 $$
     Θ = 0, π
@@ -216,8 +247,8 @@ we can use pole placement
 ## Pole Placement for the Inverted Pendulum on a Cart
 
 After linearising and including control term we get equation as below.
-$dx/dt = (A - Bk)x$
-Here K is controller vector which manipulates eigenvalues of $A - Bk$ to achieve stability.
+dx/dt = (A - Bk)x
+Here K is controller vector which manipulates eigenvalues of A - Bk to achieve stability.
 
 In Matlab we can specify eigenvalues and find out vector k.
 And then we can simulate the system.
@@ -236,8 +267,12 @@ for matrix k
 by penalising change in system coordinates and power consumption according
 to our need.
 
-$$J = ∫(x^TQx + u^TRu)$$
-$$J = ∫(x^TQx - u^TRkx)$$
+$$
+    J = ∫(x^TQx + u^TRu)
+$$
+$$
+    J = ∫(x^TQx - u^TRkx)
+$$
 
 Here Q is matrix which represents how much penalty should be given 
 if system deviates from desired state and R represents penalty for using power.
@@ -253,17 +288,17 @@ In Matlab we can find K using command k = lqr(A, B, Q, R)
 We would like to have full state measurements of system $x$ as then we can find optimal full 
 state feedback controler easily.
 But we might not have access to full state measurements, then vector of system states becomes
-$y = Cx$
+y = Cx
 
-Observability is whether we can estimate full state from measurements $y(t)$
+Observability is whether we can estimate full state from measurements y(t)
 Consider observability matrix as below
 
 <img src="https://i.postimg.cc/2yPscCmJ/Screenshot-from-2022-08-23-21-48-47.png" alt="Observability matrix" width="200"/>
 
 If rank(O) = n, system is observable.
 
-To estimate the full state we need to design a estimator which accepts $u$ and $y$ as input
-and outputs $x̂$ which is estimated full state.  This estimator itself is a linear dynamical system.
+To estimate the full state we need to design a estimator which accepts u and y as input
+and outputs x̂ which is estimated full state.  This estimator itself is a linear dynamical system.
 It can be represented as 
 $$
     dx̂/dt = Ax̂ + Bu + K_f(y-̂y)
@@ -273,5 +308,8 @@ $$
 $$
 <img src="https://i.postimg.cc/g26Z0dTt/Screenshot-from-2022-08-24-00-30-16.png" alt="Estimator" width="400"/>
 
-Here $K_f$ is Kalman filter gain matrix. The term $K_f(y-̂y)$
-updates estimated $x̂$ based on new values of y.
+Here $K_f$ is Kalman filter gain matrix. The term 
+$$
+    K_f(y-̂y)
+$$
+updates estimated x̂ based on new values of y.
