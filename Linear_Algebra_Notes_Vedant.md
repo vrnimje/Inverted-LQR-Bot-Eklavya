@@ -92,6 +92,7 @@
     \end{bmatrix*}=1 \times 4 + 2 \times 5 + 3 \times 6 = 32$$ 
  
  or 
+ 
  <img src="assets/Screenshot from 2022-08-19 12-36-18.png"><br>
  Both these definitions are explained by duality
  
@@ -104,6 +105,7 @@ So dot product is basically a transformation that squishes a vector onto a numbe
  It is the vector, whose magnitude is the area of the parallelogram enclosed by the two vectors, and its direction perpendicular to the plane of the parallelogram, determined using the right hand rule. 
  $$\vec{p} = \vec{a} \times \vec{b}$$
  The area of the parallelogram is measured by taking the determinant of the two vectors.<br>
+ 
  <img src="assets/Screenshot from 2022-08-19 13-07-59.png">
  
  ![Screenshot from 2022-08-19 15-42-22](https://user-images.githubusercontent.com/103848930/185597174-6c3518f9-8b74-460d-ac86-29fd3acc1f63.png)
@@ -112,6 +114,7 @@ So dot product is basically a transformation that squishes a vector onto a numbe
  ## 11. Change of basis
  
 <p>
+ 
  $$A \begin{bmatrix}
       x^{'} \\
       y^{'} 
@@ -129,15 +132,22 @@ So dot product is basically a transformation that squishes a vector onto a numbe
  Eigenvectors are the vectors whose span doesn't change after a linear transformation is applied to them. They still exist on the axis of the direction of original vector (span). The magnitude by which they are stretched or contracted is called their eigenvalue.<br>
  If any one vector is an eigenvector for a particular transformation, then all the vectors along the span of this vector are also eigenvectors.<br>
  Negative eigenvalues imply that the vectors get flipped and scaled by the value.<br>
+ 
  $$A \vec{v} = \lambda \vec{v} $$
+ 
  where $\vec{v}$ is the eigenvector, and $\lambda$ is the eigenvalue for the transfromation matrix A.<br>
+ 
  $$A \vec{v} - \lambda I \vec{v} = 0$$
+ 
  $$(A-\lambda I)\vec{v}=0$$
+ 
  Therefore, the det $(A-\lambda I)$ = 0 gives the eigenvalue of the corresponding eigenvector. <br>
  It is possible for transformations to have no eigenvectors, e.g., imaginary eigenvalues obtained in rotation of vectors.<br>
  It is also possible that all vectors are eigenvectors, like in case of scaling.<br>
  A diagonal matrix refers to the case where the basis vectors are eigenvectors. When eigenvectors are made to be basis vectors, the transformation matrix becomes a diagonal one, hence making easier to interpret what will happen to a vector when it is transformed multiple times by the same matrix.<br> 
+ 
  $$E^{-1} A E = T$$
+ 
  where E is the eigenbasis matrix, A is the original transformation, and T is the diagonal matrix, which transforms the system where the eigenvectors are the basis vectors. Of course, the transformation should have enough eigenvectors to be able to change into basis vectors.
  </p>
  
