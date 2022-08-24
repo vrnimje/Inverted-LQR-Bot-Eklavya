@@ -27,7 +27,7 @@
 <p> Transformations are basically functions that change the landing direction of the input vector<br>
  Linear transformations are those in which the lines remain lines and the origin remains fixed. The axes gridlines remain parallel and evenly spaced.<br>
  We only have to consider where the basis vectors $\hat{i}$ and $\hat{j}$ land after the transformation<br>
- <figure><img src="./assets/Screenshot from 2022-08-18 20-10-22.png"><figcaption>image caption</figcaption></figure>
+ <figure><img src="/assets/Screenshot from 2022-08-18 20-10-22.png"><figcaption>image caption</figcaption></figure>
  Transformations having linearly dependent vectors lead to limiting of the span to 1-D (a line).<br>
  Linearity have following characteristics :<br>
  1. Additivity: $L(\vec{v} + \vec{w}) = L(\vec{v}) + L(\vec{w})$ <br>
@@ -73,7 +73,7 @@
  ## 8. Non square matrices
  <p>
  For matrix of order $m \times n$, n indicates the number of dimesnions of the input vector, and m indicates the dimesnions of the output vector.<br>
- <img src="assets/nonsquare.jpeg">
+ <img src="/assets/nonsquare.jpeg">
  </p>
  
  ## 9. Dot Products and Duality
@@ -93,10 +93,10 @@
  
  or 
  
- <img src="assets/Screenshot from 2022-08-19 12-36-18.png"><br>
+ <img src="/assets/Screenshot from 2022-08-19 12-36-18.png"><br>
  Both these definitions are explained by duality
  
-<img src="assets/Screenshot from 2022-08-19 12-51-21.png">
+<img src="/assets/Screenshot from 2022-08-19 12-51-21.png">
 So dot product is basically a transformation that squishes a vector onto a number line, and is associated with another matrix/vector. 
  </p>
  
@@ -106,7 +106,7 @@ So dot product is basically a transformation that squishes a vector onto a numbe
  $$\vec{p} = \vec{a} \times \vec{b}$$
  The area of the parallelogram is measured by taking the determinant of the two vectors.<br>
  
- <img src="assets/Screenshot from 2022-08-19 13-07-59.png">
+ <img src="/assets/Screenshot from 2022-08-19 13-07-59.png">
  
  ![Screenshot from 2022-08-19 15-42-22](https://user-images.githubusercontent.com/103848930/185597174-6c3518f9-8b74-460d-ac86-29fd3acc1f63.png)
  </p>
@@ -154,7 +154,7 @@ So dot product is basically a transformation that squishes a vector onto a numbe
  ## 13. Abstract Vector Spaces
  <p>
  Any form of data can be represented by vectors, as long as it has some sense of linearity in it. All the concepts of linear algebra can therefore be applied extended to these spaces as well. The following axioms can be applied when we represent something as a vector space.<br>
-<img src="assets/Screenshot from 2022-08-19 23-20-05.png">
+<img src="/assets/Screenshot from 2022-08-19 23-20-05.png">
  </p>
  
  
