@@ -46,7 +46,8 @@
 ## 5. Determinant
 <p>
  Determinant of a transformation matrix is the scaling factor for the area/volume of a space/region. Its -ve/+ve sign refers to the flipping of the space.<br>
- <img src="/assets/image.png"><br>
+ <image src="/assets/image.png"><br>
+ 
  Flipping refers to whether or not the basis vectors $\hat{i}$ and $\hat{j}$ change their relative orientation. In 3-D, it means that the relative 
  positions of the axes change in orientation. First, they can be represented by right-hand rule, and then by left-hand. <br>
  When determinant is zero, it implies the area scales down to nothing.
@@ -73,7 +74,7 @@
  ## 8. Non square matrices
  <p>
  For matrix of order $m \times n$, n indicates the number of dimesnions of the input vector, and m indicates the dimesnions of the output vector.<br>
- <img src="/assets/nonsquare.jpeg">
+ <image src="/assets/nonsquare.jpeg">
  </p>
  
  ## 9. Dot Products and Duality
@@ -93,10 +94,10 @@
  
  or 
  
- <img src="/assets/Screenshot from 2022-08-19 12-36-18.png"><br>
+<image src="/assets/Screenshot from 2022-08-19 12-36-18.png"><br>
  Both these definitions are explained by duality
  
-<img src="/assets/Screenshot from 2022-08-19 12-51-21.png">
+<image src="/assets/Screenshot from 2022-08-19 12-51-21.png">
 So dot product is basically a transformation that squishes a vector onto a number line, and is associated with another matrix/vector. 
  </p>
  
@@ -106,7 +107,7 @@ So dot product is basically a transformation that squishes a vector onto a numbe
  $$\vec{p} = \vec{a} \times \vec{b}$$
  The area of the parallelogram is measured by taking the determinant of the two vectors.<br>
  
- <img src="/assets/Screenshot from 2022-08-19 13-07-59.png">
+ <image src="/assets/Screenshot from 2022-08-19 13-07-59.png">
  
  ![Screenshot from 2022-08-19 15-42-22](https://user-images.githubusercontent.com/103848930/185597174-6c3518f9-8b74-460d-ac86-29fd3acc1f63.png)
  </p>
@@ -154,7 +155,7 @@ So dot product is basically a transformation that squishes a vector onto a numbe
  ## 13. Abstract Vector Spaces
  <p>
  Any form of data can be represented by vectors, as long as it has some sense of linearity in it. All the concepts of linear algebra can therefore be applied extended to these spaces as well. The following axioms can be applied when we represent something as a vector space.<br>
-<img src="/assets/Screenshot from 2022-08-19 23-20-05.png">
+<image src="/assets/Screenshot from 2022-08-19 23-20-05.png">
  </p>
  
  
