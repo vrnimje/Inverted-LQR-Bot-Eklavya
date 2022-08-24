@@ -56,6 +56,7 @@ And,
 $$ T=\begin{bmatrix}
     \vec{c1} & \vec{c2} & \vec{c3} & \cdots\\
     \end{bmatrix} $$
+
 So,
  
 $$ AT = TD $$
