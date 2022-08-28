@@ -55,6 +55,8 @@ Microstepping control divides each full step into smaller steps to help smooth o
  
 Microstepping is achieved by using pulse-width modulated (PWM) voltage to control current to the motor windings. The driver sends two voltage sine waves, 90 degrees out of phase, to the motor windings. While current increases in one winding, it decreases in the other winding. This gradual transfer of current results in smoother motion and more consistent torque production than full- or half-step control.
  
+(Pulse-width modulation (PWM), or pulse-duration modulation (PDM), is a method of reducing the average power delivered by an electrical signal, by effectively chopping it up into discrete parts. The average value of voltage (and current) fed to the load is controlled by turning the switch between supply and load on and off at a fast rate. The longer the switch is on compared to the off periods, the higher the total power supplied to the load.)
+ 
 While the smoothness of torque delivery, low-speed motion, and resonance are improved with microstepping, limitations in control and in motor design prevent them from reaching their ideal characteristics. This is primarily because microstepping drives can only approximate a true sine wave, so some torque ripple, resonance, and noise remains, although each one is greatly reduced in comparison to full- and half-stepping modes. In addition, torque production from a stepper motor with microstepping control is only about 70 percent of the torque produced with full-step control.
  
  ![image](https://user-images.githubusercontent.com/103848930/186476906-008624e7-3664-40fc-bc86-871ebd0fb4ca.png)
@@ -67,25 +69,25 @@ While the smoothness of torque delivery, low-speed motion, and resonance are imp
  
  The Speed-Torque graph indicates the characteristic relationship between the speed and torque when the stepping motor is driven. The torque vs speed characteristics are the key to selecting the right motor and drive method for a specific application. These characteristics are dependent upon (change with) the motor, excitation mode and type of driver or drive method. On the graph, the horizontal axis is the speed at the motor’s output shaft while the vertical axis is the torque.
  
-  1.Maximum Holding Torque
+  1.Maximum Holding Torque<br>
 The holding torque is the maximum holding power (torque) the stepping motor has when power (rated current) is being supplied but the motor is not rotating (with consideration given to the permissible strength of the gear when applicable).
 
- 2.Pull-in Curve
+ 2.Pull-in Curve<br>
 The pull-in curve defines a area refered to as the start stop region. This is the maximum frequency at which the motor can start/stop instantaneously, with a load applied, without loss of synchronism.
  
- 3.Pullout Torque Curve
+ 3.Pullout Torque Curve<br>
 Pullout torque is the maximum torque that can be output at a given speed. When selecting a motor, be sure the required torque falls within this curve.
 
- 4.Maximum Starting Frequency
+ 4.Maximum Starting Frequency<br>
 This is the maximum pulse speed at which the hybrid stepping motor can start or stop instantaneously (without an acceleration or deceleration time) when the frictional load and inertial load of the stepping motor are 0. Driving the motor at greater than this pulse speed requires gradual acceleration or deceleration. This frequency drops when thereis an inertial load on the motor.
 
- 5. Maximum Slew Rate
+5. Maximum Slew Rate<br>
 The maximum operating frequency of the motor with no load applied.
  
  ![image](https://user-images.githubusercontent.com/103848930/186489288-fc48a6e7-8738-4318-9c5c-af55a36b69d8.png)
 
  
-For NEMA-17: https://components101.com/sites/default/files/component_datasheet/NEMA17.pdf
+For NEMA-17: [Specifications](https://www.motioncontrolproducts.com/electric-motors/stepper-motors/hybrid-stepper-motors/nema-17-high-torque-stepper-motors/)
 
  
 
