@@ -61,6 +61,14 @@ While the smoothness of torque delivery, low-speed motion, and resonance are imp
  
  ![image](https://user-images.githubusercontent.com/103848930/186476906-008624e7-3664-40fc-bc86-871ebd0fb4ca.png)
  
+ ## Motor Driver
+ 
+ A motor driver showcases itself as an interface between the motor and the microcontroller. The reason is that the microcontroller and the motor work on different ranges of voltages. The engine will use up a higher current level than the microcontroller.
+
+You require a motor driver module when connecting two devices that operate under different current levels to a power supply voltage. In this case, a motor acts as a third device that steps up or steps down the voltage supply.
+ 
+ A Motor Driver is an essential device that provides the required voltage and current to a stepper motor so that it gets a smooth operation, using microstepping. 
+ 
  **DRV8823**: https://www.ti.com/lit/ds/symlink/drv8823.pdf?ts=1661361828977&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FDRV8823
 
 **A4988**: https://lastminuteengineers.com/a4988-stepper-motor-driver-arduino-tutorial/
