@@ -7,14 +7,14 @@ as long as the motor is correctly sized to the application in respect to torque 
 
 <image src="assets\StepperMotor.gif"></image><br>
 
-A unipolar stepper motor has one winding with center tap per phase. Each section of windings is switched on for each direction of magnetic field. 
+A **unipolar stepper** motor has one winding with center tap per phase. Each section of windings is switched on for each direction of magnetic field. 
 Since in this arrangement a magnetic pole can be reversed without switching the polarity of the common wire, the commutation circuit can be simply a 
 single switching transistor for each half winding. Typically, given a phase, the center tap of each winding is made common: three leads per phase and six 
 leads for a typical two phase motor. Often, these two phase commons are internally joined, so the motor has only five leads. 
 
 <image src="assets\Unipolar.png"><br>
 
-Bipolar motors have a pair of single winding connections per phase. The current in a winding needs to be reversed in order to reverse a magnetic pole, 
+**Bipolar motors** have a pair of single winding connections per phase. The current in a winding needs to be reversed in order to reverse a magnetic pole, 
 so the driving circuit must be more complicated, typically with an H-bridge arrangement (however there are several off-the-shelf driver chips available 
 to make this a simple affair). There are two leads per phase, none is common. 
 Static friction effects using an H-bridge have been observed with certain drive topologies.
@@ -26,7 +26,14 @@ Because windings are better utilized, they are more powerful than a unipolar mot
 the windings. A unipolar motor has twice the amount of wire in the same space, but only half used at any point in time, hence is 50% efficient (or 
 approximately 70% of the torque output available). Though a bipolar stepper motor is more complicated to drive, the abundance of driver chips means this 
 is much less difficult to achieve. 
-  </p> 
+A basic bipolar stepper motor consists of a set of magnets, such that they alternate in polarity (N-S-N-S or pole-shoe-pole-shoe) arrangement.
+These magnets are aligned such that the teeth of the sprockets appear as shown below.
+
+<image src="assets/Hybrid-stepper-motor.jpg">
+
+The 4 pairs of coils are polarised such that by attracting the sprockets of opposite polarity, they create a step each. Hence, one tooth moves exactly to the next tooth.
+
+</p> 
  
 ## Stepping angle
   
@@ -53,7 +60,8 @@ Stepper motors move in discrete steps, or fractions of a revolution. This discre
 
 Microstepping control divides each full step into smaller steps to help smooth out the motor’s rotation, especially at slow speeds. For example, a 1.8 degree step can be divided up to 256 times, providing a step angle of 0.007 degrees (1.8 ÷ 256), or 51,200 microsteps per revolution.
  
-Microstepping is achieved by using pulse-width modulated (PWM) voltage to control current to the motor windings. The driver sends two voltage sine waves, 90 degrees out of phase, to the motor windings. While current increases in one winding, it decreases in the other winding. This gradual transfer of current results in smoother motion and more consistent torque production than full- or half-step control.
+Microstepping is achieved by using pulse-width modulated (PWM) voltage to control current to the motor windings. The driver sends two voltage sine waves, 90 degrees out of phase, to the motor windings. While current increases in one winding, it decreases in the other winding. This gradual transfer of current results in smoother motion and more consistent torque production than full- or half-step control. It requires a constant current source, where we can modify its magnitude, to achieve the desired steps.
+This is achieved using a microstepping IC, like A4988. 
  
 (Pulse-width modulation (PWM), or pulse-duration modulation (PDM), is a method of reducing the average power delivered by an electrical signal, by effectively chopping it up into discrete parts. The average value of voltage (and current) fed to the load is controlled by turning the switch between supply and load on and off at a fast rate. The longer the switch is on compared to the off periods, the higher the total power supplied to the load.)
  
@@ -86,16 +94,28 @@ The pull-in curve defines a area refered to as the start stop region. This is th
  3.Pullout Torque Curve<br>
 Pullout torque is the maximum torque that can be output at a given speed. When selecting a motor, be sure the required torque falls within this curve.
 
- 4.Maximum Starting Frequency<br>
+4.Maximum Starting Frequency<br>
 This is the maximum pulse speed at which the hybrid stepping motor can start or stop instantaneously (without an acceleration or deceleration time) when the frictional load and inertial load of the stepping motor are 0. Driving the motor at greater than this pulse speed requires gradual acceleration or deceleration. This frequency drops when thereis an inertial load on the motor.
 
 5. Maximum Slew Rate<br>
 The maximum operating frequency of the motor with no load applied.
+
+6. Maximum starting frequency (fS) This is the maximum pulse speed at which the motor can start or stop instantly (without an acceleration/deceleration time) when the stepper motor’s friction load and inertial load are 0. 
  
  ![image](https://user-images.githubusercontent.com/103848930/186489288-fc48a6e7-8738-4318-9c5c-af55a36b69d8.png)
 
  
 For NEMA-17: [Specifications](https://www.motioncontrolproducts.com/electric-motors/stepper-motors/hybrid-stepper-motors/nema-17-high-torque-stepper-motors/)
+
+[Functions for controlling stepper motors directly using esp32]([](https://github.com/eldendiss/DendoStepper))
+
+
+
+
+
+
+
+
 
  
 
