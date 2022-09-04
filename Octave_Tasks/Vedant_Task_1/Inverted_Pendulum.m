@@ -40,7 +40,7 @@ endfunction
 
 function [t,y] = lqr_inverted_pendulum(m, M, g, L, y_setpoint, y0)
   [A,B] = inverted_pendulum_AB_matrix(m, M, g, L);               ## Initialize A and B matrix
-  Q = [100 0 0 0; 0 40 0 0; 0 0 10 0; 0 0 0 40];                   ## Initialise Q matrix
+  Q = [100 0 0 0; 0 40 0 0; 0 0 10 0; 0 0 0 10];                   ## Initialise Q matrix
   R = 0.001;                   ## Initialise R
   K = lqr(A,B,Q,R);                   ## Calculate K matrix from A,B,Q,R matricesclc
   tspan = 0:0.1:10;       ## Initialise time step
@@ -53,7 +53,7 @@ function inverted_pendulum_main()
   g = 9.8;
   L = 3;
   y_setpoint = [pi; 0; 2; 0];                                  ## Set Point
-  y0 = [3*pi/4; 0; 1; 0];  ## Initial condtion
+  y0 = [2*pi/3; 0; 1; 0];  ## Initial condtion
   [t,y] = lqr_inverted_pendulum(m, M, g, L, y_setpoint, y0);
   for k = 1:length(t)
     draw_cart_pendulum(y(k, :), L);
