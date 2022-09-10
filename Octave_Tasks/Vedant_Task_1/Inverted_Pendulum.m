@@ -38,12 +38,16 @@ function [A,B] = inverted_pendulum_AB_matrix(m, M, g, L)
   B = [0; -1/(L*(M)); 0; 1/(M)];
 endfunction
 
-function [t,y] = lqr_inverted_pendulum(m, M, g, L, y_setpoint, y0)
-  [A,B] = inverted_pendulum_AB_matrix(m, M, g, L);               ## Initialize A and B matrix
-  Q = [100 0 0 0; 0 40 0 0; 0 0 10 0; 0 0 0 10];                   ## Initialise Q matrix
+function [t,y,K] = lqr_inverted_pendulum(m, M, g, L, y_setpoint, y0)
+  [A,B] = inverted_pendulum_AB_matrix(m, M, g, L);  ## Initialize A and B matrix
+  sys = ss(A,B);
+  sys_d = ss(c2d(sys, 0.05));
+  #step(sys_d);
+  Q = [100 0 0 0; 0 100 0 0; 0 0 10 0; 0 0 0 10];                   ## Initialise Q matrix
   R = 0.001;                   ## Initialise R
-  K = lqr(A,B,Q,R);                   ## Calculate K matrix from A,B,Q,R matricesclc
-  tspan = 0:0.1:10;       ## Initialise time step
+  K = dlqr(sys_d,Q,R);  ## Calculate K matrix from A,B,Q,R matrices
+##K = lqr(A,B,Q,R);
+  tspan = 0:0.05:10;       ## Initialise time step
   [t,y] = ode45(@(t,y)inverted_pendulum_dynamics(y, m, M, L, g, -K*(y-y_setpoint)),tspan,y0);
 endfunction
 
@@ -53,9 +57,21 @@ function inverted_pendulum_main()
   g = 9.8;
   L = 3;
   y_setpoint = [pi; 0; 2; 0];                                  ## Set Point
-  y0 = [2*pi/3; 0; 1; 0];  ## Initial condtion
-  [t,y] = lqr_inverted_pendulum(m, M, g, L, y_setpoint, y0);
-  for k = 1:length(t)
-    draw_cart_pendulum(y(k, :), L);
-  endfor
+  y0 = [3*pi/4; 0; 1; 0];  ## Initial condtion
+  [t,y,K] = lqr_inverted_pendulum(m, M, g, L, y_setpoint, y0);
+  y_ = repmat(transpose(y_setpoint), 201, 1);
+  #disp(y_);
+  u = -K*(transpose(y-y_));
+  plot(t,u)
+  #disp([t,y]);
+##  plot(t,y(:,1));
+##  hold on
+##  plot(t,y(:,2),"*");
+##  hold off
+##  hold on
+##  plot(t,y(:,4),"--g");
+##  hold off
+##  for k = 1:length(t)
+##    #draw_cart_pendulum(y(k, :), L);
+##  endfor
 endfunction
