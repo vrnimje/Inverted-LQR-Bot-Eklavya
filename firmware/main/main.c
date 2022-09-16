@@ -72,13 +72,13 @@ float mpu_offset[2] = {0.0f, 0.0f};
 static const char *TAG = "mpu6050";
 
 // constants related to system (assumed for now)
-static const float radius = 0.75; // pulley radius in cm
-static const int m_c = 80;     // mass of cart in gm
-static const int m_p = 60;     // maass of pendulum in gm
+static const float radius = 0.6; // pulley radius in cm
+static const int m_c = 240;     // mass of cart in gm
+static const int m_p = 1670;     // maass of pendulum in gm
 // static const int l_p = 50;   	// length of pendulum in cm
 // static const float g = 980;     // acc due to gravity in cm/s^2
 
-float k[4] = {-294.4 , -423.93, -400260,  -76416};   // value of K matrix I got from octave for theses conditions
+float k[4] = {-84080 , -53007, -18253000,  -4054000};   // value of K matrix I got from octave for theses conditions
 
 
 //takes average of first 100 readings to find initial theta
@@ -107,7 +107,6 @@ float new_x(float prev_pos,float linear_vel,float freq, uint32_t update_period)
 {
 	float x;
 	x = prev_pos + linear_vel*update_period/1000;
-	
 	return x;
 }
 
@@ -262,13 +261,15 @@ void app_main()
     {   
 		x_dot = new_x_dot(freq);
 		x = new_x(x, x_dot,freq, update_period);
-
+		if (abs(x) > 40)
+		// {
+		// 	gpio_set_level(step_pin, 1);
+		// 	break;
+		// }
+	
         complementary_filter(buffer1, buffer2, buffer3, mpu_offset);
-		th = M_PI - buffer3[0]*M_PI/180;
-		if (th < 0)
-        {
-            th = 2*M_PI + th;
-        }
+		th = M_PI + buffer3[0]*M_PI/180;
+		
 
 		th_dot = new_theta_dot(th, prev_theta, update_period);
 		prev_theta = th;
