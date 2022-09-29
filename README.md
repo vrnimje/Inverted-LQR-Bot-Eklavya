@@ -49,6 +49,19 @@ $[\theta, \dot{\theta}, x, \dot{x}]$ with respect to time.
 ![Step Response](Notes/Vedant/assets/step_response.png)
 
 
+## Contributors
+* [Vedant Nimje](https://github.com/vrnimje)
+* [Mahesh Tupe](https://github.com/Asc91)
+
+## Acknowledgements and Resources
+* [SRA VJTI](https://github.com/SRA-VJTI)
+* Special Thanks to our mentors [Jash Shah](https://github.com/Jash-Shah), [Ayush Kaura](https://github.com/Ayush-Kaura) and [Chinmay Lonkar](https://github.com/ChinmayLonkar)
+* [Linear Algebra playlist by 3Blue1Brown](https://www.youtube.com/playlist?list=PL0-GT3co4r2y2YErbmuJw2L5tW4Ew2O5B)
+* [Control Bootcamp playlist by Steve Brunton](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR20Mz-VpzgfQs5zrYi085m)
+* https://docs.espressif.com/projects/esp-idf/en/latest/esp32/
+* https://newscrewdriver.com/2021/02/25/esp32-exercise-stepper-motor-pulses-with-ledc-pwm/
+
+
 
 
 
