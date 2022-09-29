@@ -48,6 +48,11 @@ $[\theta, \dot{\theta}, x, \dot{x}]$ with respect to time.
 
 ![Step Response](Notes/Vedant/assets/step_response.png)
 
+## Implementation of Inverted Pendulum in Hardware
+First, we used the rails which were part of a CNc machine, and were firmly held in place. Then, the cart, fitted with the bearings, is then places around the rails. The stepper motor and the free pulley are mounted below the rails, and both of which drive a timing belt, which itself drives the cart. 
+
+[These](./hardware_issues.md) are some of the issues we faced during the setup and testing process of the system, along with their solutions.
+
 
 ## Contributors
 * [Vedant Nimje](https://github.com/vrnimje)
