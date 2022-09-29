@@ -19,6 +19,7 @@ In this project, we explore one of these control systems, i.e., **[LQR (Linear Q
 
 ### 3. List of Hardware Used
 * NEMA-17 Stepper Motor ([Notes for the same](./Notes/Mahesh/Controlling_Stepper_Motor.md))
+* DRV8825 Motor Driver
 * Rails, on which the cart moves
 * Timing belt
 * Custom-designed laser-cut cart, made of acrylic, and has screw-holes for the wheels (bearings) ([Drawing file for the plates](./Cart_design/side_plate.pdf)
