@@ -1,4 +1,3 @@
-# LED-Blink Task
+# Stepper-Control
 
-This code blinks LEDs on SRA board in certain pattern.
-Completing this task helped us to understand working of gpio pins on esp32 and few functions related to them. 
+Here we use ledc(one of two pwm generators in esp32) to accelerate and deaccelerate a stepper motor.
