@@ -22,10 +22,10 @@ In this project, we explore one of these control systems, i.e., **[LQR (Linear Q
 * DRV8825 Motor Driver
 * Rails, on which the cart moves
 * Timing belt
-* Custom-designed laser-cut cart, made of acrylic, and has screw-holes for the wheels (bearings) ([Drawing file for the plates](./Cart_design/side_plate.pdf)
+* Custom-designed laser-cut cart, made of acrylic, and has screw-holes for the wheels (bearings) ([Drawing file for the plates](./Cart_design/side_plate.pdf))
 * [ESP32 microcontroller](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/)
-* MPU6050, an IMU used for measuring the deviation of the pendulum from the normal
-* 9 ball bearings
+* MPU6050, the IMU used for measuring the deviation of the pendulum from the normal
+* 9 bearings
   * 8 in the cart (acting as wheels)
   * 1 inserted in the pendulum 
 * Pendulum rod, having comparable weight to the cart
@@ -51,6 +51,8 @@ $[\theta, \dot{\theta}, x, \dot{x}]$ with respect to time.
 
 ## Implementation of Inverted Pendulum in Hardware
 First, we used the rails which were part of a CNc machine, and were firmly held in place. Then, the cart, fitted with the bearings, is then places around the rails. The stepper motor and the free pulley are mounted below the rails, and both of which drive a timing belt, which itself drives the cart. 
+
+![My first board(1)](https://user-images.githubusercontent.com/103848930/193186818-cdafd9c1-1da0-4378-8d9f-5a9479d1179c.jpg)
 
 [These](./hardware_issues.md) are some of the issues we faced during the setup and testing process of the system, along with their solutions.
 
