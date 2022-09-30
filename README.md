@@ -50,7 +50,7 @@ $[\theta, \dot{\theta}, x, \dot{x}]$ with respect to time.
 ![Step Response](Notes/Vedant/assets/step_response.png)
 
 ## Implementation of Inverted Pendulum in Hardware
-First, we used the rails which were part of a CNc machine, and were firmly held in place. Then, the cart, fitted with the bearings, is then places around the rails. The stepper motor and the free pulley are mounted below the rails, and both of which drive a timing belt, which itself drives the cart. 
+First, we used the rails which were part of a CNC machine, and were firmly held in place. Then, the cart, fitted with the bearings, is then places around the rails. The stepper motor and the free pulley are mounted below the rails, and both of which drive a timing belt, which itself drives the cart. 
 
 ![My first board(1)](https://user-images.githubusercontent.com/103848930/193186818-cdafd9c1-1da0-4378-8d9f-5a9479d1179c.jpg)
 
