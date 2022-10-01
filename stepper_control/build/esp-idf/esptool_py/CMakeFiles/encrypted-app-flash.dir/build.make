@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mahesh/Inverse_Pendulum/stepper_control
+CMAKE_SOURCE_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build
 
 # Utility rule file for encrypted-app-flash.
 
@@ -54,9 +54,9 @@ CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build
 include esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/progress.make
 
 esp-idf/esptool_py/CMakeFiles/encrypted-app-flash:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/esptool_py && /usr/bin/cmake -E echo "Error: The target encrypted-app-flash requires"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/esptool_py && /usr/bin/cmake -E echo "CONFIG_SECURE_FLASH_ENCRYPTION_MODE_DEVELOPMENT to be enabled."
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/esptool_py && /usr/bin/cmake -E env "FAIL_MESSAGE=Failed executing target (see errors on lines above)" /usr/bin/cmake -P /home/mahesh/esp/esp-idf/tools/cmake/scripts/fail.cmake
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/esptool_py && /usr/bin/cmake -E echo "Error: The target encrypted-app-flash requires"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/esptool_py && /usr/bin/cmake -E echo "CONFIG_SECURE_FLASH_ENCRYPTION_MODE_DEVELOPMENT to be enabled."
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/esptool_py && /usr/bin/cmake -E env "FAIL_MESSAGE=Failed executing target (see errors on lines above)" /usr/bin/cmake -P /home/mahesh/esp/esp-idf/tools/cmake/scripts/fail.cmake
 
 encrypted-app-flash: esp-idf/esptool_py/CMakeFiles/encrypted-app-flash
 encrypted-app-flash: esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/build.make
@@ -69,10 +69,10 @@ esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/build: encrypted-app-flash
 .PHONY : esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/build
 
 esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/clean:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/esptool_py && $(CMAKE_COMMAND) -P CMakeFiles/encrypted-app-flash.dir/cmake_clean.cmake
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/esptool_py && $(CMAKE_COMMAND) -P CMakeFiles/encrypted-app-flash.dir/cmake_clean.cmake
 .PHONY : esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/clean
 
 esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/Inverse_Pendulum/stepper_control /home/mahesh/esp/esp-idf/components/esptool_py /home/mahesh/Inverse_Pendulum/stepper_control/build /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/esptool_py /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control /home/mahesh/esp/esp-idf/components/esptool_py /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/esptool_py /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/esptool_py/CMakeFiles/encrypted-app-flash.dir/depend
 

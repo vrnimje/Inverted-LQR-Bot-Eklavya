@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mahesh/Inverse_Pendulum/stepper_control
+CMAKE_SOURCE_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build
 
 # Utility rule file for apidoc.
 
@@ -67,10 +67,10 @@ esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/build: apidoc
 .PHONY : esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/build
 
 esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/clean:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/mbedtls/mbedtls && $(CMAKE_COMMAND) -P CMakeFiles/apidoc.dir/cmake_clean.cmake
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/mbedtls/mbedtls && $(CMAKE_COMMAND) -P CMakeFiles/apidoc.dir/cmake_clean.cmake
 .PHONY : esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/clean
 
 esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/Inverse_Pendulum/stepper_control /home/mahesh/esp/esp-idf/components/mbedtls/mbedtls /home/mahesh/Inverse_Pendulum/stepper_control/build /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/mbedtls/mbedtls /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control /home/mahesh/esp/esp-idf/components/mbedtls/mbedtls /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/mbedtls/mbedtls /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/depend
 

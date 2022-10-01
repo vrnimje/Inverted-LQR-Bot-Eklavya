@@ -1,4 +1,4 @@
-# Install script for directory: /home/mahesh/Inverse_Pendulum/stepper_control
+# Install script for directory: /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/cmake_install.cmake")
+  include("/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mahesh/Inverse_Pendulum/stepper_control/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

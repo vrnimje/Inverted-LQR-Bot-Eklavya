@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/mahesh/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader
 
 # Utility rule file for confserver.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloade
 include CMakeFiles/confserver.dir/progress.make
 
 CMakeFiles/confserver:
-	/home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --env-file /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/config.env
-	/home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/kconfig_new/confserver.py --env-file /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/config.env --kconfig /home/mahesh/esp/esp-idf/Kconfig --sdkconfig-rename /home/mahesh/esp/esp-idf/sdkconfig.rename --config /home/mahesh/Inverse_Pendulum/stepper_control/sdkconfig
+	/home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --env-file /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/config.env
+	/home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/kconfig_new/confserver.py --env-file /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/config.env --kconfig /home/mahesh/esp/esp-idf/Kconfig --sdkconfig-rename /home/mahesh/esp/esp-idf/sdkconfig.rename --config /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/sdkconfig
 
 confserver: CMakeFiles/confserver
 confserver: CMakeFiles/confserver.dir/build.make
@@ -72,6 +72,6 @@ CMakeFiles/confserver.dir/clean:
 .PHONY : CMakeFiles/confserver.dir/clean
 
 CMakeFiles/confserver.dir/depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles/confserver.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles/confserver.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/confserver.dir/depend
 

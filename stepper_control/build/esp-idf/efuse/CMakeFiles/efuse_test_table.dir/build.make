@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mahesh/Inverse_Pendulum/stepper_control
+CMAKE_SOURCE_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build
 
 # Utility rule file for efuse_test_table.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build
 include esp-idf/efuse/CMakeFiles/efuse_test_table.dir/progress.make
 
 esp-idf/efuse/CMakeFiles/efuse_test_table:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/efuse && /home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/components/efuse/efuse_table_gen.py /home/mahesh/esp/esp-idf/components/efuse/test/esp_efuse_test_table.csv -t esp32 --max_blk_len 192
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/efuse && /home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/components/efuse/efuse_table_gen.py /home/mahesh/esp/esp-idf/components/efuse/test/esp_efuse_test_table.csv -t esp32 --max_blk_len 192
 
 efuse_test_table: esp-idf/efuse/CMakeFiles/efuse_test_table
 efuse_test_table: esp-idf/efuse/CMakeFiles/efuse_test_table.dir/build.make
@@ -67,10 +67,10 @@ esp-idf/efuse/CMakeFiles/efuse_test_table.dir/build: efuse_test_table
 .PHONY : esp-idf/efuse/CMakeFiles/efuse_test_table.dir/build
 
 esp-idf/efuse/CMakeFiles/efuse_test_table.dir/clean:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/efuse && $(CMAKE_COMMAND) -P CMakeFiles/efuse_test_table.dir/cmake_clean.cmake
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/efuse && $(CMAKE_COMMAND) -P CMakeFiles/efuse_test_table.dir/cmake_clean.cmake
 .PHONY : esp-idf/efuse/CMakeFiles/efuse_test_table.dir/clean
 
 esp-idf/efuse/CMakeFiles/efuse_test_table.dir/depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/Inverse_Pendulum/stepper_control /home/mahesh/esp/esp-idf/components/efuse /home/mahesh/Inverse_Pendulum/stepper_control/build /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/efuse /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/efuse/CMakeFiles/efuse_test_table.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control /home/mahesh/esp/esp-idf/components/efuse /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/efuse /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/efuse/CMakeFiles/efuse_test_table.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/efuse/CMakeFiles/efuse_test_table.dir/depend
 

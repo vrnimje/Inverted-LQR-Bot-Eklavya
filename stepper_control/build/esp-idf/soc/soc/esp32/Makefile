@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mahesh/Inverse_Pendulum/stepper_control
+CMAKE_SOURCE_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/soc/soc/esp32/CMakeFiles/progress.marks
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/soc/esp32/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles 0
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/soc/soc/esp32/CMakeFiles/progress.marks
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/soc/esp32/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/soc/esp32/clean
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/soc/esp32/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/soc/esp32/preinstall
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/soc/esp32/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/soc/esp32/preinstall
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/soc/esp32/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rule:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rule
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rule
 .PHONY : esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ soc_esp32: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rule
 
 # fast build rule for target.
 soc_esp32/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build
 .PHONY : soc_esp32/fast
 
 adc_periph.obj: adc_periph.c.obj
@@ -177,7 +177,7 @@ adc_periph.obj: adc_periph.c.obj
 
 # target to build an object file
 adc_periph.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/adc_periph.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/adc_periph.c.obj
 .PHONY : adc_periph.c.obj
 
 adc_periph.i: adc_periph.c.i
@@ -186,7 +186,7 @@ adc_periph.i: adc_periph.c.i
 
 # target to preprocess a source file
 adc_periph.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/adc_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/adc_periph.c.i
 .PHONY : adc_periph.c.i
 
 adc_periph.s: adc_periph.c.s
@@ -195,7 +195,7 @@ adc_periph.s: adc_periph.c.s
 
 # target to generate assembly for a file
 adc_periph.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/adc_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/adc_periph.c.s
 .PHONY : adc_periph.c.s
 
 dac_periph.obj: dac_periph.c.obj
@@ -204,7 +204,7 @@ dac_periph.obj: dac_periph.c.obj
 
 # target to build an object file
 dac_periph.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/dac_periph.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/dac_periph.c.obj
 .PHONY : dac_periph.c.obj
 
 dac_periph.i: dac_periph.c.i
@@ -213,7 +213,7 @@ dac_periph.i: dac_periph.c.i
 
 # target to preprocess a source file
 dac_periph.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/dac_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/dac_periph.c.i
 .PHONY : dac_periph.c.i
 
 dac_periph.s: dac_periph.c.s
@@ -222,7 +222,7 @@ dac_periph.s: dac_periph.c.s
 
 # target to generate assembly for a file
 dac_periph.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/dac_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/dac_periph.c.s
 .PHONY : dac_periph.c.s
 
 gpio_periph.obj: gpio_periph.c.obj
@@ -231,7 +231,7 @@ gpio_periph.obj: gpio_periph.c.obj
 
 # target to build an object file
 gpio_periph.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/gpio_periph.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/gpio_periph.c.obj
 .PHONY : gpio_periph.c.obj
 
 gpio_periph.i: gpio_periph.c.i
@@ -240,7 +240,7 @@ gpio_periph.i: gpio_periph.c.i
 
 # target to preprocess a source file
 gpio_periph.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/gpio_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/gpio_periph.c.i
 .PHONY : gpio_periph.c.i
 
 gpio_periph.s: gpio_periph.c.s
@@ -249,7 +249,7 @@ gpio_periph.s: gpio_periph.c.s
 
 # target to generate assembly for a file
 gpio_periph.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/gpio_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/gpio_periph.c.s
 .PHONY : gpio_periph.c.s
 
 i2c_periph.obj: i2c_periph.c.obj
@@ -258,7 +258,7 @@ i2c_periph.obj: i2c_periph.c.obj
 
 # target to build an object file
 i2c_periph.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2c_periph.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2c_periph.c.obj
 .PHONY : i2c_periph.c.obj
 
 i2c_periph.i: i2c_periph.c.i
@@ -267,7 +267,7 @@ i2c_periph.i: i2c_periph.c.i
 
 # target to preprocess a source file
 i2c_periph.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2c_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2c_periph.c.i
 .PHONY : i2c_periph.c.i
 
 i2c_periph.s: i2c_periph.c.s
@@ -276,7 +276,7 @@ i2c_periph.s: i2c_periph.c.s
 
 # target to generate assembly for a file
 i2c_periph.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2c_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2c_periph.c.s
 .PHONY : i2c_periph.c.s
 
 i2s_periph.obj: i2s_periph.c.obj
@@ -285,7 +285,7 @@ i2s_periph.obj: i2s_periph.c.obj
 
 # target to build an object file
 i2s_periph.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2s_periph.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2s_periph.c.obj
 .PHONY : i2s_periph.c.obj
 
 i2s_periph.i: i2s_periph.c.i
@@ -294,7 +294,7 @@ i2s_periph.i: i2s_periph.c.i
 
 # target to preprocess a source file
 i2s_periph.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2s_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2s_periph.c.i
 .PHONY : i2s_periph.c.i
 
 i2s_periph.s: i2s_periph.c.s
@@ -303,7 +303,7 @@ i2s_periph.s: i2s_periph.c.s
 
 # target to generate assembly for a file
 i2s_periph.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2s_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2s_periph.c.s
 .PHONY : i2s_periph.c.s
 
 interrupts.obj: interrupts.c.obj
@@ -312,7 +312,7 @@ interrupts.obj: interrupts.c.obj
 
 # target to build an object file
 interrupts.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/interrupts.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/interrupts.c.obj
 .PHONY : interrupts.c.obj
 
 interrupts.i: interrupts.c.i
@@ -321,7 +321,7 @@ interrupts.i: interrupts.c.i
 
 # target to preprocess a source file
 interrupts.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/interrupts.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/interrupts.c.i
 .PHONY : interrupts.c.i
 
 interrupts.s: interrupts.c.s
@@ -330,7 +330,7 @@ interrupts.s: interrupts.c.s
 
 # target to generate assembly for a file
 interrupts.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/interrupts.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/interrupts.c.s
 .PHONY : interrupts.c.s
 
 ledc_periph.obj: ledc_periph.c.obj
@@ -339,7 +339,7 @@ ledc_periph.obj: ledc_periph.c.obj
 
 # target to build an object file
 ledc_periph.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/ledc_periph.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/ledc_periph.c.obj
 .PHONY : ledc_periph.c.obj
 
 ledc_periph.i: ledc_periph.c.i
@@ -348,7 +348,7 @@ ledc_periph.i: ledc_periph.c.i
 
 # target to preprocess a source file
 ledc_periph.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/ledc_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/ledc_periph.c.i
 .PHONY : ledc_periph.c.i
 
 ledc_periph.s: ledc_periph.c.s
@@ -357,7 +357,7 @@ ledc_periph.s: ledc_periph.c.s
 
 # target to generate assembly for a file
 ledc_periph.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/ledc_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/ledc_periph.c.s
 .PHONY : ledc_periph.c.s
 
 rtc_io_periph.obj: rtc_io_periph.c.obj
@@ -366,7 +366,7 @@ rtc_io_periph.obj: rtc_io_periph.c.obj
 
 # target to build an object file
 rtc_io_periph.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_io_periph.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_io_periph.c.obj
 .PHONY : rtc_io_periph.c.obj
 
 rtc_io_periph.i: rtc_io_periph.c.i
@@ -375,7 +375,7 @@ rtc_io_periph.i: rtc_io_periph.c.i
 
 # target to preprocess a source file
 rtc_io_periph.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_io_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_io_periph.c.i
 .PHONY : rtc_io_periph.c.i
 
 rtc_io_periph.s: rtc_io_periph.c.s
@@ -384,7 +384,7 @@ rtc_io_periph.s: rtc_io_periph.c.s
 
 # target to generate assembly for a file
 rtc_io_periph.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_io_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_io_periph.c.s
 .PHONY : rtc_io_periph.c.s
 
 rtc_periph.obj: rtc_periph.c.obj
@@ -393,7 +393,7 @@ rtc_periph.obj: rtc_periph.c.obj
 
 # target to build an object file
 rtc_periph.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_periph.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_periph.c.obj
 .PHONY : rtc_periph.c.obj
 
 rtc_periph.i: rtc_periph.c.i
@@ -402,7 +402,7 @@ rtc_periph.i: rtc_periph.c.i
 
 # target to preprocess a source file
 rtc_periph.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_periph.c.i
 .PHONY : rtc_periph.c.i
 
 rtc_periph.s: rtc_periph.c.s
@@ -411,7 +411,7 @@ rtc_periph.s: rtc_periph.c.s
 
 # target to generate assembly for a file
 rtc_periph.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_periph.c.s
 .PHONY : rtc_periph.c.s
 
 sdio_slave_periph.obj: sdio_slave_periph.c.obj
@@ -420,7 +420,7 @@ sdio_slave_periph.obj: sdio_slave_periph.c.obj
 
 # target to build an object file
 sdio_slave_periph.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.obj
 .PHONY : sdio_slave_periph.c.obj
 
 sdio_slave_periph.i: sdio_slave_periph.c.i
@@ -429,7 +429,7 @@ sdio_slave_periph.i: sdio_slave_periph.c.i
 
 # target to preprocess a source file
 sdio_slave_periph.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.i
 .PHONY : sdio_slave_periph.c.i
 
 sdio_slave_periph.s: sdio_slave_periph.c.s
@@ -438,7 +438,7 @@ sdio_slave_periph.s: sdio_slave_periph.c.s
 
 # target to generate assembly for a file
 sdio_slave_periph.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.s
 .PHONY : sdio_slave_periph.c.s
 
 sdmmc_periph.obj: sdmmc_periph.c.obj
@@ -447,7 +447,7 @@ sdmmc_periph.obj: sdmmc_periph.c.obj
 
 # target to build an object file
 sdmmc_periph.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdmmc_periph.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdmmc_periph.c.obj
 .PHONY : sdmmc_periph.c.obj
 
 sdmmc_periph.i: sdmmc_periph.c.i
@@ -456,7 +456,7 @@ sdmmc_periph.i: sdmmc_periph.c.i
 
 # target to preprocess a source file
 sdmmc_periph.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdmmc_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdmmc_periph.c.i
 .PHONY : sdmmc_periph.c.i
 
 sdmmc_periph.s: sdmmc_periph.c.s
@@ -465,7 +465,7 @@ sdmmc_periph.s: sdmmc_periph.c.s
 
 # target to generate assembly for a file
 sdmmc_periph.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdmmc_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdmmc_periph.c.s
 .PHONY : sdmmc_periph.c.s
 
 spi_periph.obj: spi_periph.c.obj
@@ -474,7 +474,7 @@ spi_periph.obj: spi_periph.c.obj
 
 # target to build an object file
 spi_periph.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/spi_periph.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/spi_periph.c.obj
 .PHONY : spi_periph.c.obj
 
 spi_periph.i: spi_periph.c.i
@@ -483,7 +483,7 @@ spi_periph.i: spi_periph.c.i
 
 # target to preprocess a source file
 spi_periph.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/spi_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/spi_periph.c.i
 .PHONY : spi_periph.c.i
 
 spi_periph.s: spi_periph.c.s
@@ -492,7 +492,7 @@ spi_periph.s: spi_periph.c.s
 
 # target to generate assembly for a file
 spi_periph.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/spi_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/spi_periph.c.s
 .PHONY : spi_periph.c.s
 
 touch_sensor_periph.obj: touch_sensor_periph.c.obj
@@ -501,7 +501,7 @@ touch_sensor_periph.obj: touch_sensor_periph.c.obj
 
 # target to build an object file
 touch_sensor_periph.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.obj
 .PHONY : touch_sensor_periph.c.obj
 
 touch_sensor_periph.i: touch_sensor_periph.c.i
@@ -510,7 +510,7 @@ touch_sensor_periph.i: touch_sensor_periph.c.i
 
 # target to preprocess a source file
 touch_sensor_periph.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.i
 .PHONY : touch_sensor_periph.c.i
 
 touch_sensor_periph.s: touch_sensor_periph.c.s
@@ -519,7 +519,7 @@ touch_sensor_periph.s: touch_sensor_periph.c.s
 
 # target to generate assembly for a file
 touch_sensor_periph.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.s
 .PHONY : touch_sensor_periph.c.s
 
 uart_periph.obj: uart_periph.c.obj
@@ -528,7 +528,7 @@ uart_periph.obj: uart_periph.c.obj
 
 # target to build an object file
 uart_periph.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/uart_periph.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/uart_periph.c.obj
 .PHONY : uart_periph.c.obj
 
 uart_periph.i: uart_periph.c.i
@@ -537,7 +537,7 @@ uart_periph.i: uart_periph.c.i
 
 # target to preprocess a source file
 uart_periph.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/uart_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/uart_periph.c.i
 .PHONY : uart_periph.c.i
 
 uart_periph.s: uart_periph.c.s
@@ -546,7 +546,7 @@ uart_periph.s: uart_periph.c.s
 
 # target to generate assembly for a file
 uart_periph.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/uart_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/uart_periph.c.s
 .PHONY : uart_periph.c.s
 
 # Help Target
@@ -615,6 +615,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

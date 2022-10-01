@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mahesh/Inverse_Pendulum/stepper_control
+CMAKE_SOURCE_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/depend.make
@@ -58,21 +58,21 @@ include CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/progress.make
 include CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/flags.make
 
 project_elf_src.c:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating project_elf_src.c"
-	/usr/bin/cmake -E touch /home/mahesh/Inverse_Pendulum/stepper_control/build/project_elf_src.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating project_elf_src.c"
+	/usr/bin/cmake -E touch /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/project_elf_src.c
 
 CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/project_elf_src.c.obj: CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/flags.make
 CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/project_elf_src.c.obj: project_elf_src.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/project_elf_src.c.obj"
-	/home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/project_elf_src.c.obj   -c /home/mahesh/Inverse_Pendulum/stepper_control/build/project_elf_src.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/project_elf_src.c.obj"
+	/home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/project_elf_src.c.obj   -c /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/project_elf_src.c
 
 CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/project_elf_src.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/project_elf_src.c.i"
-	/home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/Inverse_Pendulum/stepper_control/build/project_elf_src.c > CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/project_elf_src.c.i
+	/home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/project_elf_src.c > CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/project_elf_src.c.i
 
 CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/project_elf_src.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/project_elf_src.c.s"
-	/home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/Inverse_Pendulum/stepper_control/build/project_elf_src.c -o CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/project_elf_src.c.s
+	/home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/project_elf_src.c -o CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/project_elf_src.c.s
 
 # Object files for target esp-idf-vscode-boilerplate.elf
 esp__idf__vscode__boilerplate_elf_OBJECTS = \
@@ -399,7 +399,7 @@ esp-idf-vscode-boilerplate.elf: esp-idf/esp32/esp32_out.ld
 esp-idf-vscode-boilerplate.elf: esp-idf/esp32/ld/esp32.project.ld
 esp-idf-vscode-boilerplate.elf: /home/mahesh/esp/esp-idf/components/esp32/ld/esp32.peripherals.ld
 esp-idf-vscode-boilerplate.elf: CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable esp-idf-vscode-boilerplate.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable esp-idf-vscode-boilerplate.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -412,6 +412,6 @@ CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/clean:
 .PHONY : CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/clean
 
 CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/depend: project_elf_src.c
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/Inverse_Pendulum/stepper_control /home/mahesh/Inverse_Pendulum/stepper_control /home/mahesh/Inverse_Pendulum/stepper_control/build /home/mahesh/Inverse_Pendulum/stepper_control/build /home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/esp-idf-vscode-boilerplate.elf.dir/depend
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mahesh/Inverse_Pendulum/stepper_control
+CMAKE_SOURCE_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build
 
 # Utility rule file for size-components.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build
 include CMakeFiles/size-components.dir/progress.make
 
 CMakeFiles/size-components: esp-idf-vscode-boilerplate.elf
-	/home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/idf_size.py --target esp32 --archives /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf-vscode-boilerplate.map
+	/home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/idf_size.py --target esp32 --archives /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf-vscode-boilerplate.map
 
 size-components: CMakeFiles/size-components
 size-components: CMakeFiles/size-components.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/size-components.dir/clean:
 .PHONY : CMakeFiles/size-components.dir/clean
 
 CMakeFiles/size-components.dir/depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/Inverse_Pendulum/stepper_control /home/mahesh/Inverse_Pendulum/stepper_control /home/mahesh/Inverse_Pendulum/stepper_control/build /home/mahesh/Inverse_Pendulum/stepper_control/build /home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles/size-components.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles/size-components.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/size-components.dir/depend
 

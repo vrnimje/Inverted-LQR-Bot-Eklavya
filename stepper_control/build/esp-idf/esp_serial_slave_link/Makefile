@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mahesh/Inverse_Pendulum/stepper_control
+CMAKE_SOURCE_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/esp_serial_slave_link/CMakeFiles/progress.marks
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_serial_slave_link/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles 0
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/esp_serial_slave_link/CMakeFiles/progress.marks
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_serial_slave_link/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_serial_slave_link/clean
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_serial_slave_link/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_serial_slave_link/preinstall
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_serial_slave_link/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_serial_slave_link/preinstall
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_serial_slave_link/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/rule:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/rule
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/rule
 .PHONY : esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ __idf_esp_serial_slave_link: esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_
 
 # fast build rule for target.
 __idf_esp_serial_slave_link/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/build.make esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/build
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/build.make esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/build
 .PHONY : __idf_esp_serial_slave_link/fast
 
 essl.obj: essl.c.obj
@@ -177,7 +177,7 @@ essl.obj: essl.c.obj
 
 # target to build an object file
 essl.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/build.make esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/essl.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/build.make esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/essl.c.obj
 .PHONY : essl.c.obj
 
 essl.i: essl.c.i
@@ -186,7 +186,7 @@ essl.i: essl.c.i
 
 # target to preprocess a source file
 essl.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/build.make esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/essl.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/build.make esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/essl.c.i
 .PHONY : essl.c.i
 
 essl.s: essl.c.s
@@ -195,7 +195,7 @@ essl.s: essl.c.s
 
 # target to generate assembly for a file
 essl.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/build.make esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/essl.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/build.make esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/essl.c.s
 .PHONY : essl.c.s
 
 essl_sdio.obj: essl_sdio.c.obj
@@ -204,7 +204,7 @@ essl_sdio.obj: essl_sdio.c.obj
 
 # target to build an object file
 essl_sdio.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/build.make esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/essl_sdio.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/build.make esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/essl_sdio.c.obj
 .PHONY : essl_sdio.c.obj
 
 essl_sdio.i: essl_sdio.c.i
@@ -213,7 +213,7 @@ essl_sdio.i: essl_sdio.c.i
 
 # target to preprocess a source file
 essl_sdio.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/build.make esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/essl_sdio.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/build.make esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/essl_sdio.c.i
 .PHONY : essl_sdio.c.i
 
 essl_sdio.s: essl_sdio.c.s
@@ -222,7 +222,7 @@ essl_sdio.s: essl_sdio.c.s
 
 # target to generate assembly for a file
 essl_sdio.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/build.make esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/essl_sdio.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/build.make esp-idf/esp_serial_slave_link/CMakeFiles/__idf_esp_serial_slave_link.dir/essl_sdio.c.s
 .PHONY : essl_sdio.c.s
 
 # Help Target
@@ -255,6 +255,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

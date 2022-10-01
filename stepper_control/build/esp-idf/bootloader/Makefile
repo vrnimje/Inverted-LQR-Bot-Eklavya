@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mahesh/Inverse_Pendulum/stepper_control
+CMAKE_SOURCE_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/bootloader/CMakeFiles/progress.marks
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/bootloader/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles 0
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/bootloader/CMakeFiles/progress.marks
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/bootloader/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/bootloader/clean
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/bootloader/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/bootloader/preinstall
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/bootloader/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/bootloader/preinstall
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/bootloader/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/rule:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/rule
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/rule
 .PHONY : esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ encrypted-bootloader-flash: esp-idf/bootloader/CMakeFiles/encrypted-bootloader-f
 
 # fast build rule for target.
 encrypted-bootloader-flash/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/build.make esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/build
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/build.make esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/build
 .PHONY : encrypted-bootloader-flash/fast
 
 # Convenience name for target.
 esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/rule:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/rule
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/rule
 .PHONY : esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/rule
 
 # Convenience name for target.
@@ -183,7 +183,7 @@ bootloader-flash: esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/rule
 
 # fast build rule for target.
 bootloader-flash/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/build.make esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/build
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/build.make esp-idf/bootloader/CMakeFiles/bootloader-flash.dir/build
 .PHONY : bootloader-flash/fast
 
 # Help Target
@@ -211,6 +211,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

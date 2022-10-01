@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/mahesh/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader
 
 # Utility rule file for efuse_custom_table.
 
@@ -63,10 +63,10 @@ esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/build: efuse_custom_table
 .PHONY : esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/build
 
 esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/clean:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/efuse && $(CMAKE_COMMAND) -P CMakeFiles/efuse_custom_table.dir/cmake_clean.cmake
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/efuse && $(CMAKE_COMMAND) -P CMakeFiles/efuse_custom_table.dir/cmake_clean.cmake
 .PHONY : esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/clean
 
 esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/esp/esp-idf/components/efuse /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/efuse /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/esp/esp-idf/components/efuse /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/efuse /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/depend
 

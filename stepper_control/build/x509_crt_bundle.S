@@ -1,4 +1,4 @@
-/* * Data converted from /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

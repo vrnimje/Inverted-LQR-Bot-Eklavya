@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/mahesh/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

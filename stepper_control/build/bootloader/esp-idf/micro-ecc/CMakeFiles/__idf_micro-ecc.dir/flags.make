@@ -6,5 +6,5 @@ C_FLAGS = -mlongcalls -Wno-frame-address   -ffunction-sections -fdata-sections -
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/config -I/home/mahesh/esp/esp-idf/components/bootloader/subproject/components/micro-ecc -I/home/mahesh/esp/esp-idf/components/bootloader/subproject/components/micro-ecc/micro-ecc -I/home/mahesh/esp/esp-idf/components/log/include -I/home/mahesh/esp/esp-idf/components/esp_rom/include -I/home/mahesh/esp/esp-idf/components/esp_rom/esp32 -I/home/mahesh/esp/esp-idf/components/esp_common/include -I/home/mahesh/esp/esp-idf/components/xtensa/include -I/home/mahesh/esp/esp-idf/components/xtensa/esp32/include -I/home/mahesh/esp/esp-idf/components/esp32/include 
+C_INCLUDES = -I/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/config -I/home/mahesh/esp/esp-idf/components/bootloader/subproject/components/micro-ecc -I/home/mahesh/esp/esp-idf/components/bootloader/subproject/components/micro-ecc/micro-ecc -I/home/mahesh/esp/esp-idf/components/log/include -I/home/mahesh/esp/esp-idf/components/esp_rom/include -I/home/mahesh/esp/esp-idf/components/esp_rom/esp32 -I/home/mahesh/esp/esp-idf/components/esp_common/include -I/home/mahesh/esp/esp-idf/components/xtensa/include -I/home/mahesh/esp/esp-idf/components/xtensa/esp32/include -I/home/mahesh/esp/esp-idf/components/esp32/include 
 

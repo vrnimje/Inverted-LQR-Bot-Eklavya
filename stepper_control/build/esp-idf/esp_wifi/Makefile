@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mahesh/Inverse_Pendulum/stepper_control
+CMAKE_SOURCE_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/esp_wifi/CMakeFiles/progress.marks
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_wifi/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles 0
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/esp_wifi/CMakeFiles/progress.marks
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_wifi/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_wifi/clean
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_wifi/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_wifi/preinstall
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_wifi/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_wifi/preinstall
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_wifi/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/rule:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/rule
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/rule
 .PHONY : esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ __idf_esp_wifi: esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/rule
 
 # fast build rule for target.
 __idf_esp_wifi/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build
 .PHONY : __idf_esp_wifi/fast
 
 esp32/esp_adapter.obj: esp32/esp_adapter.c.obj
@@ -177,7 +177,7 @@ esp32/esp_adapter.obj: esp32/esp_adapter.c.obj
 
 # target to build an object file
 esp32/esp_adapter.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/esp32/esp_adapter.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/esp32/esp_adapter.c.obj
 .PHONY : esp32/esp_adapter.c.obj
 
 esp32/esp_adapter.i: esp32/esp_adapter.c.i
@@ -186,7 +186,7 @@ esp32/esp_adapter.i: esp32/esp_adapter.c.i
 
 # target to preprocess a source file
 esp32/esp_adapter.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/esp32/esp_adapter.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/esp32/esp_adapter.c.i
 .PHONY : esp32/esp_adapter.c.i
 
 esp32/esp_adapter.s: esp32/esp_adapter.c.s
@@ -195,7 +195,7 @@ esp32/esp_adapter.s: esp32/esp_adapter.c.s
 
 # target to generate assembly for a file
 esp32/esp_adapter.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/esp32/esp_adapter.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/esp32/esp_adapter.c.s
 .PHONY : esp32/esp_adapter.c.s
 
 src/coexist.obj: src/coexist.c.obj
@@ -204,7 +204,7 @@ src/coexist.obj: src/coexist.c.obj
 
 # target to build an object file
 src/coexist.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/coexist.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/coexist.c.obj
 .PHONY : src/coexist.c.obj
 
 src/coexist.i: src/coexist.c.i
@@ -213,7 +213,7 @@ src/coexist.i: src/coexist.c.i
 
 # target to preprocess a source file
 src/coexist.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/coexist.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/coexist.c.i
 .PHONY : src/coexist.c.i
 
 src/coexist.s: src/coexist.c.s
@@ -222,7 +222,7 @@ src/coexist.s: src/coexist.c.s
 
 # target to generate assembly for a file
 src/coexist.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/coexist.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/coexist.c.s
 .PHONY : src/coexist.c.s
 
 src/lib_printf.obj: src/lib_printf.c.obj
@@ -231,7 +231,7 @@ src/lib_printf.obj: src/lib_printf.c.obj
 
 # target to build an object file
 src/lib_printf.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/lib_printf.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/lib_printf.c.obj
 .PHONY : src/lib_printf.c.obj
 
 src/lib_printf.i: src/lib_printf.c.i
@@ -240,7 +240,7 @@ src/lib_printf.i: src/lib_printf.c.i
 
 # target to preprocess a source file
 src/lib_printf.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/lib_printf.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/lib_printf.c.i
 .PHONY : src/lib_printf.c.i
 
 src/lib_printf.s: src/lib_printf.c.s
@@ -249,7 +249,7 @@ src/lib_printf.s: src/lib_printf.c.s
 
 # target to generate assembly for a file
 src/lib_printf.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/lib_printf.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/lib_printf.c.s
 .PHONY : src/lib_printf.c.s
 
 src/mesh_event.obj: src/mesh_event.c.obj
@@ -258,7 +258,7 @@ src/mesh_event.obj: src/mesh_event.c.obj
 
 # target to build an object file
 src/mesh_event.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/mesh_event.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/mesh_event.c.obj
 .PHONY : src/mesh_event.c.obj
 
 src/mesh_event.i: src/mesh_event.c.i
@@ -267,7 +267,7 @@ src/mesh_event.i: src/mesh_event.c.i
 
 # target to preprocess a source file
 src/mesh_event.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/mesh_event.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/mesh_event.c.i
 .PHONY : src/mesh_event.c.i
 
 src/mesh_event.s: src/mesh_event.c.s
@@ -276,7 +276,7 @@ src/mesh_event.s: src/mesh_event.c.s
 
 # target to generate assembly for a file
 src/mesh_event.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/mesh_event.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/mesh_event.c.s
 .PHONY : src/mesh_event.c.s
 
 src/phy_init.obj: src/phy_init.c.obj
@@ -285,7 +285,7 @@ src/phy_init.obj: src/phy_init.c.obj
 
 # target to build an object file
 src/phy_init.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/phy_init.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/phy_init.c.obj
 .PHONY : src/phy_init.c.obj
 
 src/phy_init.i: src/phy_init.c.i
@@ -294,7 +294,7 @@ src/phy_init.i: src/phy_init.c.i
 
 # target to preprocess a source file
 src/phy_init.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/phy_init.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/phy_init.c.i
 .PHONY : src/phy_init.c.i
 
 src/phy_init.s: src/phy_init.c.s
@@ -303,7 +303,7 @@ src/phy_init.s: src/phy_init.c.s
 
 # target to generate assembly for a file
 src/phy_init.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/phy_init.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/phy_init.c.s
 .PHONY : src/phy_init.c.s
 
 src/phy_override.obj: src/phy_override.c.obj
@@ -312,7 +312,7 @@ src/phy_override.obj: src/phy_override.c.obj
 
 # target to build an object file
 src/phy_override.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/phy_override.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/phy_override.c.obj
 .PHONY : src/phy_override.c.obj
 
 src/phy_override.i: src/phy_override.c.i
@@ -321,7 +321,7 @@ src/phy_override.i: src/phy_override.c.i
 
 # target to preprocess a source file
 src/phy_override.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/phy_override.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/phy_override.c.i
 .PHONY : src/phy_override.c.i
 
 src/phy_override.s: src/phy_override.c.s
@@ -330,7 +330,7 @@ src/phy_override.s: src/phy_override.c.s
 
 # target to generate assembly for a file
 src/phy_override.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/phy_override.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/phy_override.c.s
 .PHONY : src/phy_override.c.s
 
 src/smartconfig.obj: src/smartconfig.c.obj
@@ -339,7 +339,7 @@ src/smartconfig.obj: src/smartconfig.c.obj
 
 # target to build an object file
 src/smartconfig.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig.c.obj
 .PHONY : src/smartconfig.c.obj
 
 src/smartconfig.i: src/smartconfig.c.i
@@ -348,7 +348,7 @@ src/smartconfig.i: src/smartconfig.c.i
 
 # target to preprocess a source file
 src/smartconfig.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig.c.i
 .PHONY : src/smartconfig.c.i
 
 src/smartconfig.s: src/smartconfig.c.s
@@ -357,7 +357,7 @@ src/smartconfig.s: src/smartconfig.c.s
 
 # target to generate assembly for a file
 src/smartconfig.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig.c.s
 .PHONY : src/smartconfig.c.s
 
 src/smartconfig_ack.obj: src/smartconfig_ack.c.obj
@@ -366,7 +366,7 @@ src/smartconfig_ack.obj: src/smartconfig_ack.c.obj
 
 # target to build an object file
 src/smartconfig_ack.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig_ack.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig_ack.c.obj
 .PHONY : src/smartconfig_ack.c.obj
 
 src/smartconfig_ack.i: src/smartconfig_ack.c.i
@@ -375,7 +375,7 @@ src/smartconfig_ack.i: src/smartconfig_ack.c.i
 
 # target to preprocess a source file
 src/smartconfig_ack.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig_ack.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig_ack.c.i
 .PHONY : src/smartconfig_ack.c.i
 
 src/smartconfig_ack.s: src/smartconfig_ack.c.s
@@ -384,7 +384,7 @@ src/smartconfig_ack.s: src/smartconfig_ack.c.s
 
 # target to generate assembly for a file
 src/smartconfig_ack.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig_ack.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig_ack.c.s
 .PHONY : src/smartconfig_ack.c.s
 
 src/wifi_default.obj: src/wifi_default.c.obj
@@ -393,7 +393,7 @@ src/wifi_default.obj: src/wifi_default.c.obj
 
 # target to build an object file
 src/wifi_default.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_default.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_default.c.obj
 .PHONY : src/wifi_default.c.obj
 
 src/wifi_default.i: src/wifi_default.c.i
@@ -402,7 +402,7 @@ src/wifi_default.i: src/wifi_default.c.i
 
 # target to preprocess a source file
 src/wifi_default.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_default.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_default.c.i
 .PHONY : src/wifi_default.c.i
 
 src/wifi_default.s: src/wifi_default.c.s
@@ -411,7 +411,7 @@ src/wifi_default.s: src/wifi_default.c.s
 
 # target to generate assembly for a file
 src/wifi_default.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_default.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_default.c.s
 .PHONY : src/wifi_default.c.s
 
 src/wifi_init.obj: src/wifi_init.c.obj
@@ -420,7 +420,7 @@ src/wifi_init.obj: src/wifi_init.c.obj
 
 # target to build an object file
 src/wifi_init.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_init.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_init.c.obj
 .PHONY : src/wifi_init.c.obj
 
 src/wifi_init.i: src/wifi_init.c.i
@@ -429,7 +429,7 @@ src/wifi_init.i: src/wifi_init.c.i
 
 # target to preprocess a source file
 src/wifi_init.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_init.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_init.c.i
 .PHONY : src/wifi_init.c.i
 
 src/wifi_init.s: src/wifi_init.c.s
@@ -438,7 +438,7 @@ src/wifi_init.s: src/wifi_init.c.s
 
 # target to generate assembly for a file
 src/wifi_init.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_init.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_init.c.s
 .PHONY : src/wifi_init.c.s
 
 src/wifi_netif.obj: src/wifi_netif.c.obj
@@ -447,7 +447,7 @@ src/wifi_netif.obj: src/wifi_netif.c.obj
 
 # target to build an object file
 src/wifi_netif.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_netif.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_netif.c.obj
 .PHONY : src/wifi_netif.c.obj
 
 src/wifi_netif.i: src/wifi_netif.c.i
@@ -456,7 +456,7 @@ src/wifi_netif.i: src/wifi_netif.c.i
 
 # target to preprocess a source file
 src/wifi_netif.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_netif.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_netif.c.i
 .PHONY : src/wifi_netif.c.i
 
 src/wifi_netif.s: src/wifi_netif.c.s
@@ -465,7 +465,7 @@ src/wifi_netif.s: src/wifi_netif.c.s
 
 # target to generate assembly for a file
 src/wifi_netif.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_netif.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/build.make esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_netif.c.s
 .PHONY : src/wifi_netif.c.s
 
 # Help Target
@@ -525,6 +525,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

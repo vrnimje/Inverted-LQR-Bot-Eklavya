@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mahesh/Inverse_Pendulum/stepper_control
+CMAKE_SOURCE_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/soc/CMakeFiles/progress.marks
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles 0
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/soc/CMakeFiles/progress.marks
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/clean
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/preinstall
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/preinstall
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/soc/CMakeFiles/__idf_soc.dir/rule:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/CMakeFiles/__idf_soc.dir/rule
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/soc/CMakeFiles/__idf_soc.dir/rule
 .PHONY : esp-idf/soc/CMakeFiles/__idf_soc.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ __idf_soc: esp-idf/soc/CMakeFiles/__idf_soc.dir/rule
 
 # fast build rule for target.
 __idf_soc/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/build
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/build
 .PHONY : __idf_soc/fast
 
 src/compare_set.obj: src/compare_set.c.obj
@@ -177,7 +177,7 @@ src/compare_set.obj: src/compare_set.c.obj
 
 # target to build an object file
 src/compare_set.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/compare_set.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/compare_set.c.obj
 .PHONY : src/compare_set.c.obj
 
 src/compare_set.i: src/compare_set.c.i
@@ -186,7 +186,7 @@ src/compare_set.i: src/compare_set.c.i
 
 # target to preprocess a source file
 src/compare_set.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/compare_set.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/compare_set.c.i
 .PHONY : src/compare_set.c.i
 
 src/compare_set.s: src/compare_set.c.s
@@ -195,7 +195,7 @@ src/compare_set.s: src/compare_set.c.s
 
 # target to generate assembly for a file
 src/compare_set.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/compare_set.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/compare_set.c.s
 .PHONY : src/compare_set.c.s
 
 src/cpu_util.obj: src/cpu_util.c.obj
@@ -204,7 +204,7 @@ src/cpu_util.obj: src/cpu_util.c.obj
 
 # target to build an object file
 src/cpu_util.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/cpu_util.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/cpu_util.c.obj
 .PHONY : src/cpu_util.c.obj
 
 src/cpu_util.i: src/cpu_util.c.i
@@ -213,7 +213,7 @@ src/cpu_util.i: src/cpu_util.c.i
 
 # target to preprocess a source file
 src/cpu_util.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/cpu_util.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/cpu_util.c.i
 .PHONY : src/cpu_util.c.i
 
 src/cpu_util.s: src/cpu_util.c.s
@@ -222,7 +222,7 @@ src/cpu_util.s: src/cpu_util.c.s
 
 # target to generate assembly for a file
 src/cpu_util.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/cpu_util.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/cpu_util.c.s
 .PHONY : src/cpu_util.c.s
 
 src/esp32/adc_hal.obj: src/esp32/adc_hal.c.obj
@@ -231,7 +231,7 @@ src/esp32/adc_hal.obj: src/esp32/adc_hal.c.obj
 
 # target to build an object file
 src/esp32/adc_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/adc_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/adc_hal.c.obj
 .PHONY : src/esp32/adc_hal.c.obj
 
 src/esp32/adc_hal.i: src/esp32/adc_hal.c.i
@@ -240,7 +240,7 @@ src/esp32/adc_hal.i: src/esp32/adc_hal.c.i
 
 # target to preprocess a source file
 src/esp32/adc_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/adc_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/adc_hal.c.i
 .PHONY : src/esp32/adc_hal.c.i
 
 src/esp32/adc_hal.s: src/esp32/adc_hal.c.s
@@ -249,7 +249,7 @@ src/esp32/adc_hal.s: src/esp32/adc_hal.c.s
 
 # target to generate assembly for a file
 src/esp32/adc_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/adc_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/adc_hal.c.s
 .PHONY : src/esp32/adc_hal.c.s
 
 src/esp32/brownout_hal.obj: src/esp32/brownout_hal.c.obj
@@ -258,7 +258,7 @@ src/esp32/brownout_hal.obj: src/esp32/brownout_hal.c.obj
 
 # target to build an object file
 src/esp32/brownout_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/brownout_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/brownout_hal.c.obj
 .PHONY : src/esp32/brownout_hal.c.obj
 
 src/esp32/brownout_hal.i: src/esp32/brownout_hal.c.i
@@ -267,7 +267,7 @@ src/esp32/brownout_hal.i: src/esp32/brownout_hal.c.i
 
 # target to preprocess a source file
 src/esp32/brownout_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/brownout_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/brownout_hal.c.i
 .PHONY : src/esp32/brownout_hal.c.i
 
 src/esp32/brownout_hal.s: src/esp32/brownout_hal.c.s
@@ -276,7 +276,7 @@ src/esp32/brownout_hal.s: src/esp32/brownout_hal.c.s
 
 # target to generate assembly for a file
 src/esp32/brownout_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/brownout_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/brownout_hal.c.s
 .PHONY : src/esp32/brownout_hal.c.s
 
 src/esp32/emac_hal.obj: src/esp32/emac_hal.c.obj
@@ -285,7 +285,7 @@ src/esp32/emac_hal.obj: src/esp32/emac_hal.c.obj
 
 # target to build an object file
 src/esp32/emac_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/emac_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/emac_hal.c.obj
 .PHONY : src/esp32/emac_hal.c.obj
 
 src/esp32/emac_hal.i: src/esp32/emac_hal.c.i
@@ -294,7 +294,7 @@ src/esp32/emac_hal.i: src/esp32/emac_hal.c.i
 
 # target to preprocess a source file
 src/esp32/emac_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/emac_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/emac_hal.c.i
 .PHONY : src/esp32/emac_hal.c.i
 
 src/esp32/emac_hal.s: src/esp32/emac_hal.c.s
@@ -303,7 +303,7 @@ src/esp32/emac_hal.s: src/esp32/emac_hal.c.s
 
 # target to generate assembly for a file
 src/esp32/emac_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/emac_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/emac_hal.c.s
 .PHONY : src/esp32/emac_hal.c.s
 
 src/esp32/rtc_clk.obj: src/esp32/rtc_clk.c.obj
@@ -312,7 +312,7 @@ src/esp32/rtc_clk.obj: src/esp32/rtc_clk.c.obj
 
 # target to build an object file
 src/esp32/rtc_clk.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_clk.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_clk.c.obj
 .PHONY : src/esp32/rtc_clk.c.obj
 
 src/esp32/rtc_clk.i: src/esp32/rtc_clk.c.i
@@ -321,7 +321,7 @@ src/esp32/rtc_clk.i: src/esp32/rtc_clk.c.i
 
 # target to preprocess a source file
 src/esp32/rtc_clk.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_clk.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_clk.c.i
 .PHONY : src/esp32/rtc_clk.c.i
 
 src/esp32/rtc_clk.s: src/esp32/rtc_clk.c.s
@@ -330,7 +330,7 @@ src/esp32/rtc_clk.s: src/esp32/rtc_clk.c.s
 
 # target to generate assembly for a file
 src/esp32/rtc_clk.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_clk.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_clk.c.s
 .PHONY : src/esp32/rtc_clk.c.s
 
 src/esp32/rtc_clk_init.obj: src/esp32/rtc_clk_init.c.obj
@@ -339,7 +339,7 @@ src/esp32/rtc_clk_init.obj: src/esp32/rtc_clk_init.c.obj
 
 # target to build an object file
 src/esp32/rtc_clk_init.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_clk_init.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_clk_init.c.obj
 .PHONY : src/esp32/rtc_clk_init.c.obj
 
 src/esp32/rtc_clk_init.i: src/esp32/rtc_clk_init.c.i
@@ -348,7 +348,7 @@ src/esp32/rtc_clk_init.i: src/esp32/rtc_clk_init.c.i
 
 # target to preprocess a source file
 src/esp32/rtc_clk_init.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_clk_init.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_clk_init.c.i
 .PHONY : src/esp32/rtc_clk_init.c.i
 
 src/esp32/rtc_clk_init.s: src/esp32/rtc_clk_init.c.s
@@ -357,7 +357,7 @@ src/esp32/rtc_clk_init.s: src/esp32/rtc_clk_init.c.s
 
 # target to generate assembly for a file
 src/esp32/rtc_clk_init.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_clk_init.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_clk_init.c.s
 .PHONY : src/esp32/rtc_clk_init.c.s
 
 src/esp32/rtc_init.obj: src/esp32/rtc_init.c.obj
@@ -366,7 +366,7 @@ src/esp32/rtc_init.obj: src/esp32/rtc_init.c.obj
 
 # target to build an object file
 src/esp32/rtc_init.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_init.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_init.c.obj
 .PHONY : src/esp32/rtc_init.c.obj
 
 src/esp32/rtc_init.i: src/esp32/rtc_init.c.i
@@ -375,7 +375,7 @@ src/esp32/rtc_init.i: src/esp32/rtc_init.c.i
 
 # target to preprocess a source file
 src/esp32/rtc_init.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_init.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_init.c.i
 .PHONY : src/esp32/rtc_init.c.i
 
 src/esp32/rtc_init.s: src/esp32/rtc_init.c.s
@@ -384,7 +384,7 @@ src/esp32/rtc_init.s: src/esp32/rtc_init.c.s
 
 # target to generate assembly for a file
 src/esp32/rtc_init.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_init.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_init.c.s
 .PHONY : src/esp32/rtc_init.c.s
 
 src/esp32/rtc_pm.obj: src/esp32/rtc_pm.c.obj
@@ -393,7 +393,7 @@ src/esp32/rtc_pm.obj: src/esp32/rtc_pm.c.obj
 
 # target to build an object file
 src/esp32/rtc_pm.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_pm.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_pm.c.obj
 .PHONY : src/esp32/rtc_pm.c.obj
 
 src/esp32/rtc_pm.i: src/esp32/rtc_pm.c.i
@@ -402,7 +402,7 @@ src/esp32/rtc_pm.i: src/esp32/rtc_pm.c.i
 
 # target to preprocess a source file
 src/esp32/rtc_pm.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_pm.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_pm.c.i
 .PHONY : src/esp32/rtc_pm.c.i
 
 src/esp32/rtc_pm.s: src/esp32/rtc_pm.c.s
@@ -411,7 +411,7 @@ src/esp32/rtc_pm.s: src/esp32/rtc_pm.c.s
 
 # target to generate assembly for a file
 src/esp32/rtc_pm.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_pm.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_pm.c.s
 .PHONY : src/esp32/rtc_pm.c.s
 
 src/esp32/rtc_sleep.obj: src/esp32/rtc_sleep.c.obj
@@ -420,7 +420,7 @@ src/esp32/rtc_sleep.obj: src/esp32/rtc_sleep.c.obj
 
 # target to build an object file
 src/esp32/rtc_sleep.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_sleep.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_sleep.c.obj
 .PHONY : src/esp32/rtc_sleep.c.obj
 
 src/esp32/rtc_sleep.i: src/esp32/rtc_sleep.c.i
@@ -429,7 +429,7 @@ src/esp32/rtc_sleep.i: src/esp32/rtc_sleep.c.i
 
 # target to preprocess a source file
 src/esp32/rtc_sleep.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_sleep.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_sleep.c.i
 .PHONY : src/esp32/rtc_sleep.c.i
 
 src/esp32/rtc_sleep.s: src/esp32/rtc_sleep.c.s
@@ -438,7 +438,7 @@ src/esp32/rtc_sleep.s: src/esp32/rtc_sleep.c.s
 
 # target to generate assembly for a file
 src/esp32/rtc_sleep.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_sleep.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_sleep.c.s
 .PHONY : src/esp32/rtc_sleep.c.s
 
 src/esp32/rtc_time.obj: src/esp32/rtc_time.c.obj
@@ -447,7 +447,7 @@ src/esp32/rtc_time.obj: src/esp32/rtc_time.c.obj
 
 # target to build an object file
 src/esp32/rtc_time.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_time.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_time.c.obj
 .PHONY : src/esp32/rtc_time.c.obj
 
 src/esp32/rtc_time.i: src/esp32/rtc_time.c.i
@@ -456,7 +456,7 @@ src/esp32/rtc_time.i: src/esp32/rtc_time.c.i
 
 # target to preprocess a source file
 src/esp32/rtc_time.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_time.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_time.c.i
 .PHONY : src/esp32/rtc_time.c.i
 
 src/esp32/rtc_time.s: src/esp32/rtc_time.c.s
@@ -465,7 +465,7 @@ src/esp32/rtc_time.s: src/esp32/rtc_time.c.s
 
 # target to generate assembly for a file
 src/esp32/rtc_time.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_time.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_time.c.s
 .PHONY : src/esp32/rtc_time.c.s
 
 src/esp32/rtc_wdt.obj: src/esp32/rtc_wdt.c.obj
@@ -474,7 +474,7 @@ src/esp32/rtc_wdt.obj: src/esp32/rtc_wdt.c.obj
 
 # target to build an object file
 src/esp32/rtc_wdt.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_wdt.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_wdt.c.obj
 .PHONY : src/esp32/rtc_wdt.c.obj
 
 src/esp32/rtc_wdt.i: src/esp32/rtc_wdt.c.i
@@ -483,7 +483,7 @@ src/esp32/rtc_wdt.i: src/esp32/rtc_wdt.c.i
 
 # target to preprocess a source file
 src/esp32/rtc_wdt.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_wdt.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_wdt.c.i
 .PHONY : src/esp32/rtc_wdt.c.i
 
 src/esp32/rtc_wdt.s: src/esp32/rtc_wdt.c.s
@@ -492,7 +492,7 @@ src/esp32/rtc_wdt.s: src/esp32/rtc_wdt.c.s
 
 # target to generate assembly for a file
 src/esp32/rtc_wdt.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_wdt.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/rtc_wdt.c.s
 .PHONY : src/esp32/rtc_wdt.c.s
 
 src/esp32/soc_memory_layout.obj: src/esp32/soc_memory_layout.c.obj
@@ -501,7 +501,7 @@ src/esp32/soc_memory_layout.obj: src/esp32/soc_memory_layout.c.obj
 
 # target to build an object file
 src/esp32/soc_memory_layout.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/soc_memory_layout.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/soc_memory_layout.c.obj
 .PHONY : src/esp32/soc_memory_layout.c.obj
 
 src/esp32/soc_memory_layout.i: src/esp32/soc_memory_layout.c.i
@@ -510,7 +510,7 @@ src/esp32/soc_memory_layout.i: src/esp32/soc_memory_layout.c.i
 
 # target to preprocess a source file
 src/esp32/soc_memory_layout.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/soc_memory_layout.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/soc_memory_layout.c.i
 .PHONY : src/esp32/soc_memory_layout.c.i
 
 src/esp32/soc_memory_layout.s: src/esp32/soc_memory_layout.c.s
@@ -519,7 +519,7 @@ src/esp32/soc_memory_layout.s: src/esp32/soc_memory_layout.c.s
 
 # target to generate assembly for a file
 src/esp32/soc_memory_layout.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/soc_memory_layout.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/soc_memory_layout.c.s
 .PHONY : src/esp32/soc_memory_layout.c.s
 
 src/esp32/touch_sensor_hal.obj: src/esp32/touch_sensor_hal.c.obj
@@ -528,7 +528,7 @@ src/esp32/touch_sensor_hal.obj: src/esp32/touch_sensor_hal.c.obj
 
 # target to build an object file
 src/esp32/touch_sensor_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/touch_sensor_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/touch_sensor_hal.c.obj
 .PHONY : src/esp32/touch_sensor_hal.c.obj
 
 src/esp32/touch_sensor_hal.i: src/esp32/touch_sensor_hal.c.i
@@ -537,7 +537,7 @@ src/esp32/touch_sensor_hal.i: src/esp32/touch_sensor_hal.c.i
 
 # target to preprocess a source file
 src/esp32/touch_sensor_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/touch_sensor_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/touch_sensor_hal.c.i
 .PHONY : src/esp32/touch_sensor_hal.c.i
 
 src/esp32/touch_sensor_hal.s: src/esp32/touch_sensor_hal.c.s
@@ -546,7 +546,7 @@ src/esp32/touch_sensor_hal.s: src/esp32/touch_sensor_hal.c.s
 
 # target to generate assembly for a file
 src/esp32/touch_sensor_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/touch_sensor_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/esp32/touch_sensor_hal.c.s
 .PHONY : src/esp32/touch_sensor_hal.c.s
 
 src/hal/adc_hal.obj: src/hal/adc_hal.c.obj
@@ -555,7 +555,7 @@ src/hal/adc_hal.obj: src/hal/adc_hal.c.obj
 
 # target to build an object file
 src/hal/adc_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/adc_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/adc_hal.c.obj
 .PHONY : src/hal/adc_hal.c.obj
 
 src/hal/adc_hal.i: src/hal/adc_hal.c.i
@@ -564,7 +564,7 @@ src/hal/adc_hal.i: src/hal/adc_hal.c.i
 
 # target to preprocess a source file
 src/hal/adc_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/adc_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/adc_hal.c.i
 .PHONY : src/hal/adc_hal.c.i
 
 src/hal/adc_hal.s: src/hal/adc_hal.c.s
@@ -573,7 +573,7 @@ src/hal/adc_hal.s: src/hal/adc_hal.c.s
 
 # target to generate assembly for a file
 src/hal/adc_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/adc_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/adc_hal.c.s
 .PHONY : src/hal/adc_hal.c.s
 
 src/hal/cpu_hal.obj: src/hal/cpu_hal.c.obj
@@ -582,7 +582,7 @@ src/hal/cpu_hal.obj: src/hal/cpu_hal.c.obj
 
 # target to build an object file
 src/hal/cpu_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/cpu_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/cpu_hal.c.obj
 .PHONY : src/hal/cpu_hal.c.obj
 
 src/hal/cpu_hal.i: src/hal/cpu_hal.c.i
@@ -591,7 +591,7 @@ src/hal/cpu_hal.i: src/hal/cpu_hal.c.i
 
 # target to preprocess a source file
 src/hal/cpu_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/cpu_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/cpu_hal.c.i
 .PHONY : src/hal/cpu_hal.c.i
 
 src/hal/cpu_hal.s: src/hal/cpu_hal.c.s
@@ -600,7 +600,7 @@ src/hal/cpu_hal.s: src/hal/cpu_hal.c.s
 
 # target to generate assembly for a file
 src/hal/cpu_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/cpu_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/cpu_hal.c.s
 .PHONY : src/hal/cpu_hal.c.s
 
 src/hal/dac_hal.obj: src/hal/dac_hal.c.obj
@@ -609,7 +609,7 @@ src/hal/dac_hal.obj: src/hal/dac_hal.c.obj
 
 # target to build an object file
 src/hal/dac_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/dac_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/dac_hal.c.obj
 .PHONY : src/hal/dac_hal.c.obj
 
 src/hal/dac_hal.i: src/hal/dac_hal.c.i
@@ -618,7 +618,7 @@ src/hal/dac_hal.i: src/hal/dac_hal.c.i
 
 # target to preprocess a source file
 src/hal/dac_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/dac_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/dac_hal.c.i
 .PHONY : src/hal/dac_hal.c.i
 
 src/hal/dac_hal.s: src/hal/dac_hal.c.s
@@ -627,7 +627,7 @@ src/hal/dac_hal.s: src/hal/dac_hal.c.s
 
 # target to generate assembly for a file
 src/hal/dac_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/dac_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/dac_hal.c.s
 .PHONY : src/hal/dac_hal.c.s
 
 src/hal/gpio_hal.obj: src/hal/gpio_hal.c.obj
@@ -636,7 +636,7 @@ src/hal/gpio_hal.obj: src/hal/gpio_hal.c.obj
 
 # target to build an object file
 src/hal/gpio_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/gpio_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/gpio_hal.c.obj
 .PHONY : src/hal/gpio_hal.c.obj
 
 src/hal/gpio_hal.i: src/hal/gpio_hal.c.i
@@ -645,7 +645,7 @@ src/hal/gpio_hal.i: src/hal/gpio_hal.c.i
 
 # target to preprocess a source file
 src/hal/gpio_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/gpio_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/gpio_hal.c.i
 .PHONY : src/hal/gpio_hal.c.i
 
 src/hal/gpio_hal.s: src/hal/gpio_hal.c.s
@@ -654,7 +654,7 @@ src/hal/gpio_hal.s: src/hal/gpio_hal.c.s
 
 # target to generate assembly for a file
 src/hal/gpio_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/gpio_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/gpio_hal.c.s
 .PHONY : src/hal/gpio_hal.c.s
 
 src/hal/i2c_hal.obj: src/hal/i2c_hal.c.obj
@@ -663,7 +663,7 @@ src/hal/i2c_hal.obj: src/hal/i2c_hal.c.obj
 
 # target to build an object file
 src/hal/i2c_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2c_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2c_hal.c.obj
 .PHONY : src/hal/i2c_hal.c.obj
 
 src/hal/i2c_hal.i: src/hal/i2c_hal.c.i
@@ -672,7 +672,7 @@ src/hal/i2c_hal.i: src/hal/i2c_hal.c.i
 
 # target to preprocess a source file
 src/hal/i2c_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2c_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2c_hal.c.i
 .PHONY : src/hal/i2c_hal.c.i
 
 src/hal/i2c_hal.s: src/hal/i2c_hal.c.s
@@ -681,7 +681,7 @@ src/hal/i2c_hal.s: src/hal/i2c_hal.c.s
 
 # target to generate assembly for a file
 src/hal/i2c_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2c_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2c_hal.c.s
 .PHONY : src/hal/i2c_hal.c.s
 
 src/hal/i2c_hal_iram.obj: src/hal/i2c_hal_iram.c.obj
@@ -690,7 +690,7 @@ src/hal/i2c_hal_iram.obj: src/hal/i2c_hal_iram.c.obj
 
 # target to build an object file
 src/hal/i2c_hal_iram.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2c_hal_iram.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2c_hal_iram.c.obj
 .PHONY : src/hal/i2c_hal_iram.c.obj
 
 src/hal/i2c_hal_iram.i: src/hal/i2c_hal_iram.c.i
@@ -699,7 +699,7 @@ src/hal/i2c_hal_iram.i: src/hal/i2c_hal_iram.c.i
 
 # target to preprocess a source file
 src/hal/i2c_hal_iram.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2c_hal_iram.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2c_hal_iram.c.i
 .PHONY : src/hal/i2c_hal_iram.c.i
 
 src/hal/i2c_hal_iram.s: src/hal/i2c_hal_iram.c.s
@@ -708,7 +708,7 @@ src/hal/i2c_hal_iram.s: src/hal/i2c_hal_iram.c.s
 
 # target to generate assembly for a file
 src/hal/i2c_hal_iram.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2c_hal_iram.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2c_hal_iram.c.s
 .PHONY : src/hal/i2c_hal_iram.c.s
 
 src/hal/i2s_hal.obj: src/hal/i2s_hal.c.obj
@@ -717,7 +717,7 @@ src/hal/i2s_hal.obj: src/hal/i2s_hal.c.obj
 
 # target to build an object file
 src/hal/i2s_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2s_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2s_hal.c.obj
 .PHONY : src/hal/i2s_hal.c.obj
 
 src/hal/i2s_hal.i: src/hal/i2s_hal.c.i
@@ -726,7 +726,7 @@ src/hal/i2s_hal.i: src/hal/i2s_hal.c.i
 
 # target to preprocess a source file
 src/hal/i2s_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2s_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2s_hal.c.i
 .PHONY : src/hal/i2s_hal.c.i
 
 src/hal/i2s_hal.s: src/hal/i2s_hal.c.s
@@ -735,7 +735,7 @@ src/hal/i2s_hal.s: src/hal/i2s_hal.c.s
 
 # target to generate assembly for a file
 src/hal/i2s_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2s_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/i2s_hal.c.s
 .PHONY : src/hal/i2s_hal.c.s
 
 src/hal/ledc_hal.obj: src/hal/ledc_hal.c.obj
@@ -744,7 +744,7 @@ src/hal/ledc_hal.obj: src/hal/ledc_hal.c.obj
 
 # target to build an object file
 src/hal/ledc_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/ledc_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/ledc_hal.c.obj
 .PHONY : src/hal/ledc_hal.c.obj
 
 src/hal/ledc_hal.i: src/hal/ledc_hal.c.i
@@ -753,7 +753,7 @@ src/hal/ledc_hal.i: src/hal/ledc_hal.c.i
 
 # target to preprocess a source file
 src/hal/ledc_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/ledc_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/ledc_hal.c.i
 .PHONY : src/hal/ledc_hal.c.i
 
 src/hal/ledc_hal.s: src/hal/ledc_hal.c.s
@@ -762,7 +762,7 @@ src/hal/ledc_hal.s: src/hal/ledc_hal.c.s
 
 # target to generate assembly for a file
 src/hal/ledc_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/ledc_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/ledc_hal.c.s
 .PHONY : src/hal/ledc_hal.c.s
 
 src/hal/ledc_hal_iram.obj: src/hal/ledc_hal_iram.c.obj
@@ -771,7 +771,7 @@ src/hal/ledc_hal_iram.obj: src/hal/ledc_hal_iram.c.obj
 
 # target to build an object file
 src/hal/ledc_hal_iram.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/ledc_hal_iram.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/ledc_hal_iram.c.obj
 .PHONY : src/hal/ledc_hal_iram.c.obj
 
 src/hal/ledc_hal_iram.i: src/hal/ledc_hal_iram.c.i
@@ -780,7 +780,7 @@ src/hal/ledc_hal_iram.i: src/hal/ledc_hal_iram.c.i
 
 # target to preprocess a source file
 src/hal/ledc_hal_iram.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/ledc_hal_iram.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/ledc_hal_iram.c.i
 .PHONY : src/hal/ledc_hal_iram.c.i
 
 src/hal/ledc_hal_iram.s: src/hal/ledc_hal_iram.c.s
@@ -789,7 +789,7 @@ src/hal/ledc_hal_iram.s: src/hal/ledc_hal_iram.c.s
 
 # target to generate assembly for a file
 src/hal/ledc_hal_iram.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/ledc_hal_iram.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/ledc_hal_iram.c.s
 .PHONY : src/hal/ledc_hal_iram.c.s
 
 src/hal/mcpwm_hal.obj: src/hal/mcpwm_hal.c.obj
@@ -798,7 +798,7 @@ src/hal/mcpwm_hal.obj: src/hal/mcpwm_hal.c.obj
 
 # target to build an object file
 src/hal/mcpwm_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/mcpwm_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/mcpwm_hal.c.obj
 .PHONY : src/hal/mcpwm_hal.c.obj
 
 src/hal/mcpwm_hal.i: src/hal/mcpwm_hal.c.i
@@ -807,7 +807,7 @@ src/hal/mcpwm_hal.i: src/hal/mcpwm_hal.c.i
 
 # target to preprocess a source file
 src/hal/mcpwm_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/mcpwm_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/mcpwm_hal.c.i
 .PHONY : src/hal/mcpwm_hal.c.i
 
 src/hal/mcpwm_hal.s: src/hal/mcpwm_hal.c.s
@@ -816,7 +816,7 @@ src/hal/mcpwm_hal.s: src/hal/mcpwm_hal.c.s
 
 # target to generate assembly for a file
 src/hal/mcpwm_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/mcpwm_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/mcpwm_hal.c.s
 .PHONY : src/hal/mcpwm_hal.c.s
 
 src/hal/mpu_hal.obj: src/hal/mpu_hal.c.obj
@@ -825,7 +825,7 @@ src/hal/mpu_hal.obj: src/hal/mpu_hal.c.obj
 
 # target to build an object file
 src/hal/mpu_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/mpu_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/mpu_hal.c.obj
 .PHONY : src/hal/mpu_hal.c.obj
 
 src/hal/mpu_hal.i: src/hal/mpu_hal.c.i
@@ -834,7 +834,7 @@ src/hal/mpu_hal.i: src/hal/mpu_hal.c.i
 
 # target to preprocess a source file
 src/hal/mpu_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/mpu_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/mpu_hal.c.i
 .PHONY : src/hal/mpu_hal.c.i
 
 src/hal/mpu_hal.s: src/hal/mpu_hal.c.s
@@ -843,7 +843,7 @@ src/hal/mpu_hal.s: src/hal/mpu_hal.c.s
 
 # target to generate assembly for a file
 src/hal/mpu_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/mpu_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/mpu_hal.c.s
 .PHONY : src/hal/mpu_hal.c.s
 
 src/hal/pcnt_hal.obj: src/hal/pcnt_hal.c.obj
@@ -852,7 +852,7 @@ src/hal/pcnt_hal.obj: src/hal/pcnt_hal.c.obj
 
 # target to build an object file
 src/hal/pcnt_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/pcnt_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/pcnt_hal.c.obj
 .PHONY : src/hal/pcnt_hal.c.obj
 
 src/hal/pcnt_hal.i: src/hal/pcnt_hal.c.i
@@ -861,7 +861,7 @@ src/hal/pcnt_hal.i: src/hal/pcnt_hal.c.i
 
 # target to preprocess a source file
 src/hal/pcnt_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/pcnt_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/pcnt_hal.c.i
 .PHONY : src/hal/pcnt_hal.c.i
 
 src/hal/pcnt_hal.s: src/hal/pcnt_hal.c.s
@@ -870,7 +870,7 @@ src/hal/pcnt_hal.s: src/hal/pcnt_hal.c.s
 
 # target to generate assembly for a file
 src/hal/pcnt_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/pcnt_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/pcnt_hal.c.s
 .PHONY : src/hal/pcnt_hal.c.s
 
 src/hal/rmt_hal.obj: src/hal/rmt_hal.c.obj
@@ -879,7 +879,7 @@ src/hal/rmt_hal.obj: src/hal/rmt_hal.c.obj
 
 # target to build an object file
 src/hal/rmt_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/rmt_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/rmt_hal.c.obj
 .PHONY : src/hal/rmt_hal.c.obj
 
 src/hal/rmt_hal.i: src/hal/rmt_hal.c.i
@@ -888,7 +888,7 @@ src/hal/rmt_hal.i: src/hal/rmt_hal.c.i
 
 # target to preprocess a source file
 src/hal/rmt_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/rmt_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/rmt_hal.c.i
 .PHONY : src/hal/rmt_hal.c.i
 
 src/hal/rmt_hal.s: src/hal/rmt_hal.c.s
@@ -897,7 +897,7 @@ src/hal/rmt_hal.s: src/hal/rmt_hal.c.s
 
 # target to generate assembly for a file
 src/hal/rmt_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/rmt_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/rmt_hal.c.s
 .PHONY : src/hal/rmt_hal.c.s
 
 src/hal/rtc_io_hal.obj: src/hal/rtc_io_hal.c.obj
@@ -906,7 +906,7 @@ src/hal/rtc_io_hal.obj: src/hal/rtc_io_hal.c.obj
 
 # target to build an object file
 src/hal/rtc_io_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/rtc_io_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/rtc_io_hal.c.obj
 .PHONY : src/hal/rtc_io_hal.c.obj
 
 src/hal/rtc_io_hal.i: src/hal/rtc_io_hal.c.i
@@ -915,7 +915,7 @@ src/hal/rtc_io_hal.i: src/hal/rtc_io_hal.c.i
 
 # target to preprocess a source file
 src/hal/rtc_io_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/rtc_io_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/rtc_io_hal.c.i
 .PHONY : src/hal/rtc_io_hal.c.i
 
 src/hal/rtc_io_hal.s: src/hal/rtc_io_hal.c.s
@@ -924,7 +924,7 @@ src/hal/rtc_io_hal.s: src/hal/rtc_io_hal.c.s
 
 # target to generate assembly for a file
 src/hal/rtc_io_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/rtc_io_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/rtc_io_hal.c.s
 .PHONY : src/hal/rtc_io_hal.c.s
 
 src/hal/sdio_slave_hal.obj: src/hal/sdio_slave_hal.c.obj
@@ -933,7 +933,7 @@ src/hal/sdio_slave_hal.obj: src/hal/sdio_slave_hal.c.obj
 
 # target to build an object file
 src/hal/sdio_slave_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/sdio_slave_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/sdio_slave_hal.c.obj
 .PHONY : src/hal/sdio_slave_hal.c.obj
 
 src/hal/sdio_slave_hal.i: src/hal/sdio_slave_hal.c.i
@@ -942,7 +942,7 @@ src/hal/sdio_slave_hal.i: src/hal/sdio_slave_hal.c.i
 
 # target to preprocess a source file
 src/hal/sdio_slave_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/sdio_slave_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/sdio_slave_hal.c.i
 .PHONY : src/hal/sdio_slave_hal.c.i
 
 src/hal/sdio_slave_hal.s: src/hal/sdio_slave_hal.c.s
@@ -951,7 +951,7 @@ src/hal/sdio_slave_hal.s: src/hal/sdio_slave_hal.c.s
 
 # target to generate assembly for a file
 src/hal/sdio_slave_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/sdio_slave_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/sdio_slave_hal.c.s
 .PHONY : src/hal/sdio_slave_hal.c.s
 
 src/hal/sigmadelta_hal.obj: src/hal/sigmadelta_hal.c.obj
@@ -960,7 +960,7 @@ src/hal/sigmadelta_hal.obj: src/hal/sigmadelta_hal.c.obj
 
 # target to build an object file
 src/hal/sigmadelta_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/sigmadelta_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/sigmadelta_hal.c.obj
 .PHONY : src/hal/sigmadelta_hal.c.obj
 
 src/hal/sigmadelta_hal.i: src/hal/sigmadelta_hal.c.i
@@ -969,7 +969,7 @@ src/hal/sigmadelta_hal.i: src/hal/sigmadelta_hal.c.i
 
 # target to preprocess a source file
 src/hal/sigmadelta_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/sigmadelta_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/sigmadelta_hal.c.i
 .PHONY : src/hal/sigmadelta_hal.c.i
 
 src/hal/sigmadelta_hal.s: src/hal/sigmadelta_hal.c.s
@@ -978,7 +978,7 @@ src/hal/sigmadelta_hal.s: src/hal/sigmadelta_hal.c.s
 
 # target to generate assembly for a file
 src/hal/sigmadelta_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/sigmadelta_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/sigmadelta_hal.c.s
 .PHONY : src/hal/sigmadelta_hal.c.s
 
 src/hal/soc_hal.obj: src/hal/soc_hal.c.obj
@@ -987,7 +987,7 @@ src/hal/soc_hal.obj: src/hal/soc_hal.c.obj
 
 # target to build an object file
 src/hal/soc_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/soc_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/soc_hal.c.obj
 .PHONY : src/hal/soc_hal.c.obj
 
 src/hal/soc_hal.i: src/hal/soc_hal.c.i
@@ -996,7 +996,7 @@ src/hal/soc_hal.i: src/hal/soc_hal.c.i
 
 # target to preprocess a source file
 src/hal/soc_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/soc_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/soc_hal.c.i
 .PHONY : src/hal/soc_hal.c.i
 
 src/hal/soc_hal.s: src/hal/soc_hal.c.s
@@ -1005,7 +1005,7 @@ src/hal/soc_hal.s: src/hal/soc_hal.c.s
 
 # target to generate assembly for a file
 src/hal/soc_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/soc_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/soc_hal.c.s
 .PHONY : src/hal/soc_hal.c.s
 
 src/hal/spi_flash_hal.obj: src/hal/spi_flash_hal.c.obj
@@ -1014,7 +1014,7 @@ src/hal/spi_flash_hal.obj: src/hal/spi_flash_hal.c.obj
 
 # target to build an object file
 src/hal/spi_flash_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal.c.obj
 .PHONY : src/hal/spi_flash_hal.c.obj
 
 src/hal/spi_flash_hal.i: src/hal/spi_flash_hal.c.i
@@ -1023,7 +1023,7 @@ src/hal/spi_flash_hal.i: src/hal/spi_flash_hal.c.i
 
 # target to preprocess a source file
 src/hal/spi_flash_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal.c.i
 .PHONY : src/hal/spi_flash_hal.c.i
 
 src/hal/spi_flash_hal.s: src/hal/spi_flash_hal.c.s
@@ -1032,7 +1032,7 @@ src/hal/spi_flash_hal.s: src/hal/spi_flash_hal.c.s
 
 # target to generate assembly for a file
 src/hal/spi_flash_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal.c.s
 .PHONY : src/hal/spi_flash_hal.c.s
 
 src/hal/spi_flash_hal_iram.obj: src/hal/spi_flash_hal_iram.c.obj
@@ -1041,7 +1041,7 @@ src/hal/spi_flash_hal_iram.obj: src/hal/spi_flash_hal_iram.c.obj
 
 # target to build an object file
 src/hal/spi_flash_hal_iram.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal_iram.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal_iram.c.obj
 .PHONY : src/hal/spi_flash_hal_iram.c.obj
 
 src/hal/spi_flash_hal_iram.i: src/hal/spi_flash_hal_iram.c.i
@@ -1050,7 +1050,7 @@ src/hal/spi_flash_hal_iram.i: src/hal/spi_flash_hal_iram.c.i
 
 # target to preprocess a source file
 src/hal/spi_flash_hal_iram.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal_iram.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal_iram.c.i
 .PHONY : src/hal/spi_flash_hal_iram.c.i
 
 src/hal/spi_flash_hal_iram.s: src/hal/spi_flash_hal_iram.c.s
@@ -1059,7 +1059,7 @@ src/hal/spi_flash_hal_iram.s: src/hal/spi_flash_hal_iram.c.s
 
 # target to generate assembly for a file
 src/hal/spi_flash_hal_iram.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal_iram.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_flash_hal_iram.c.s
 .PHONY : src/hal/spi_flash_hal_iram.c.s
 
 src/hal/spi_hal.obj: src/hal/spi_hal.c.obj
@@ -1068,7 +1068,7 @@ src/hal/spi_hal.obj: src/hal/spi_hal.c.obj
 
 # target to build an object file
 src/hal/spi_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal.c.obj
 .PHONY : src/hal/spi_hal.c.obj
 
 src/hal/spi_hal.i: src/hal/spi_hal.c.i
@@ -1077,7 +1077,7 @@ src/hal/spi_hal.i: src/hal/spi_hal.c.i
 
 # target to preprocess a source file
 src/hal/spi_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal.c.i
 .PHONY : src/hal/spi_hal.c.i
 
 src/hal/spi_hal.s: src/hal/spi_hal.c.s
@@ -1086,7 +1086,7 @@ src/hal/spi_hal.s: src/hal/spi_hal.c.s
 
 # target to generate assembly for a file
 src/hal/spi_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal.c.s
 .PHONY : src/hal/spi_hal.c.s
 
 src/hal/spi_hal_iram.obj: src/hal/spi_hal_iram.c.obj
@@ -1095,7 +1095,7 @@ src/hal/spi_hal_iram.obj: src/hal/spi_hal_iram.c.obj
 
 # target to build an object file
 src/hal/spi_hal_iram.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal_iram.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal_iram.c.obj
 .PHONY : src/hal/spi_hal_iram.c.obj
 
 src/hal/spi_hal_iram.i: src/hal/spi_hal_iram.c.i
@@ -1104,7 +1104,7 @@ src/hal/spi_hal_iram.i: src/hal/spi_hal_iram.c.i
 
 # target to preprocess a source file
 src/hal/spi_hal_iram.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal_iram.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal_iram.c.i
 .PHONY : src/hal/spi_hal_iram.c.i
 
 src/hal/spi_hal_iram.s: src/hal/spi_hal_iram.c.s
@@ -1113,7 +1113,7 @@ src/hal/spi_hal_iram.s: src/hal/spi_hal_iram.c.s
 
 # target to generate assembly for a file
 src/hal/spi_hal_iram.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal_iram.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_hal_iram.c.s
 .PHONY : src/hal/spi_hal_iram.c.s
 
 src/hal/spi_slave_hal.obj: src/hal/spi_slave_hal.c.obj
@@ -1122,7 +1122,7 @@ src/hal/spi_slave_hal.obj: src/hal/spi_slave_hal.c.obj
 
 # target to build an object file
 src/hal/spi_slave_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal.c.obj
 .PHONY : src/hal/spi_slave_hal.c.obj
 
 src/hal/spi_slave_hal.i: src/hal/spi_slave_hal.c.i
@@ -1131,7 +1131,7 @@ src/hal/spi_slave_hal.i: src/hal/spi_slave_hal.c.i
 
 # target to preprocess a source file
 src/hal/spi_slave_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal.c.i
 .PHONY : src/hal/spi_slave_hal.c.i
 
 src/hal/spi_slave_hal.s: src/hal/spi_slave_hal.c.s
@@ -1140,7 +1140,7 @@ src/hal/spi_slave_hal.s: src/hal/spi_slave_hal.c.s
 
 # target to generate assembly for a file
 src/hal/spi_slave_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal.c.s
 .PHONY : src/hal/spi_slave_hal.c.s
 
 src/hal/spi_slave_hal_iram.obj: src/hal/spi_slave_hal_iram.c.obj
@@ -1149,7 +1149,7 @@ src/hal/spi_slave_hal_iram.obj: src/hal/spi_slave_hal_iram.c.obj
 
 # target to build an object file
 src/hal/spi_slave_hal_iram.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal_iram.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal_iram.c.obj
 .PHONY : src/hal/spi_slave_hal_iram.c.obj
 
 src/hal/spi_slave_hal_iram.i: src/hal/spi_slave_hal_iram.c.i
@@ -1158,7 +1158,7 @@ src/hal/spi_slave_hal_iram.i: src/hal/spi_slave_hal_iram.c.i
 
 # target to preprocess a source file
 src/hal/spi_slave_hal_iram.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal_iram.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal_iram.c.i
 .PHONY : src/hal/spi_slave_hal_iram.c.i
 
 src/hal/spi_slave_hal_iram.s: src/hal/spi_slave_hal_iram.c.s
@@ -1167,7 +1167,7 @@ src/hal/spi_slave_hal_iram.s: src/hal/spi_slave_hal_iram.c.s
 
 # target to generate assembly for a file
 src/hal/spi_slave_hal_iram.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal_iram.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/spi_slave_hal_iram.c.s
 .PHONY : src/hal/spi_slave_hal_iram.c.s
 
 src/hal/timer_hal.obj: src/hal/timer_hal.c.obj
@@ -1176,7 +1176,7 @@ src/hal/timer_hal.obj: src/hal/timer_hal.c.obj
 
 # target to build an object file
 src/hal/timer_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/timer_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/timer_hal.c.obj
 .PHONY : src/hal/timer_hal.c.obj
 
 src/hal/timer_hal.i: src/hal/timer_hal.c.i
@@ -1185,7 +1185,7 @@ src/hal/timer_hal.i: src/hal/timer_hal.c.i
 
 # target to preprocess a source file
 src/hal/timer_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/timer_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/timer_hal.c.i
 .PHONY : src/hal/timer_hal.c.i
 
 src/hal/timer_hal.s: src/hal/timer_hal.c.s
@@ -1194,7 +1194,7 @@ src/hal/timer_hal.s: src/hal/timer_hal.c.s
 
 # target to generate assembly for a file
 src/hal/timer_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/timer_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/timer_hal.c.s
 .PHONY : src/hal/timer_hal.c.s
 
 src/hal/touch_sensor_hal.obj: src/hal/touch_sensor_hal.c.obj
@@ -1203,7 +1203,7 @@ src/hal/touch_sensor_hal.obj: src/hal/touch_sensor_hal.c.obj
 
 # target to build an object file
 src/hal/touch_sensor_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/touch_sensor_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/touch_sensor_hal.c.obj
 .PHONY : src/hal/touch_sensor_hal.c.obj
 
 src/hal/touch_sensor_hal.i: src/hal/touch_sensor_hal.c.i
@@ -1212,7 +1212,7 @@ src/hal/touch_sensor_hal.i: src/hal/touch_sensor_hal.c.i
 
 # target to preprocess a source file
 src/hal/touch_sensor_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/touch_sensor_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/touch_sensor_hal.c.i
 .PHONY : src/hal/touch_sensor_hal.c.i
 
 src/hal/touch_sensor_hal.s: src/hal/touch_sensor_hal.c.s
@@ -1221,7 +1221,7 @@ src/hal/touch_sensor_hal.s: src/hal/touch_sensor_hal.c.s
 
 # target to generate assembly for a file
 src/hal/touch_sensor_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/touch_sensor_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/touch_sensor_hal.c.s
 .PHONY : src/hal/touch_sensor_hal.c.s
 
 src/hal/twai_hal.obj: src/hal/twai_hal.c.obj
@@ -1230,7 +1230,7 @@ src/hal/twai_hal.obj: src/hal/twai_hal.c.obj
 
 # target to build an object file
 src/hal/twai_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/twai_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/twai_hal.c.obj
 .PHONY : src/hal/twai_hal.c.obj
 
 src/hal/twai_hal.i: src/hal/twai_hal.c.i
@@ -1239,7 +1239,7 @@ src/hal/twai_hal.i: src/hal/twai_hal.c.i
 
 # target to preprocess a source file
 src/hal/twai_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/twai_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/twai_hal.c.i
 .PHONY : src/hal/twai_hal.c.i
 
 src/hal/twai_hal.s: src/hal/twai_hal.c.s
@@ -1248,7 +1248,7 @@ src/hal/twai_hal.s: src/hal/twai_hal.c.s
 
 # target to generate assembly for a file
 src/hal/twai_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/twai_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/twai_hal.c.s
 .PHONY : src/hal/twai_hal.c.s
 
 src/hal/twai_hal_iram.obj: src/hal/twai_hal_iram.c.obj
@@ -1257,7 +1257,7 @@ src/hal/twai_hal_iram.obj: src/hal/twai_hal_iram.c.obj
 
 # target to build an object file
 src/hal/twai_hal_iram.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/twai_hal_iram.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/twai_hal_iram.c.obj
 .PHONY : src/hal/twai_hal_iram.c.obj
 
 src/hal/twai_hal_iram.i: src/hal/twai_hal_iram.c.i
@@ -1266,7 +1266,7 @@ src/hal/twai_hal_iram.i: src/hal/twai_hal_iram.c.i
 
 # target to preprocess a source file
 src/hal/twai_hal_iram.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/twai_hal_iram.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/twai_hal_iram.c.i
 .PHONY : src/hal/twai_hal_iram.c.i
 
 src/hal/twai_hal_iram.s: src/hal/twai_hal_iram.c.s
@@ -1275,7 +1275,7 @@ src/hal/twai_hal_iram.s: src/hal/twai_hal_iram.c.s
 
 # target to generate assembly for a file
 src/hal/twai_hal_iram.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/twai_hal_iram.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/twai_hal_iram.c.s
 .PHONY : src/hal/twai_hal_iram.c.s
 
 src/hal/uart_hal.obj: src/hal/uart_hal.c.obj
@@ -1284,7 +1284,7 @@ src/hal/uart_hal.obj: src/hal/uart_hal.c.obj
 
 # target to build an object file
 src/hal/uart_hal.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/uart_hal.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/uart_hal.c.obj
 .PHONY : src/hal/uart_hal.c.obj
 
 src/hal/uart_hal.i: src/hal/uart_hal.c.i
@@ -1293,7 +1293,7 @@ src/hal/uart_hal.i: src/hal/uart_hal.c.i
 
 # target to preprocess a source file
 src/hal/uart_hal.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/uart_hal.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/uart_hal.c.i
 .PHONY : src/hal/uart_hal.c.i
 
 src/hal/uart_hal.s: src/hal/uart_hal.c.s
@@ -1302,7 +1302,7 @@ src/hal/uart_hal.s: src/hal/uart_hal.c.s
 
 # target to generate assembly for a file
 src/hal/uart_hal.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/uart_hal.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/uart_hal.c.s
 .PHONY : src/hal/uart_hal.c.s
 
 src/hal/uart_hal_iram.obj: src/hal/uart_hal_iram.c.obj
@@ -1311,7 +1311,7 @@ src/hal/uart_hal_iram.obj: src/hal/uart_hal_iram.c.obj
 
 # target to build an object file
 src/hal/uart_hal_iram.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/uart_hal_iram.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/uart_hal_iram.c.obj
 .PHONY : src/hal/uart_hal_iram.c.obj
 
 src/hal/uart_hal_iram.i: src/hal/uart_hal_iram.c.i
@@ -1320,7 +1320,7 @@ src/hal/uart_hal_iram.i: src/hal/uart_hal_iram.c.i
 
 # target to preprocess a source file
 src/hal/uart_hal_iram.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/uart_hal_iram.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/uart_hal_iram.c.i
 .PHONY : src/hal/uart_hal_iram.c.i
 
 src/hal/uart_hal_iram.s: src/hal/uart_hal_iram.c.s
@@ -1329,7 +1329,7 @@ src/hal/uart_hal_iram.s: src/hal/uart_hal_iram.c.s
 
 # target to generate assembly for a file
 src/hal/uart_hal_iram.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/uart_hal_iram.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/uart_hal_iram.c.s
 .PHONY : src/hal/uart_hal_iram.c.s
 
 src/hal/wdt_hal_iram.obj: src/hal/wdt_hal_iram.c.obj
@@ -1338,7 +1338,7 @@ src/hal/wdt_hal_iram.obj: src/hal/wdt_hal_iram.c.obj
 
 # target to build an object file
 src/hal/wdt_hal_iram.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/wdt_hal_iram.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/wdt_hal_iram.c.obj
 .PHONY : src/hal/wdt_hal_iram.c.obj
 
 src/hal/wdt_hal_iram.i: src/hal/wdt_hal_iram.c.i
@@ -1347,7 +1347,7 @@ src/hal/wdt_hal_iram.i: src/hal/wdt_hal_iram.c.i
 
 # target to preprocess a source file
 src/hal/wdt_hal_iram.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/wdt_hal_iram.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/wdt_hal_iram.c.i
 .PHONY : src/hal/wdt_hal_iram.c.i
 
 src/hal/wdt_hal_iram.s: src/hal/wdt_hal_iram.c.s
@@ -1356,7 +1356,7 @@ src/hal/wdt_hal_iram.s: src/hal/wdt_hal_iram.c.s
 
 # target to generate assembly for a file
 src/hal/wdt_hal_iram.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/wdt_hal_iram.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/hal/wdt_hal_iram.c.s
 .PHONY : src/hal/wdt_hal_iram.c.s
 
 src/lldesc.obj: src/lldesc.c.obj
@@ -1365,7 +1365,7 @@ src/lldesc.obj: src/lldesc.c.obj
 
 # target to build an object file
 src/lldesc.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/lldesc.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/lldesc.c.obj
 .PHONY : src/lldesc.c.obj
 
 src/lldesc.i: src/lldesc.c.i
@@ -1374,7 +1374,7 @@ src/lldesc.i: src/lldesc.c.i
 
 # target to preprocess a source file
 src/lldesc.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/lldesc.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/lldesc.c.i
 .PHONY : src/lldesc.c.i
 
 src/lldesc.s: src/lldesc.c.s
@@ -1383,7 +1383,7 @@ src/lldesc.s: src/lldesc.c.s
 
 # target to generate assembly for a file
 src/lldesc.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/lldesc.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/lldesc.c.s
 .PHONY : src/lldesc.c.s
 
 src/memory_layout_utils.obj: src/memory_layout_utils.c.obj
@@ -1392,7 +1392,7 @@ src/memory_layout_utils.obj: src/memory_layout_utils.c.obj
 
 # target to build an object file
 src/memory_layout_utils.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/memory_layout_utils.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/memory_layout_utils.c.obj
 .PHONY : src/memory_layout_utils.c.obj
 
 src/memory_layout_utils.i: src/memory_layout_utils.c.i
@@ -1401,7 +1401,7 @@ src/memory_layout_utils.i: src/memory_layout_utils.c.i
 
 # target to preprocess a source file
 src/memory_layout_utils.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/memory_layout_utils.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/memory_layout_utils.c.i
 .PHONY : src/memory_layout_utils.c.i
 
 src/memory_layout_utils.s: src/memory_layout_utils.c.s
@@ -1410,7 +1410,7 @@ src/memory_layout_utils.s: src/memory_layout_utils.c.s
 
 # target to generate assembly for a file
 src/memory_layout_utils.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/memory_layout_utils.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/memory_layout_utils.c.s
 .PHONY : src/memory_layout_utils.c.s
 
 src/regi2c_ctrl.obj: src/regi2c_ctrl.c.obj
@@ -1419,7 +1419,7 @@ src/regi2c_ctrl.obj: src/regi2c_ctrl.c.obj
 
 # target to build an object file
 src/regi2c_ctrl.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/regi2c_ctrl.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/regi2c_ctrl.c.obj
 .PHONY : src/regi2c_ctrl.c.obj
 
 src/regi2c_ctrl.i: src/regi2c_ctrl.c.i
@@ -1428,7 +1428,7 @@ src/regi2c_ctrl.i: src/regi2c_ctrl.c.i
 
 # target to preprocess a source file
 src/regi2c_ctrl.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/regi2c_ctrl.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/regi2c_ctrl.c.i
 .PHONY : src/regi2c_ctrl.c.i
 
 src/regi2c_ctrl.s: src/regi2c_ctrl.c.s
@@ -1437,7 +1437,7 @@ src/regi2c_ctrl.s: src/regi2c_ctrl.c.s
 
 # target to generate assembly for a file
 src/regi2c_ctrl.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/regi2c_ctrl.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/regi2c_ctrl.c.s
 .PHONY : src/regi2c_ctrl.c.s
 
 src/soc_include_legacy_warn.obj: src/soc_include_legacy_warn.c.obj
@@ -1446,7 +1446,7 @@ src/soc_include_legacy_warn.obj: src/soc_include_legacy_warn.c.obj
 
 # target to build an object file
 src/soc_include_legacy_warn.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/soc_include_legacy_warn.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/soc_include_legacy_warn.c.obj
 .PHONY : src/soc_include_legacy_warn.c.obj
 
 src/soc_include_legacy_warn.i: src/soc_include_legacy_warn.c.i
@@ -1455,7 +1455,7 @@ src/soc_include_legacy_warn.i: src/soc_include_legacy_warn.c.i
 
 # target to preprocess a source file
 src/soc_include_legacy_warn.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/soc_include_legacy_warn.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/soc_include_legacy_warn.c.i
 .PHONY : src/soc_include_legacy_warn.c.i
 
 src/soc_include_legacy_warn.s: src/soc_include_legacy_warn.c.s
@@ -1464,7 +1464,7 @@ src/soc_include_legacy_warn.s: src/soc_include_legacy_warn.c.s
 
 # target to generate assembly for a file
 src/soc_include_legacy_warn.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/soc_include_legacy_warn.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/src/soc_include_legacy_warn.c.s
 .PHONY : src/soc_include_legacy_warn.c.s
 
 # Help Target
@@ -1635,6 +1635,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

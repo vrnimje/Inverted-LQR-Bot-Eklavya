@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mahesh/Inverse_Pendulum/stepper_control
+CMAKE_SOURCE_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/esp_common/CMakeFiles/progress.marks
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_common/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles 0
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/esp_common/CMakeFiles/progress.marks
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_common/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_common/clean
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_common/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_common/preinstall
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_common/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_common/preinstall
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_common/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/rule:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/rule
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/rule
 .PHONY : esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ __idf_esp_common: esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/rule
 
 # fast build rule for target.
 __idf_esp_common/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build
 .PHONY : __idf_esp_common/fast
 
 src/brownout.obj: src/brownout.c.obj
@@ -177,7 +177,7 @@ src/brownout.obj: src/brownout.c.obj
 
 # target to build an object file
 src/brownout.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/brownout.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/brownout.c.obj
 .PHONY : src/brownout.c.obj
 
 src/brownout.i: src/brownout.c.i
@@ -186,7 +186,7 @@ src/brownout.i: src/brownout.c.i
 
 # target to preprocess a source file
 src/brownout.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/brownout.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/brownout.c.i
 .PHONY : src/brownout.c.i
 
 src/brownout.s: src/brownout.c.s
@@ -195,7 +195,7 @@ src/brownout.s: src/brownout.c.s
 
 # target to generate assembly for a file
 src/brownout.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/brownout.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/brownout.c.s
 .PHONY : src/brownout.c.s
 
 src/dbg_stubs.obj: src/dbg_stubs.c.obj
@@ -204,7 +204,7 @@ src/dbg_stubs.obj: src/dbg_stubs.c.obj
 
 # target to build an object file
 src/dbg_stubs.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/dbg_stubs.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/dbg_stubs.c.obj
 .PHONY : src/dbg_stubs.c.obj
 
 src/dbg_stubs.i: src/dbg_stubs.c.i
@@ -213,7 +213,7 @@ src/dbg_stubs.i: src/dbg_stubs.c.i
 
 # target to preprocess a source file
 src/dbg_stubs.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/dbg_stubs.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/dbg_stubs.c.i
 .PHONY : src/dbg_stubs.c.i
 
 src/dbg_stubs.s: src/dbg_stubs.c.s
@@ -222,7 +222,7 @@ src/dbg_stubs.s: src/dbg_stubs.c.s
 
 # target to generate assembly for a file
 src/dbg_stubs.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/dbg_stubs.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/dbg_stubs.c.s
 .PHONY : src/dbg_stubs.c.s
 
 src/esp_err.obj: src/esp_err.c.obj
@@ -231,7 +231,7 @@ src/esp_err.obj: src/esp_err.c.obj
 
 # target to build an object file
 src/esp_err.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err.c.obj
 .PHONY : src/esp_err.c.obj
 
 src/esp_err.i: src/esp_err.c.i
@@ -240,7 +240,7 @@ src/esp_err.i: src/esp_err.c.i
 
 # target to preprocess a source file
 src/esp_err.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err.c.i
 .PHONY : src/esp_err.c.i
 
 src/esp_err.s: src/esp_err.c.s
@@ -249,7 +249,7 @@ src/esp_err.s: src/esp_err.c.s
 
 # target to generate assembly for a file
 src/esp_err.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err.c.s
 .PHONY : src/esp_err.c.s
 
 src/esp_err_to_name.obj: src/esp_err_to_name.c.obj
@@ -258,7 +258,7 @@ src/esp_err_to_name.obj: src/esp_err_to_name.c.obj
 
 # target to build an object file
 src/esp_err_to_name.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj
 .PHONY : src/esp_err_to_name.c.obj
 
 src/esp_err_to_name.i: src/esp_err_to_name.c.i
@@ -267,7 +267,7 @@ src/esp_err_to_name.i: src/esp_err_to_name.c.i
 
 # target to preprocess a source file
 src/esp_err_to_name.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.i
 .PHONY : src/esp_err_to_name.c.i
 
 src/esp_err_to_name.s: src/esp_err_to_name.c.s
@@ -276,7 +276,7 @@ src/esp_err_to_name.s: src/esp_err_to_name.c.s
 
 # target to generate assembly for a file
 src/esp_err_to_name.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.s
 .PHONY : src/esp_err_to_name.c.s
 
 src/freertos_hooks.obj: src/freertos_hooks.c.obj
@@ -285,7 +285,7 @@ src/freertos_hooks.obj: src/freertos_hooks.c.obj
 
 # target to build an object file
 src/freertos_hooks.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/freertos_hooks.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/freertos_hooks.c.obj
 .PHONY : src/freertos_hooks.c.obj
 
 src/freertos_hooks.i: src/freertos_hooks.c.i
@@ -294,7 +294,7 @@ src/freertos_hooks.i: src/freertos_hooks.c.i
 
 # target to preprocess a source file
 src/freertos_hooks.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/freertos_hooks.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/freertos_hooks.c.i
 .PHONY : src/freertos_hooks.c.i
 
 src/freertos_hooks.s: src/freertos_hooks.c.s
@@ -303,7 +303,7 @@ src/freertos_hooks.s: src/freertos_hooks.c.s
 
 # target to generate assembly for a file
 src/freertos_hooks.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/freertos_hooks.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/freertos_hooks.c.s
 .PHONY : src/freertos_hooks.c.s
 
 src/int_wdt.obj: src/int_wdt.c.obj
@@ -312,7 +312,7 @@ src/int_wdt.obj: src/int_wdt.c.obj
 
 # target to build an object file
 src/int_wdt.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/int_wdt.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/int_wdt.c.obj
 .PHONY : src/int_wdt.c.obj
 
 src/int_wdt.i: src/int_wdt.c.i
@@ -321,7 +321,7 @@ src/int_wdt.i: src/int_wdt.c.i
 
 # target to preprocess a source file
 src/int_wdt.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/int_wdt.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/int_wdt.c.i
 .PHONY : src/int_wdt.c.i
 
 src/int_wdt.s: src/int_wdt.c.s
@@ -330,7 +330,7 @@ src/int_wdt.s: src/int_wdt.c.s
 
 # target to generate assembly for a file
 src/int_wdt.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/int_wdt.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/int_wdt.c.s
 .PHONY : src/int_wdt.c.s
 
 src/mac_addr.obj: src/mac_addr.c.obj
@@ -339,7 +339,7 @@ src/mac_addr.obj: src/mac_addr.c.obj
 
 # target to build an object file
 src/mac_addr.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/mac_addr.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/mac_addr.c.obj
 .PHONY : src/mac_addr.c.obj
 
 src/mac_addr.i: src/mac_addr.c.i
@@ -348,7 +348,7 @@ src/mac_addr.i: src/mac_addr.c.i
 
 # target to preprocess a source file
 src/mac_addr.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/mac_addr.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/mac_addr.c.i
 .PHONY : src/mac_addr.c.i
 
 src/mac_addr.s: src/mac_addr.c.s
@@ -357,7 +357,7 @@ src/mac_addr.s: src/mac_addr.c.s
 
 # target to generate assembly for a file
 src/mac_addr.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/mac_addr.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/mac_addr.c.s
 .PHONY : src/mac_addr.c.s
 
 src/pm_locks.obj: src/pm_locks.c.obj
@@ -366,7 +366,7 @@ src/pm_locks.obj: src/pm_locks.c.obj
 
 # target to build an object file
 src/pm_locks.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/pm_locks.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/pm_locks.c.obj
 .PHONY : src/pm_locks.c.obj
 
 src/pm_locks.i: src/pm_locks.c.i
@@ -375,7 +375,7 @@ src/pm_locks.i: src/pm_locks.c.i
 
 # target to preprocess a source file
 src/pm_locks.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/pm_locks.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/pm_locks.c.i
 .PHONY : src/pm_locks.c.i
 
 src/pm_locks.s: src/pm_locks.c.s
@@ -384,7 +384,7 @@ src/pm_locks.s: src/pm_locks.c.s
 
 # target to generate assembly for a file
 src/pm_locks.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/pm_locks.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/pm_locks.c.s
 .PHONY : src/pm_locks.c.s
 
 src/stack_check.obj: src/stack_check.c.obj
@@ -393,7 +393,7 @@ src/stack_check.obj: src/stack_check.c.obj
 
 # target to build an object file
 src/stack_check.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/stack_check.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/stack_check.c.obj
 .PHONY : src/stack_check.c.obj
 
 src/stack_check.i: src/stack_check.c.i
@@ -402,7 +402,7 @@ src/stack_check.i: src/stack_check.c.i
 
 # target to preprocess a source file
 src/stack_check.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/stack_check.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/stack_check.c.i
 .PHONY : src/stack_check.c.i
 
 src/stack_check.s: src/stack_check.c.s
@@ -411,7 +411,7 @@ src/stack_check.s: src/stack_check.c.s
 
 # target to generate assembly for a file
 src/stack_check.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/stack_check.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/stack_check.c.s
 .PHONY : src/stack_check.c.s
 
 src/task_wdt.obj: src/task_wdt.c.obj
@@ -420,7 +420,7 @@ src/task_wdt.obj: src/task_wdt.c.obj
 
 # target to build an object file
 src/task_wdt.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/task_wdt.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/task_wdt.c.obj
 .PHONY : src/task_wdt.c.obj
 
 src/task_wdt.i: src/task_wdt.c.i
@@ -429,7 +429,7 @@ src/task_wdt.i: src/task_wdt.c.i
 
 # target to preprocess a source file
 src/task_wdt.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/task_wdt.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/task_wdt.c.i
 .PHONY : src/task_wdt.c.i
 
 src/task_wdt.s: src/task_wdt.c.s
@@ -438,7 +438,7 @@ src/task_wdt.s: src/task_wdt.c.s
 
 # target to generate assembly for a file
 src/task_wdt.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/task_wdt.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(MAKE) -f esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/build.make esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/task_wdt.c.s
 .PHONY : src/task_wdt.c.s
 
 # Help Target
@@ -495,6 +495,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/mahesh/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader
 
 # Utility rule file for monitor.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloade
 include CMakeFiles/monitor.dir/progress.make
 
 CMakeFiles/monitor:
-	cd /home/mahesh/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH="/home/mahesh/esp/esp-idf" -D IDF_MONITOR="/home/mahesh/esp/esp-idf/tools/idf_monitor.py" -D ELF_FILE="/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/bootloader.elf" -D WORKING_DIRECTORY="/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader" -P run_idf_monitor.cmake
+	cd /home/mahesh/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH="/home/mahesh/esp/esp-idf" -D IDF_MONITOR="/home/mahesh/esp/esp-idf/tools/idf_monitor.py" -D ELF_FILE="/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/bootloader.elf" -D WORKING_DIRECTORY="/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader" -P run_idf_monitor.cmake
 
 monitor: CMakeFiles/monitor
 monitor: CMakeFiles/monitor.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/monitor.dir/clean:
 .PHONY : CMakeFiles/monitor.dir/clean
 
 CMakeFiles/monitor.dir/depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles/monitor.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles/monitor.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/monitor.dir/depend
 

@@ -6,19 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/mahesh/Inverse_Pendulum/stepper_control/main/main.c
+/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/main/main.c
 stdio.h
 -
 freertos/FreeRTOS.h
-/home/mahesh/Inverse_Pendulum/stepper_control/main/freertos/FreeRTOS.h
+/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/main/freertos/FreeRTOS.h
 freertos/task.h
-/home/mahesh/Inverse_Pendulum/stepper_control/main/freertos/task.h
+/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/main/freertos/task.h
 driver/ledc.h
-/home/mahesh/Inverse_Pendulum/stepper_control/main/driver/ledc.h
+/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/main/driver/ledc.h
 esp_err.h
-/home/mahesh/Inverse_Pendulum/stepper_control/main/esp_err.h
+/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/main/esp_err.h
 esp_log.h
-/home/mahesh/Inverse_Pendulum/stepper_control/main/esp_log.h
+/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/main/esp_log.h
+math.h
+/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/main/math.h
 
 /home/mahesh/esp/esp-idf/components/driver/include/driver/gpio.h
 sdkconfig.h

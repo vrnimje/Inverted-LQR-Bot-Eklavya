@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/mahesh/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader
 
 # Include any dependencies generated for this target.
 include CMakeFiles/bootloader.elf.dir/depend.make
@@ -58,21 +58,21 @@ include CMakeFiles/bootloader.elf.dir/progress.make
 include CMakeFiles/bootloader.elf.dir/flags.make
 
 project_elf_src.c:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating project_elf_src.c"
-	/usr/bin/cmake -E touch /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/project_elf_src.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating project_elf_src.c"
+	/usr/bin/cmake -E touch /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/project_elf_src.c
 
 CMakeFiles/bootloader.elf.dir/project_elf_src.c.obj: CMakeFiles/bootloader.elf.dir/flags.make
 CMakeFiles/bootloader.elf.dir/project_elf_src.c.obj: project_elf_src.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/bootloader.elf.dir/project_elf_src.c.obj"
-	/home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bootloader.elf.dir/project_elf_src.c.obj   -c /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/project_elf_src.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/bootloader.elf.dir/project_elf_src.c.obj"
+	/home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bootloader.elf.dir/project_elf_src.c.obj   -c /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/project_elf_src.c
 
 CMakeFiles/bootloader.elf.dir/project_elf_src.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bootloader.elf.dir/project_elf_src.c.i"
-	/home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/project_elf_src.c > CMakeFiles/bootloader.elf.dir/project_elf_src.c.i
+	/home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/project_elf_src.c > CMakeFiles/bootloader.elf.dir/project_elf_src.c.i
 
 CMakeFiles/bootloader.elf.dir/project_elf_src.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bootloader.elf.dir/project_elf_src.c.s"
-	/home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/project_elf_src.c -o CMakeFiles/bootloader.elf.dir/project_elf_src.c.s
+	/home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/project_elf_src.c -o CMakeFiles/bootloader.elf.dir/project_elf_src.c.s
 
 # Object files for target bootloader.elf
 bootloader_elf_OBJECTS = \
@@ -114,7 +114,7 @@ bootloader.elf: /home/mahesh/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.l
 bootloader.elf: /home/mahesh/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld
 bootloader.elf: /home/mahesh/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
 bootloader.elf: CMakeFiles/bootloader.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable bootloader.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable bootloader.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bootloader.elf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +127,6 @@ CMakeFiles/bootloader.elf.dir/clean:
 .PHONY : CMakeFiles/bootloader.elf.dir/clean
 
 CMakeFiles/bootloader.elf.dir/depend: project_elf_src.c
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles/bootloader.elf.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles/bootloader.elf.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/bootloader.elf.dir/depend
 

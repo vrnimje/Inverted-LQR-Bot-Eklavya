@@ -1,4 +1,4 @@
-# Install script for directory: /home/mahesh/Inverse_Pendulum/stepper_control/main
+# Install script for directory: /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

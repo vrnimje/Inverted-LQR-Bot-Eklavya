@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/mahesh/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader
 
 # Include any dependencies generated for this target.
 include esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/depend.make
@@ -59,185 +59,185 @@ include esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/flags.make
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/adc_periph.c.obj: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/flags.make
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/adc_periph.c.obj: /home/mahesh/esp/esp-idf/components/soc/soc/esp32/adc_periph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/adc_periph.c.obj"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/adc_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/adc_periph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/adc_periph.c.obj"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/adc_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/adc_periph.c
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/adc_periph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/soc_esp32.dir/adc_periph.c.i"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/adc_periph.c > CMakeFiles/soc_esp32.dir/adc_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/adc_periph.c > CMakeFiles/soc_esp32.dir/adc_periph.c.i
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/adc_periph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/soc_esp32.dir/adc_periph.c.s"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/adc_periph.c -o CMakeFiles/soc_esp32.dir/adc_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/adc_periph.c -o CMakeFiles/soc_esp32.dir/adc_periph.c.s
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/dac_periph.c.obj: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/flags.make
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/dac_periph.c.obj: /home/mahesh/esp/esp-idf/components/soc/soc/esp32/dac_periph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/dac_periph.c.obj"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/dac_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/dac_periph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/dac_periph.c.obj"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/dac_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/dac_periph.c
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/dac_periph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/soc_esp32.dir/dac_periph.c.i"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/dac_periph.c > CMakeFiles/soc_esp32.dir/dac_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/dac_periph.c > CMakeFiles/soc_esp32.dir/dac_periph.c.i
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/dac_periph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/soc_esp32.dir/dac_periph.c.s"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/dac_periph.c -o CMakeFiles/soc_esp32.dir/dac_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/dac_periph.c -o CMakeFiles/soc_esp32.dir/dac_periph.c.s
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/gpio_periph.c.obj: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/flags.make
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/gpio_periph.c.obj: /home/mahesh/esp/esp-idf/components/soc/soc/esp32/gpio_periph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/gpio_periph.c.obj"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/gpio_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/gpio_periph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/gpio_periph.c.obj"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/gpio_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/gpio_periph.c
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/gpio_periph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/soc_esp32.dir/gpio_periph.c.i"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/gpio_periph.c > CMakeFiles/soc_esp32.dir/gpio_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/gpio_periph.c > CMakeFiles/soc_esp32.dir/gpio_periph.c.i
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/gpio_periph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/soc_esp32.dir/gpio_periph.c.s"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/gpio_periph.c -o CMakeFiles/soc_esp32.dir/gpio_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/gpio_periph.c -o CMakeFiles/soc_esp32.dir/gpio_periph.c.s
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_io_periph.c.obj: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/flags.make
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_io_periph.c.obj: /home/mahesh/esp/esp-idf/components/soc/soc/esp32/rtc_io_periph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_io_periph.c.obj"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/rtc_io_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/rtc_io_periph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_io_periph.c.obj"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/rtc_io_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/rtc_io_periph.c
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_io_periph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/soc_esp32.dir/rtc_io_periph.c.i"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/rtc_io_periph.c > CMakeFiles/soc_esp32.dir/rtc_io_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/rtc_io_periph.c > CMakeFiles/soc_esp32.dir/rtc_io_periph.c.i
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_io_periph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/soc_esp32.dir/rtc_io_periph.c.s"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/rtc_io_periph.c -o CMakeFiles/soc_esp32.dir/rtc_io_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/rtc_io_periph.c -o CMakeFiles/soc_esp32.dir/rtc_io_periph.c.s
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_periph.c.obj: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/flags.make
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_periph.c.obj: /home/mahesh/esp/esp-idf/components/soc/soc/esp32/rtc_periph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_periph.c.obj"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/rtc_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/rtc_periph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_periph.c.obj"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/rtc_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/rtc_periph.c
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_periph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/soc_esp32.dir/rtc_periph.c.i"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/rtc_periph.c > CMakeFiles/soc_esp32.dir/rtc_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/rtc_periph.c > CMakeFiles/soc_esp32.dir/rtc_periph.c.i
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/rtc_periph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/soc_esp32.dir/rtc_periph.c.s"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/rtc_periph.c -o CMakeFiles/soc_esp32.dir/rtc_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/rtc_periph.c -o CMakeFiles/soc_esp32.dir/rtc_periph.c.s
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.obj: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/flags.make
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.obj: /home/mahesh/esp/esp-idf/components/soc/soc/esp32/sdio_slave_periph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.obj"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/sdio_slave_periph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.obj"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/sdio_slave_periph.c
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.i"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/sdio_slave_periph.c > CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/sdio_slave_periph.c > CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.i
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.s"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/sdio_slave_periph.c -o CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/sdio_slave_periph.c -o CMakeFiles/soc_esp32.dir/sdio_slave_periph.c.s
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdmmc_periph.c.obj: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/flags.make
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdmmc_periph.c.obj: /home/mahesh/esp/esp-idf/components/soc/soc/esp32/sdmmc_periph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdmmc_periph.c.obj"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/sdmmc_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/sdmmc_periph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdmmc_periph.c.obj"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/sdmmc_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/sdmmc_periph.c
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdmmc_periph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/soc_esp32.dir/sdmmc_periph.c.i"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/sdmmc_periph.c > CMakeFiles/soc_esp32.dir/sdmmc_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/sdmmc_periph.c > CMakeFiles/soc_esp32.dir/sdmmc_periph.c.i
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/sdmmc_periph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/soc_esp32.dir/sdmmc_periph.c.s"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/sdmmc_periph.c -o CMakeFiles/soc_esp32.dir/sdmmc_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/sdmmc_periph.c -o CMakeFiles/soc_esp32.dir/sdmmc_periph.c.s
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/interrupts.c.obj: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/flags.make
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/interrupts.c.obj: /home/mahesh/esp/esp-idf/components/soc/soc/esp32/interrupts.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/interrupts.c.obj"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/interrupts.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/interrupts.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/interrupts.c.obj"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/interrupts.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/interrupts.c
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/interrupts.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/soc_esp32.dir/interrupts.c.i"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/interrupts.c > CMakeFiles/soc_esp32.dir/interrupts.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/interrupts.c > CMakeFiles/soc_esp32.dir/interrupts.c.i
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/interrupts.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/soc_esp32.dir/interrupts.c.s"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/interrupts.c -o CMakeFiles/soc_esp32.dir/interrupts.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/interrupts.c -o CMakeFiles/soc_esp32.dir/interrupts.c.s
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/spi_periph.c.obj: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/flags.make
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/spi_periph.c.obj: /home/mahesh/esp/esp-idf/components/soc/soc/esp32/spi_periph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/spi_periph.c.obj"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/spi_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/spi_periph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/spi_periph.c.obj"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/spi_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/spi_periph.c
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/spi_periph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/soc_esp32.dir/spi_periph.c.i"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/spi_periph.c > CMakeFiles/soc_esp32.dir/spi_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/spi_periph.c > CMakeFiles/soc_esp32.dir/spi_periph.c.i
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/spi_periph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/soc_esp32.dir/spi_periph.c.s"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/spi_periph.c -o CMakeFiles/soc_esp32.dir/spi_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/spi_periph.c -o CMakeFiles/soc_esp32.dir/spi_periph.c.s
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/ledc_periph.c.obj: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/flags.make
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/ledc_periph.c.obj: /home/mahesh/esp/esp-idf/components/soc/soc/esp32/ledc_periph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/ledc_periph.c.obj"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/ledc_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/ledc_periph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/ledc_periph.c.obj"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/ledc_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/ledc_periph.c
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/ledc_periph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/soc_esp32.dir/ledc_periph.c.i"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/ledc_periph.c > CMakeFiles/soc_esp32.dir/ledc_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/ledc_periph.c > CMakeFiles/soc_esp32.dir/ledc_periph.c.i
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/ledc_periph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/soc_esp32.dir/ledc_periph.c.s"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/ledc_periph.c -o CMakeFiles/soc_esp32.dir/ledc_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/ledc_periph.c -o CMakeFiles/soc_esp32.dir/ledc_periph.c.s
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2s_periph.c.obj: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/flags.make
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2s_periph.c.obj: /home/mahesh/esp/esp-idf/components/soc/soc/esp32/i2s_periph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2s_periph.c.obj"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/i2s_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/i2s_periph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2s_periph.c.obj"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/i2s_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/i2s_periph.c
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2s_periph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/soc_esp32.dir/i2s_periph.c.i"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/i2s_periph.c > CMakeFiles/soc_esp32.dir/i2s_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/i2s_periph.c > CMakeFiles/soc_esp32.dir/i2s_periph.c.i
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2s_periph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/soc_esp32.dir/i2s_periph.c.s"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/i2s_periph.c -o CMakeFiles/soc_esp32.dir/i2s_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/i2s_periph.c -o CMakeFiles/soc_esp32.dir/i2s_periph.c.s
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2c_periph.c.obj: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/flags.make
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2c_periph.c.obj: /home/mahesh/esp/esp-idf/components/soc/soc/esp32/i2c_periph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2c_periph.c.obj"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/i2c_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/i2c_periph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2c_periph.c.obj"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/i2c_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/i2c_periph.c
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2c_periph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/soc_esp32.dir/i2c_periph.c.i"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/i2c_periph.c > CMakeFiles/soc_esp32.dir/i2c_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/i2c_periph.c > CMakeFiles/soc_esp32.dir/i2c_periph.c.i
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/i2c_periph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/soc_esp32.dir/i2c_periph.c.s"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/i2c_periph.c -o CMakeFiles/soc_esp32.dir/i2c_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/i2c_periph.c -o CMakeFiles/soc_esp32.dir/i2c_periph.c.s
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/uart_periph.c.obj: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/flags.make
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/uart_periph.c.obj: /home/mahesh/esp/esp-idf/components/soc/soc/esp32/uart_periph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/uart_periph.c.obj"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/uart_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/uart_periph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/uart_periph.c.obj"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/uart_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/uart_periph.c
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/uart_periph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/soc_esp32.dir/uart_periph.c.i"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/uart_periph.c > CMakeFiles/soc_esp32.dir/uart_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/uart_periph.c > CMakeFiles/soc_esp32.dir/uart_periph.c.i
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/uart_periph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/soc_esp32.dir/uart_periph.c.s"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/uart_periph.c -o CMakeFiles/soc_esp32.dir/uart_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/uart_periph.c -o CMakeFiles/soc_esp32.dir/uart_periph.c.s
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.obj: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/flags.make
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.obj: /home/mahesh/esp/esp-idf/components/soc/soc/esp32/touch_sensor_periph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.obj"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/touch_sensor_periph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.obj"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.obj   -c /home/mahesh/esp/esp-idf/components/soc/soc/esp32/touch_sensor_periph.c
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.i"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/touch_sensor_periph.c > CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mahesh/esp/esp-idf/components/soc/soc/esp32/touch_sensor_periph.c > CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.i
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.s"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/touch_sensor_periph.c -o CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mahesh/esp/esp-idf/components/soc/soc/esp32/touch_sensor_periph.c -o CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.s
 
 # Object files for target soc_esp32
 soc_esp32_OBJECTS = \
@@ -275,9 +275,9 @@ esp-idf/soc/soc/esp32/libsoc_esp32.a: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32
 esp-idf/soc/soc/esp32/libsoc_esp32.a: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/touch_sensor_periph.c.obj
 esp-idf/soc/soc/esp32/libsoc_esp32.a: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build.make
 esp-idf/soc/soc/esp32/libsoc_esp32.a: esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking C static library libsoc_esp32.a"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && $(CMAKE_COMMAND) -P CMakeFiles/soc_esp32.dir/cmake_clean_target.cmake
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/soc_esp32.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking C static library libsoc_esp32.a"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && $(CMAKE_COMMAND) -P CMakeFiles/soc_esp32.dir/cmake_clean_target.cmake
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/soc_esp32.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build: esp-idf/soc/soc/esp32/libsoc_esp32.a
@@ -285,10 +285,10 @@ esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build: esp-idf/soc/soc/esp32/libs
 .PHONY : esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/build
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/clean:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && $(CMAKE_COMMAND) -P CMakeFiles/soc_esp32.dir/cmake_clean.cmake
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 && $(CMAKE_COMMAND) -P CMakeFiles/soc_esp32.dir/cmake_clean.cmake
 .PHONY : esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/clean
 
 esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/esp/esp-idf/components/soc/soc/esp32 /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/esp/esp-idf/components/soc/soc/esp32 /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32 /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/soc/soc/esp32/CMakeFiles/soc_esp32.dir/depend
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mahesh/Inverse_Pendulum/stepper_control
+CMAKE_SOURCE_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build
 
 # Utility rule file for __ldgen_output_esp32.project.ld.
 
@@ -143,9 +143,9 @@ esp-idf/esp32/ld/esp32.project.ld: esp-idf/ulp/libulp.a
 esp-idf/esp32/ld/esp32.project.ld: esp-idf/unity/libunity.a
 esp-idf/esp32/ld/esp32.project.ld: esp-idf/wifi_provisioning/libwifi_provisioning.a
 esp-idf/esp32/ld/esp32.project.ld: esp-idf/main/libmain.a
-esp-idf/esp32/ld/esp32.project.ld: /home/mahesh/Inverse_Pendulum/stepper_control/sdkconfig
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ld/esp32.project.ld"
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/esp32 && /home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/ldgen/ldgen.py --config /home/mahesh/Inverse_Pendulum/stepper_control/sdkconfig --fragments /home/mahesh/esp/esp-idf/components/xtensa/linker.lf	/home/mahesh/esp/esp-idf/components/spi_flash/linker.lf	/home/mahesh/esp/esp-idf/components/esp_system/linker.lf	/home/mahesh/esp/esp-idf/components/soc/linker.lf	/home/mahesh/esp/esp-idf/components/esp_event/linker.lf	/home/mahesh/esp/esp-idf/components/esp_wifi/linker.lf	/home/mahesh/esp/esp-idf/components/lwip/linker.lf	/home/mahesh/esp/esp-idf/components/log/linker.lf	/home/mahesh/esp/esp-idf/components/heap/linker.lf	/home/mahesh/esp/esp-idf/components/esp_ringbuf/linker.lf	/home/mahesh/esp/esp-idf/components/driver/linker.lf	/home/mahesh/esp/esp-idf/components/espcoredump/linker.lf	/home/mahesh/esp/esp-idf/components/esp32/linker.lf	/home/mahesh/esp/esp-idf/components/esp32/ld/esp32_fragments.lf	/home/mahesh/esp/esp-idf/components/esp_common/linker.lf	/home/mahesh/esp/esp-idf/components/freertos/linker.lf	/home/mahesh/esp/esp-idf/components/newlib/newlib.lf	/home/mahesh/esp/esp-idf/components/app_trace/linker.lf	/home/mahesh/esp/esp-idf/components/esp_gdbstub/linker.lf --input /home/mahesh/esp/esp-idf/components/esp32/ld/esp32.project.ld.in --output /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/esp32/ld/esp32.project.ld --kconfig /home/mahesh/esp/esp-idf/Kconfig --env-file /home/mahesh/Inverse_Pendulum/stepper_control/build/config.env --libraries-file /home/mahesh/Inverse_Pendulum/stepper_control/build/ldgen_libraries --objdump /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump
+esp-idf/esp32/ld/esp32.project.ld: /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/sdkconfig
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ld/esp32.project.ld"
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/esp32 && /home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/ldgen/ldgen.py --config /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/sdkconfig --fragments /home/mahesh/esp/esp-idf/components/xtensa/linker.lf	/home/mahesh/esp/esp-idf/components/spi_flash/linker.lf	/home/mahesh/esp/esp-idf/components/esp_system/linker.lf	/home/mahesh/esp/esp-idf/components/soc/linker.lf	/home/mahesh/esp/esp-idf/components/esp_event/linker.lf	/home/mahesh/esp/esp-idf/components/esp_wifi/linker.lf	/home/mahesh/esp/esp-idf/components/lwip/linker.lf	/home/mahesh/esp/esp-idf/components/log/linker.lf	/home/mahesh/esp/esp-idf/components/heap/linker.lf	/home/mahesh/esp/esp-idf/components/esp_ringbuf/linker.lf	/home/mahesh/esp/esp-idf/components/driver/linker.lf	/home/mahesh/esp/esp-idf/components/espcoredump/linker.lf	/home/mahesh/esp/esp-idf/components/esp32/linker.lf	/home/mahesh/esp/esp-idf/components/esp32/ld/esp32_fragments.lf	/home/mahesh/esp/esp-idf/components/esp_common/linker.lf	/home/mahesh/esp/esp-idf/components/freertos/linker.lf	/home/mahesh/esp/esp-idf/components/newlib/newlib.lf	/home/mahesh/esp/esp-idf/components/app_trace/linker.lf	/home/mahesh/esp/esp-idf/components/esp_gdbstub/linker.lf --input /home/mahesh/esp/esp-idf/components/esp32/ld/esp32.project.ld.in --output /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/esp32/ld/esp32.project.ld --kconfig /home/mahesh/esp/esp-idf/Kconfig --env-file /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/config.env --libraries-file /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/ldgen_libraries --objdump /home/mahesh/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump
 
 __ldgen_output_esp32.project.ld: esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld
 __ldgen_output_esp32.project.ld: esp-idf/esp32/ld/esp32.project.ld
@@ -159,10 +159,10 @@ esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/build: __ldgen_outp
 .PHONY : esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/build
 
 esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/clean:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/esp32 && $(CMAKE_COMMAND) -P CMakeFiles/__ldgen_output_esp32.project.ld.dir/cmake_clean.cmake
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/esp32 && $(CMAKE_COMMAND) -P CMakeFiles/__ldgen_output_esp32.project.ld.dir/cmake_clean.cmake
 .PHONY : esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/clean
 
 esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/Inverse_Pendulum/stepper_control /home/mahesh/esp/esp-idf/components/esp32 /home/mahesh/Inverse_Pendulum/stepper_control/build /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/esp32 /home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control /home/mahesh/esp/esp-idf/components/esp32 /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/esp32 /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : esp-idf/esp32/CMakeFiles/__ldgen_output_esp32.project.ld.dir/depend
 

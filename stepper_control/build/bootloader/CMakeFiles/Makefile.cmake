@@ -14,7 +14,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/git-data/grabRef.cmake"
   "config/sdkconfig.cmake"
   "config/sdkconfig.h"
-  "/home/mahesh/Inverse_Pendulum/stepper_control/sdkconfig"
+  "/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/sdkconfig"
   "/home/mahesh/esp/esp-idf/.git/HEAD"
   "/home/mahesh/esp/esp-idf/.git/modules/components/asio/asio/HEAD"
   "/home/mahesh/esp/esp-idf/.git/modules/components/bootloader/subproject/components/micro-ecc/micro-ecc/HEAD"

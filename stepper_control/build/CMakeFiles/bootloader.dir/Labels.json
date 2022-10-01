@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles/bootloader"
+			"file" : "/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "/home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles/bootloader.rule"
+			"file" : "/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "/home/mahesh/Inverse_Pendulum/stepper_control/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		},
 		{
-			"file" : "/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		}
 	],
 	"target" : 

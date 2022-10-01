@@ -7,6 +7,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/home/mahesh/Inverted-LQR-Bot-Eklavya/.git/HEAD"
+  "/home/mahesh/Inverted-LQR-Bot-Eklavya/.git/refs/heads/develop"
   "../CMakeLists.txt"
   "CMakeFiles/3.16.3/CMakeASMCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
@@ -292,6 +294,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.16.3/CMakeASMCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
+  "CMakeFiles/git-data/HEAD"
+  "CMakeFiles/git-data/grabRef.cmake"
+  "CMakeFiles/git-data/head-ref"
   "config.env"
   "bootloader-prefix/tmp/bootloader-cfgcmd.txt"
   "project_description.json"

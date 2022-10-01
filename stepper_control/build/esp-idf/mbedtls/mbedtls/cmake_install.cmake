@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake")
-  include("/home/mahesh/Inverse_Pendulum/stepper_control/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake")
+  include("/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake")
+  include("/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake")
 
 endif()
 

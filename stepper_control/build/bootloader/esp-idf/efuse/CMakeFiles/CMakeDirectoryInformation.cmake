@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/mahesh/esp/esp-idf")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

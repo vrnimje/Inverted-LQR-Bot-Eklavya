@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/mahesh/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader
 
 # Utility rule file for menuconfig.
 
@@ -54,11 +54,11 @@ CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloade
 include CMakeFiles/menuconfig.dir/progress.make
 
 CMakeFiles/menuconfig:
-	/home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --env-file /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/config.env
-	/home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/kconfig_new/confgen.py --kconfig /home/mahesh/esp/esp-idf/Kconfig --sdkconfig-rename /home/mahesh/esp/esp-idf/sdkconfig.rename --config /home/mahesh/Inverse_Pendulum/stepper_control/sdkconfig --env-file /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/config.env --env IDF_TARGET=esp32 --dont-write-deprecated --output config /home/mahesh/Inverse_Pendulum/stepper_control/sdkconfig
+	/home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --env-file /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/config.env
+	/home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/kconfig_new/confgen.py --kconfig /home/mahesh/esp/esp-idf/Kconfig --sdkconfig-rename /home/mahesh/esp/esp-idf/sdkconfig.rename --config /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/sdkconfig --env-file /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/config.env --env IDF_TARGET=esp32 --dont-write-deprecated --output config /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/sdkconfig
 	/home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/check_term.py
-	/usr/bin/cmake -E env COMPONENT_KCONFIGS_SOURCE_FILE=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/kconfigs.in COMPONENT_KCONFIGS_PROJBUILD_SOURCE_FILE=/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/kconfigs_projbuild.in IDF_CMAKE=y KCONFIG_CONFIG=/home/mahesh/Inverse_Pendulum/stepper_control/sdkconfig IDF_TARGET=esp32 /home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/kconfig_new/menuconfig.py /home/mahesh/esp/esp-idf/Kconfig
-	/home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/kconfig_new/confgen.py --kconfig /home/mahesh/esp/esp-idf/Kconfig --sdkconfig-rename /home/mahesh/esp/esp-idf/sdkconfig.rename --config /home/mahesh/Inverse_Pendulum/stepper_control/sdkconfig --env-file /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/config.env --env IDF_TARGET=esp32 --output config /home/mahesh/Inverse_Pendulum/stepper_control/sdkconfig
+	/usr/bin/cmake -E env COMPONENT_KCONFIGS_SOURCE_FILE=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/kconfigs.in COMPONENT_KCONFIGS_PROJBUILD_SOURCE_FILE=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/kconfigs_projbuild.in IDF_CMAKE=y KCONFIG_CONFIG=/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/sdkconfig IDF_TARGET=esp32 /home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/kconfig_new/menuconfig.py /home/mahesh/esp/esp-idf/Kconfig
+	/home/mahesh/.espressif/python_env/idf4.2_py3.8_env/bin/python /home/mahesh/esp/esp-idf/tools/kconfig_new/confgen.py --kconfig /home/mahesh/esp/esp-idf/Kconfig --sdkconfig-rename /home/mahesh/esp/esp-idf/sdkconfig.rename --config /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/sdkconfig --env-file /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/config.env --env IDF_TARGET=esp32 --output config /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/sdkconfig
 
 menuconfig: CMakeFiles/menuconfig
 menuconfig: CMakeFiles/menuconfig.dir/build.make
@@ -75,6 +75,6 @@ CMakeFiles/menuconfig.dir/clean:
 .PHONY : CMakeFiles/menuconfig.dir/clean
 
 CMakeFiles/menuconfig.dir/depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles/menuconfig.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/esp/esp-idf/components/bootloader/subproject /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles/menuconfig.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/menuconfig.dir/depend
 

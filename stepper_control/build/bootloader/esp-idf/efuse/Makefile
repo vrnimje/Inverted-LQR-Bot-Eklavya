@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/mahesh/esp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader
+CMAKE_BINARY_DIR = /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/esp-idf/efuse/CMakeFiles/progress.marks
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader/CMakeFiles 0
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/esp-idf/efuse/CMakeFiles/progress.marks
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/clean
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/preinstall
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/preinstall
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 esp-idf/efuse/CMakeFiles/efuse_test_table.dir/rule:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/CMakeFiles/efuse_test_table.dir/rule
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/CMakeFiles/efuse_test_table.dir/rule
 .PHONY : esp-idf/efuse/CMakeFiles/efuse_test_table.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ efuse_test_table: esp-idf/efuse/CMakeFiles/efuse_test_table.dir/rule
 
 # fast build rule for target.
 efuse_test_table/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/efuse_test_table.dir/build.make esp-idf/efuse/CMakeFiles/efuse_test_table.dir/build
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/efuse_test_table.dir/build.make esp-idf/efuse/CMakeFiles/efuse_test_table.dir/build
 .PHONY : efuse_test_table/fast
 
 # Convenience name for target.
 esp-idf/efuse/CMakeFiles/show_efuse_table.dir/rule:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/CMakeFiles/show_efuse_table.dir/rule
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/CMakeFiles/show_efuse_table.dir/rule
 .PHONY : esp-idf/efuse/CMakeFiles/show_efuse_table.dir/rule
 
 # Convenience name for target.
@@ -137,12 +137,12 @@ show_efuse_table: esp-idf/efuse/CMakeFiles/show_efuse_table.dir/rule
 
 # fast build rule for target.
 show_efuse_table/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/show_efuse_table.dir/build.make esp-idf/efuse/CMakeFiles/show_efuse_table.dir/build
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/show_efuse_table.dir/build.make esp-idf/efuse/CMakeFiles/show_efuse_table.dir/build
 .PHONY : show_efuse_table/fast
 
 # Convenience name for target.
 esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/rule:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/rule
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/rule
 .PHONY : esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/rule
 
 # Convenience name for target.
@@ -152,12 +152,12 @@ efuse_custom_table: esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/rule
 
 # fast build rule for target.
 efuse_custom_table/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/build.make esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/build
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/build.make esp-idf/efuse/CMakeFiles/efuse_custom_table.dir/build
 .PHONY : efuse_custom_table/fast
 
 # Convenience name for target.
 esp-idf/efuse/CMakeFiles/efuse_common_table.dir/rule:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/CMakeFiles/efuse_common_table.dir/rule
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/CMakeFiles/efuse_common_table.dir/rule
 .PHONY : esp-idf/efuse/CMakeFiles/efuse_common_table.dir/rule
 
 # Convenience name for target.
@@ -167,12 +167,12 @@ efuse_common_table: esp-idf/efuse/CMakeFiles/efuse_common_table.dir/rule
 
 # fast build rule for target.
 efuse_common_table/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/efuse_common_table.dir/build.make esp-idf/efuse/CMakeFiles/efuse_common_table.dir/build
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/efuse_common_table.dir/build.make esp-idf/efuse/CMakeFiles/efuse_common_table.dir/build
 .PHONY : efuse_common_table/fast
 
 # Convenience name for target.
 esp-idf/efuse/CMakeFiles/__idf_efuse.dir/rule:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/CMakeFiles/__idf_efuse.dir/rule
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f CMakeFiles/Makefile2 esp-idf/efuse/CMakeFiles/__idf_efuse.dir/rule
 .PHONY : esp-idf/efuse/CMakeFiles/__idf_efuse.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ __idf_efuse: esp-idf/efuse/CMakeFiles/__idf_efuse.dir/rule
 
 # fast build rule for target.
 __idf_efuse/fast:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build
 .PHONY : __idf_efuse/fast
 
 esp32/esp_efuse_table.obj: esp32/esp_efuse_table.c.obj
@@ -191,7 +191,7 @@ esp32/esp_efuse_table.obj: esp32/esp_efuse_table.c.obj
 
 # target to build an object file
 esp32/esp_efuse_table.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32/esp_efuse_table.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32/esp_efuse_table.c.obj
 .PHONY : esp32/esp_efuse_table.c.obj
 
 esp32/esp_efuse_table.i: esp32/esp_efuse_table.c.i
@@ -200,7 +200,7 @@ esp32/esp_efuse_table.i: esp32/esp_efuse_table.c.i
 
 # target to preprocess a source file
 esp32/esp_efuse_table.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32/esp_efuse_table.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32/esp_efuse_table.c.i
 .PHONY : esp32/esp_efuse_table.c.i
 
 esp32/esp_efuse_table.s: esp32/esp_efuse_table.c.s
@@ -209,7 +209,7 @@ esp32/esp_efuse_table.s: esp32/esp_efuse_table.c.s
 
 # target to generate assembly for a file
 esp32/esp_efuse_table.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32/esp_efuse_table.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32/esp_efuse_table.c.s
 .PHONY : esp32/esp_efuse_table.c.s
 
 src/esp32/esp_efuse_api.obj: src/esp32/esp_efuse_api.c.obj
@@ -218,7 +218,7 @@ src/esp32/esp_efuse_api.obj: src/esp32/esp_efuse_api.c.obj
 
 # target to build an object file
 src/esp32/esp_efuse_api.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_api.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_api.c.obj
 .PHONY : src/esp32/esp_efuse_api.c.obj
 
 src/esp32/esp_efuse_api.i: src/esp32/esp_efuse_api.c.i
@@ -227,7 +227,7 @@ src/esp32/esp_efuse_api.i: src/esp32/esp_efuse_api.c.i
 
 # target to preprocess a source file
 src/esp32/esp_efuse_api.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_api.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_api.c.i
 .PHONY : src/esp32/esp_efuse_api.c.i
 
 src/esp32/esp_efuse_api.s: src/esp32/esp_efuse_api.c.s
@@ -236,7 +236,7 @@ src/esp32/esp_efuse_api.s: src/esp32/esp_efuse_api.c.s
 
 # target to generate assembly for a file
 src/esp32/esp_efuse_api.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_api.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_api.c.s
 .PHONY : src/esp32/esp_efuse_api.c.s
 
 src/esp32/esp_efuse_fields.obj: src/esp32/esp_efuse_fields.c.obj
@@ -245,7 +245,7 @@ src/esp32/esp_efuse_fields.obj: src/esp32/esp_efuse_fields.c.obj
 
 # target to build an object file
 src/esp32/esp_efuse_fields.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_fields.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_fields.c.obj
 .PHONY : src/esp32/esp_efuse_fields.c.obj
 
 src/esp32/esp_efuse_fields.i: src/esp32/esp_efuse_fields.c.i
@@ -254,7 +254,7 @@ src/esp32/esp_efuse_fields.i: src/esp32/esp_efuse_fields.c.i
 
 # target to preprocess a source file
 src/esp32/esp_efuse_fields.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_fields.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_fields.c.i
 .PHONY : src/esp32/esp_efuse_fields.c.i
 
 src/esp32/esp_efuse_fields.s: src/esp32/esp_efuse_fields.c.s
@@ -263,7 +263,7 @@ src/esp32/esp_efuse_fields.s: src/esp32/esp_efuse_fields.c.s
 
 # target to generate assembly for a file
 src/esp32/esp_efuse_fields.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_fields.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_fields.c.s
 .PHONY : src/esp32/esp_efuse_fields.c.s
 
 src/esp32/esp_efuse_utility.obj: src/esp32/esp_efuse_utility.c.obj
@@ -272,7 +272,7 @@ src/esp32/esp_efuse_utility.obj: src/esp32/esp_efuse_utility.c.obj
 
 # target to build an object file
 src/esp32/esp_efuse_utility.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_utility.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_utility.c.obj
 .PHONY : src/esp32/esp_efuse_utility.c.obj
 
 src/esp32/esp_efuse_utility.i: src/esp32/esp_efuse_utility.c.i
@@ -281,7 +281,7 @@ src/esp32/esp_efuse_utility.i: src/esp32/esp_efuse_utility.c.i
 
 # target to preprocess a source file
 src/esp32/esp_efuse_utility.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_utility.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_utility.c.i
 .PHONY : src/esp32/esp_efuse_utility.c.i
 
 src/esp32/esp_efuse_utility.s: src/esp32/esp_efuse_utility.c.s
@@ -290,7 +290,7 @@ src/esp32/esp_efuse_utility.s: src/esp32/esp_efuse_utility.c.s
 
 # target to generate assembly for a file
 src/esp32/esp_efuse_utility.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_utility.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp32/esp_efuse_utility.c.s
 .PHONY : src/esp32/esp_efuse_utility.c.s
 
 src/esp_efuse_api.obj: src/esp_efuse_api.c.obj
@@ -299,7 +299,7 @@ src/esp_efuse_api.obj: src/esp_efuse_api.c.obj
 
 # target to build an object file
 src/esp_efuse_api.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj
 .PHONY : src/esp_efuse_api.c.obj
 
 src/esp_efuse_api.i: src/esp_efuse_api.c.i
@@ -308,7 +308,7 @@ src/esp_efuse_api.i: src/esp_efuse_api.c.i
 
 # target to preprocess a source file
 src/esp_efuse_api.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.i
 .PHONY : src/esp_efuse_api.c.i
 
 src/esp_efuse_api.s: src/esp_efuse_api.c.s
@@ -317,7 +317,7 @@ src/esp_efuse_api.s: src/esp_efuse_api.c.s
 
 # target to generate assembly for a file
 src/esp_efuse_api.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.s
 .PHONY : src/esp_efuse_api.c.s
 
 src/esp_efuse_fields.obj: src/esp_efuse_fields.c.obj
@@ -326,7 +326,7 @@ src/esp_efuse_fields.obj: src/esp_efuse_fields.c.obj
 
 # target to build an object file
 src/esp_efuse_fields.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj
 .PHONY : src/esp_efuse_fields.c.obj
 
 src/esp_efuse_fields.i: src/esp_efuse_fields.c.i
@@ -335,7 +335,7 @@ src/esp_efuse_fields.i: src/esp_efuse_fields.c.i
 
 # target to preprocess a source file
 src/esp_efuse_fields.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.i
 .PHONY : src/esp_efuse_fields.c.i
 
 src/esp_efuse_fields.s: src/esp_efuse_fields.c.s
@@ -344,7 +344,7 @@ src/esp_efuse_fields.s: src/esp_efuse_fields.c.s
 
 # target to generate assembly for a file
 src/esp_efuse_fields.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.s
 .PHONY : src/esp_efuse_fields.c.s
 
 src/esp_efuse_utility.obj: src/esp_efuse_utility.c.obj
@@ -353,7 +353,7 @@ src/esp_efuse_utility.obj: src/esp_efuse_utility.c.obj
 
 # target to build an object file
 src/esp_efuse_utility.c.obj:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj
 .PHONY : src/esp_efuse_utility.c.obj
 
 src/esp_efuse_utility.i: src/esp_efuse_utility.c.i
@@ -362,7 +362,7 @@ src/esp_efuse_utility.i: src/esp_efuse_utility.c.i
 
 # target to preprocess a source file
 src/esp_efuse_utility.c.i:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.i
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.i
 .PHONY : src/esp_efuse_utility.c.i
 
 src/esp_efuse_utility.s: src/esp_efuse_utility.c.s
@@ -371,7 +371,7 @@ src/esp_efuse_utility.s: src/esp_efuse_utility.c.s
 
 # target to generate assembly for a file
 src/esp_efuse_utility.c.s:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.s
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(MAKE) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.s
 .PHONY : src/esp_efuse_utility.c.s
 
 # Help Target
@@ -419,6 +419,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

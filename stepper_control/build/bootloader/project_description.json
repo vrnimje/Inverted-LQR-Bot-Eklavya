@@ -1,8 +1,8 @@
 {
     "project_name":       "bootloader",
     "project_path":       "/home/mahesh/esp/esp-idf/components/bootloader/subproject",
-    "build_dir":          "/home/mahesh/Inverse_Pendulum/stepper_control/build/bootloader",
-    "config_file":        "/home/mahesh/Inverse_Pendulum/stepper_control/sdkconfig",
+    "build_dir":          "/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/build/bootloader",
+    "config_file":        "/home/mahesh/Inverted-LQR-Bot-Eklavya/stepper_control/sdkconfig",
     "config_defaults":    "",
     "app_elf":            "bootloader.elf",
     "app_bin":            "bootloader.bin",
