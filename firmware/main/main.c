@@ -16,7 +16,7 @@
 #include "pin_defs.h"
 #include "utils.h"
 
-#define PI  3.13
+#define PI  3.14159
 
 // STEP and DIRECTION output pins for stepper motor driver.
 static const gpio_num_t step_pin = GPIO_NUM_16;
@@ -29,7 +29,7 @@ static const int32_t max_freq = 1500;
 static const int32_t min_freq = 20;
 static const int32_t max_freq_change = 10000;
 
-//finds freq
+//finds new frequency
 float find_freq(float freq, float freq_change, int32_t update_period)
 {
     freq = freq + (freq_change*update_period/1000);
@@ -65,18 +65,45 @@ void set_direction(float freq)
 
 // constants related to system (assumed for now)
 static const float radius = 0.6; // pulley radius in cm
-static const int m_c = 160;     // mass of cart in gm
-static const int m_p = 240;     // maass of pendulum in gm
+static const int M = 280;     // mass of cart in gm
+static const int m = 130;     // maass of pendulum in gm
+float state_setpoint[4] = {0, 0, PI, 0};	// Setpoint to which system needs to move
+
+/*
+## State Equations ##
+	 
+	dy(1,1) = y(2);
+  	dy(2,1) = (-(g*sin_theta) + (dy(4,1)*cos_theta))/L;
+	dy(3,1) = y(4);
+  	dy(4,1) = (-(m*g*cos_theta*sin_theta) + (m*L*sin_theta*((y(2))^2) - f*y(4)) + u)/(M + m*(sin_theta^2));
+
+## State Matrix ##
+	
+		|	  0 		    1		0	 	 0       | 
+	A = | (g+(m*g/M))/L		0		0		-f/(M*L) |
+		|  	  0 			0 		0		 1       |
+		|   -m*g/M 			0 		0 		-f/M     |
+
+## Input Matrix ## 
+  	
+	B = |	   0      |
+		| -1/(L*(M))  |
+		|	   0	  |
+		|	 1/(M)	  |
+
+*/
+
+// value of K matrix we get from octave for theses conditions
+float k[4] = {1714.9 , -1717, -1248300,  -255140};   
+
 
 //initialising required variables
-float freq_change = 0; // Hz. Speed change per update will not exceed this amount
-float freq = 0; 
-float state_setpoint[4] = {0, 0, PI, 0};
-float x = 0, x_dot = 0, th = 0, th_dot = 0;
-float linear_acc = 0;
-float prev_theta = 0;
+float freq_change = 0; 						// Speed change per update will not exceed this amount
+float freq = 0; 							// input of motor in steps per second 
+float x = 0, x_dot = 0, th = 0, th_dot = 0; // store values of state variables
+float linear_acc = 0;						// linear acceleration of cart
+float prev_theta = 0;						// previous angular position
 	
-float k[4] = {-756.67 , -979.65, -1027700,  -204050};   // value of K matrix I got from octave for theses conditions
 
 
 
@@ -114,18 +141,20 @@ float new_x_dot(float freq)
 	return x_dot;
 }
 
+//finds angular velocity
 float new_theta_dot(float theta, float prev_theta, uint32_t update_period)
 {
     float theta_dot = ((theta - prev_theta)*1000)/update_period;
     return theta_dot;
 }
+
 //finds linear acc
 float acceleration(float x, float x_dot, float th, float th_dot, float k[], float state_setpoint[])
 {
 	float u = -(round(k[0]*(x - state_setpoint[0])) + round(k[1]*(x_dot - state_setpoint[1])) + round(k[2]*(th - state_setpoint[2])) + round(k[3]*(th_dot - state_setpoint[3])));
 	float linear_acc;
 	
-	linear_acc = u/(m_c + m_p);
+	linear_acc = u/(M + m);
 	return linear_acc;
 }
 
@@ -152,7 +181,8 @@ float motor_acc(float linear_acc)
 	}
 }
 
-float mpu_offset[2] = {0.0f, 0.0f};
+
+float mpu_offset[2] = {7.448, 0.0f};
 
 // Task which finds current angle 
 void find_theta(float *mpu_offset)
@@ -172,7 +202,7 @@ void find_theta(float *mpu_offset)
 		{
 			
 			complementary_filter(buffer1, buffer2, buffer3, mpu_offset);
-			th = floor((PI + buffer3[0]*PI/180)*100)/100;
+			th = ((PI + buffer3[0]*PI/180)*100)/100;
 
 			
 		}
@@ -250,3 +280,4 @@ void app_main()
 	xTaskCreatePinnedToCore(&find_theta, "finding angle", 10000, &mpu_offset, 1, NULL, 0);
 	xTaskCreatePinnedToCore(&run_motor, "running motor", 10000, NULL, 1, NULL, 1);
 }
+
