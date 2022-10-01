@@ -19,7 +19,7 @@ function draw_cart_pendulum(y, L)
   line([dist x1], [B/2 y1], "linestyle", "-", "color", "k");
   line([-40 40], [0 0], "linestyle", "-", "color", "k");
   xlim([-35 35])
-  ylim([0 40])
+  ylim([0 70])
   drawnow
   hold off
 endfunction
@@ -27,10 +27,10 @@ endfunction
 function dy = inverted_pendulum_dynamics(y, m, M, L, g, u)
   sin_theta = sin(y(1));
   cos_theta = cos(y(1));
-  f = 20;
+  f = 10;
   dy(1,1) = y(2);
   dy(3,1) = y(4);
-  dy(4,1) = (-(m*g*cos_theta*sin_theta) + (m*L*sin_theta*((y(2))^2) + f*y(4)) + u)/(M + m*(sin_theta^2));
+  dy(4,1) = (-(m*g*cos_theta*sin_theta) + (m*L*sin_theta*((y(2))^2) - f*y(4)) + u)/(M + m*(sin_theta^2));
   dy(2,1) = (-(g*sin_theta) + (dy(4,1)*cos_theta))/L;
 
 endfunction
@@ -46,8 +46,8 @@ function [t,y,K,sys_d] = lqr_inverted_pendulum(m, M, g, L, y_setpoint, y0)
   sys = ss(A,B);
   sys_d = ss(c2d(sys, 0.05));
   #daspect();
-  Q = [10000 0 0 0; 0 100 0 0; 0 0 100000 0; 0 0 0 1];                   ## Initialise Q matrix
-  R = 0.01;                   ## Initialise R
+  Q = [10000 0 0 0; 0 100 0 0; 0 0 1000000 0; 0 0 0 1];                   ## Initialise Q matrix
+  R = 0.2;                   ## Initialise R
   K = dlqr(sys_d,Q,R);  ## Calculate K matrix from A,B,Q,R matrices
 ##K = lqr(A,B,Q,R);
   tspan = 0:0.05:10;       ## Initialise time step
@@ -58,7 +58,7 @@ function inverted_pendulum_main()
   m = 130;
   M = 280;
   g = 980;
-  L = 33.23;
+  L = 50;
   y_setpoint = [pi; 0; 0; 0];                                  ## Set Point
   y0 = [2.9; 0; 0; 0];  ## Initial condtion
   [t,y,K,sys_d] = lqr_inverted_pendulum(m, M, g, L, y_setpoint, y0);
