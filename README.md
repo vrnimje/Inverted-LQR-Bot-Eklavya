@@ -1,7 +1,7 @@
 # About This Project
 Control systems form the basis for ensuring that every automatic system performs its ordained task accurately, efficiently and quickly (optimally) despite being subjected to varying environmental conditions.
 
-In this project, we explore one of these control systems, i.e., **[LQR (Linear Quadratic Regulator)](../Notes/Vedant/Control_Bootcamp_Vedant.md) Controller**, which is a type of controller in which we try to minimise a cost function by optimising the various factors involved in the physical system. Then, we apply LQR to the classical problem of an **Inverted Pendulum on Rails**, which is used as a benchmark for testing control strategies, both in simulation and hardware.
+In this project, we explore one of these control systems, i.e., **[LQR (Linear Quadratic Regulator)](./Notes/Vedant/Control_Bootcamp_Vedant.md) Controller**, which is a type of controller in which we try to minimise a cost function by optimising the various factors involved in the physical system. Then, we apply LQR to the classical problem of an **Inverted Pendulum on Rails**, which is used as a benchmark for testing control strategies, both in simulation and hardware.
 
 
  ![image](https://user-images.githubusercontent.com/103848930/193101549-694b60c1-498a-4eb1-9eca-13f6805558b5.png)
