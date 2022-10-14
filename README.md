@@ -56,6 +56,11 @@ First, we used the rails which were part of a CNC machine, and were firmly held 
 
 [These](./hardware_issues.md) are some of the issues we faced during the setup and testing process of the system, along with their solutions.
 
+## **Future Work**
+
+- [ ]  Improve balancing
+- [ ]  Add swing up controller
+- [ ]  Implement LQR on self-balancing bot on wheels
 
 ## Contributors
 * [Vedant Nimje](https://github.com/vrnimje)
