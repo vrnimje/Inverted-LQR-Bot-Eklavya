@@ -32,7 +32,10 @@ In this project, we explore one of these control systems, i.e., **[LQR (Linear Q
 
 
 ## Modelling the system in Octave
-We first model the physical system by considering it's parameters (like mass of cart, pendulum rod, length of rod, etc.) and the dynamics equations. Then, we [linearise the system](https://github.com/vrnimje/Inverted-LQR-Bot-Eklavya/blob/develop/Notes/Mahesh/ControlBootcamp_Notes_Mahesh.md#linearizing-around-a-fixed-point) about it's equilibrium point, $\(pi, 0)$. Then, we represent the system as: 
+We first model the physical system by considering it's parameters (like mass of cart, pendulum rod, length of rod, etc.) and the dynamics equations. 
+![Screenshot from 2022-10-14 15-36-38](https://user-images.githubusercontent.com/103848930/195821454-5dfc776f-d797-4c69-858a-a70fe0534af7.png)
+
+Then, we [linearise the system](https://github.com/vrnimje/Inverted-LQR-Bot-Eklavya/blob/develop/Notes/Mahesh/ControlBootcamp_Notes_Mahesh.md#linearizing-around-a-fixed-point) about it's equilibrium point, $\(\pi, 0)$. Then, we represent the system as: 
 $$\dot{x} = Ax + Bu$$ 
 where 'u' is our input to the system. 
 
