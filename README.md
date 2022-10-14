@@ -7,7 +7,6 @@ In this project, we explore one of these control systems, i.e., **[LQR (Linear Q
  ![image](https://user-images.githubusercontent.com/103848930/193101549-694b60c1-498a-4eb1-9eca-13f6805558b5.png)
 
 
-
 ### 1. Research Topics
 * **Linear Algebra**, for representation of various aspects of physical systems, like, current state, stability, etc.. ([Notes for the same](./Notes/Mahesh/LA_Notes_Mahesh.md))
 * A thorough understanding of **Control Systems**. ([Notes for the same](./Notes/Mahesh/ControlBootcamp_Notes_Mahesh.md))
@@ -32,7 +31,11 @@ In this project, we explore one of these control systems, i.e., **[LQR (Linear Q
 
 
 ## Modelling the system in Octave
-We first model the physical system by considering it's parameters (like mass of cart, pendulum rod, length of rod, etc.) and the dynamics equations. Then, we [linearise the system](https://github.com/vrnimje/Inverted-LQR-Bot-Eklavya/blob/develop/Notes/Mahesh/ControlBootcamp_Notes_Mahesh.md#linearizing-around-a-fixed-point) about it's equilibrium point, $\(pi, 0)$. Then, we represent the system as: 
+We first model the physical system by considering it's parameters (like mass of cart, pendulum rod, length of rod, etc.) and the dynamics equations.
+
+![image](https://user-images.githubusercontent.com/103848930/195924367-654b86b8-5a49-49b6-8a25-f8d7e8adc6ec.png)
+
+Then, we [linearise the system](https://github.com/vrnimje/Inverted-LQR-Bot-Eklavya/blob/develop/Notes/Mahesh/ControlBootcamp_Notes_Mahesh.md#linearizing-around-a-fixed-point) about it's equilibrium point, $\(\pi, 0)$. Then, we represent the system as: 
 $$\dot{x} = Ax + Bu$$ 
 where 'u' is our input to the system. 
 
@@ -50,11 +53,18 @@ $[\theta, \dot{\theta}, x, \dot{x}]$ with respect to time.
 ![Step Response](Notes/Vedant/assets/step_response.png)
 
 ## Implementation of Inverted Pendulum in Hardware
-First, we used the rails which were part of a CNC machine, and were firmly held in place. Then, the cart, fitted with the bearings, is then places around the rails. The stepper motor and the free pulley are mounted below the rails, and both of which drive a timing belt, which itself drives the cart. 
+First, we used the rails which were part of a CNC machine, and were firmly held in place. Then, the cart, fitted with the bearings, is then places around the rails. The stepper motor and the free pulley are mounted aside the rails, and both of which drive a timing belt, which itself drives the cart. The MPU6050 is mounted on the rod, with the help of screws, near the pivot point. The rod itself contains a bearing, which allows it to rotate about the screw. The screw is held in place on the cart by means of a mount. 
 
 ![My first board(1)](https://user-images.githubusercontent.com/103848930/193186818-cdafd9c1-1da0-4378-8d9f-5a9479d1179c.jpg)
 
+<img width="671" alt="image" src="https://user-images.githubusercontent.com/103848930/195923386-228fb49d-1f6a-4514-bb75-dc905956b11c.png">
+
+
 [These](./hardware_issues.md) are some of the issues we faced during the setup and testing process of the system, along with their solutions.
+
+This is one of our best runs:
+
+https://user-images.githubusercontent.com/103848930/195923741-b8d7eb5f-76ed-4bf6-bab0-725a133ea2e3.mp4
 
 ## **Future Work**
 
